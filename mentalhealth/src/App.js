@@ -5,9 +5,9 @@ import axios from 'axios';
 function App() {
 
   const user = {
-    name: "Pratik12",
-    email:"pratikjadhav99@gmail.com",
-    password:"pratikjadhav"
+    name: "rohit",
+    email:"rohitkumar@gmail.com",
+    password:"orhinadldad"
   };
 
   const addauser = () => {
@@ -18,6 +18,7 @@ function App() {
         console.log(res.data);
       })
   }
+
 
   return (
     <div className="App">
