@@ -6,7 +6,7 @@ function App() {
 
   const user = {
     name: "Pratik12",
-    email:"pratikjadhav88809@gmail.com",
+    email:"pratikjadhav99@gmail.com",
     password:"pratikjadhav"
   };
 
