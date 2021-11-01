@@ -1,6 +1,7 @@
 
 import './App.css';
 import axios from 'axios';
+import { Landing } from './components/Landing';
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
 
   return (
     <div className="App">
+      <Landing />
       <h1>Welcome to Our App</h1>
 
       <button onClick={addauser}>Add user</button>
