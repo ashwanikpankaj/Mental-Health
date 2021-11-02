@@ -3,6 +3,7 @@ import './App.css';
 import axios from 'axios';
 import { Landing } from './components/Landing';
 import { Login } from './components/Login';
+import {StaticHeader} from "./components/Staticheader"
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
 
   return (
     <div className="App">
+      <StaticHeader></StaticHeader>
       <Landing />
       <Login/>
       <h1>Welcome to Our App</h1>
