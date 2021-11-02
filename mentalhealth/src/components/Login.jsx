@@ -9,7 +9,7 @@ export const Login = () => {
                 <form id="form">
                     <input className="fields" type="text" placeholder="Name"/>
                     <input className="fields" type="text" placeholder="Email"/>
-                    <input className="fields" type="text" placeholder="Password (8+ CHARACTERS)"/>
+                    <input className="fields" type="password" placeholder="Password (8+ CHARACTERS)"/>
                     <input type="submit" value="Create an account"/>
                 </form>
                 <div>

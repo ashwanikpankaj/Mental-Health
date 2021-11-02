@@ -3,6 +3,7 @@ import './App.css';
 import axios from 'axios';
 import { Landing } from './components/Landing';
 import { Login } from './components/Login';
+import { Goodbad } from './components/Goodbad';
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
     <div className="App">
       <Landing />
       <Login/>
+      <Goodbad/>
       <h1>Welcome to Our App</h1>
       <button onClick={addauser}>Add user</button>
     </div>
