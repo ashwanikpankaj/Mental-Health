@@ -5,6 +5,7 @@ import { Landing } from './components/Landing';
 import { Login } from './components/Login';
 import { Welcome } from "./components/Welcome"
 import {Goodbad} from "./components/Goodbad"
+import { Goal } from './components/Goal';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <Login/>
       <Goodbad/>
      <Welcome></Welcome>
+     <Goal/>
     </div>
     
   );

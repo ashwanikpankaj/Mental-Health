@@ -12,7 +12,6 @@ export const Goodbad = () => {
                 <img id="bad" src='bad.jpg'></img>
                     <p id="goodtext">GOOD</p>
                     <p id="badtext">BAD</p>
-
                 <button id="skip">Skip</button>
             </div>
         </>
