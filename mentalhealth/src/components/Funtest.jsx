@@ -11,7 +11,7 @@ export const Funtest = () => {
                 <p id="funtestp">Take a fun test to help us know you.</p>
                 <img id="funtestimg" src="funtest.jpg"></img>
                 <button id="start">Start</button>
-                <Skip/>
+                <Skip prop="skip"/>
             </div>
         </>
     )

@@ -1,10 +1,12 @@
 import '../styles/login.css'
+import { StaticHeader } from './Staticheader'
 
 export const Login = () => {
 
     return (
         <>
             <div id="login">
+                <StaticHeader/>
                 <div><img id="logo" src="blueaura.png"></img></div>
                 <form id="form">
                     <input className="fields" type="text" placeholder="Name"/>

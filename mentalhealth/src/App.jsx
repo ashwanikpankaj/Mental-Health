@@ -7,6 +7,8 @@ import { Welcome } from "./components/Welcome"
 import {Goodbad} from "./components/Goodbad"
 import { Goal } from './components/Goal';
 import { Funtest } from './components/Funtest';
+import { Colors } from './components/Colors';
+import { Personality } from './components/Personality';
 
 function App() {
 
@@ -20,6 +22,8 @@ function App() {
      <Welcome></Welcome>
      <Goal/>
      <Funtest/>
+     <Colors/>
+     <Personality/>
     </div>
     
   );
