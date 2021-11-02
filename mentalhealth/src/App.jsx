@@ -10,6 +10,7 @@ import { Funtest } from './components/Funtest';
 import { Waterfall } from './components/Waterfall';
 import { Colors } from './components/Colors';
 import { Personality } from './components/Personality';
+import { Avatar } from './components/Avatar';
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
      <Waterfall/>
      <Colors/>
      <Personality/>
+     <Avatar/>
     </div>
     
   );

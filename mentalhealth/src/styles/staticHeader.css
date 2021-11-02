@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 .headerBox{
     position: absolute;
@@ -11,7 +11,7 @@
 
 #time{
     position: absolute;
-    font-family: "Roboto";
+    font-family: "Poppins";
     font-style: normal;
     font-weight: bold;
     font-size: 16px;

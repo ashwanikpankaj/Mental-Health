@@ -17,7 +17,7 @@ export const Goal = () => {
                 <p id="mind">Mindfulness</p>
                 <p id="stay">Stay focused</p>
                 <p id="sleep">Sleep</p>
-                <Skip/>
+                <Skip prop="Skip"/>
             </div>
         </>
     )
