@@ -1,16 +1,21 @@
-/* body{
-    background-color: #F2F2F2;
-} */
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 .cont{
     width: 411px;
     height:823px;
     background-color: #FFFFFF;
     margin: auto;
     box-sizing: border-box;
+   border:1px solid red;
+   position:relative
     
 }
 
+.img-div{
+    width: 359px;
+    height: 341px;
+   margin-top: 50px;
+   margin-left: 20px;
+}
 .bottom-box{
     width: 411px;
     height: 281px;
@@ -20,8 +25,8 @@
 
 .welcome{
     color:#555555; 
-    margin-top: 100px;
-    margin-bottom: 115px;
+    margin-top: 30px;
+    margin-bottom: 75px;
 }
 
 .bottom-box{
@@ -36,17 +41,18 @@
 .bottom-line{
     width: 411px;
     height: 16px;
+  
 }
 .bottom-line>div{
     height: 3px;
     width: 114px;
-    border-radius: 0.5px;
+    border-radius: 2px;
     background-color: #656B75;
     margin-left: 150px;
     margin-top: 2px;
 }
 .text{
- font-family: Poppins;
+ font-family: "Poppins";
 font-size: 20px;
 font-style: normal;
 font-weight: 400;
@@ -56,6 +62,8 @@ text-align: center;
 padding: 60px;
 color:#333333;
 justify-content: space-between;
+padding-bottom: 40px;
+height: 109px;
 
 }
 
@@ -63,6 +71,7 @@ justify-content: space-between;
     display: flex;
     gap:100px;
     margin-left: 10px;
+   
 }
 
 
