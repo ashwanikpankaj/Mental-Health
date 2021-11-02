@@ -1,4 +1,5 @@
 import '../styles/goodbad.css'
+import { Skip } from './Skip'
 import { StaticHeader } from './Staticheader'
 
 export const Goodbad = () => {
@@ -12,7 +13,7 @@ export const Goodbad = () => {
                 <img id="bad" src='bad.jpg'></img>
                     <p id="goodtext">GOOD</p>
                     <p id="badtext">BAD</p>
-                <button id="skip">Skip</button>
+                <Skip/>
             </div>
         </>
     )

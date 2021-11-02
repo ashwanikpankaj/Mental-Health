@@ -6,6 +6,7 @@ import { Login } from './components/Login';
 import { Welcome } from "./components/Welcome"
 import {Goodbad} from "./components/Goodbad"
 import { Goal } from './components/Goal';
+import { Funtest } from './components/Funtest';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
       <Goodbad/>
      <Welcome></Welcome>
      <Goal/>
+     <Funtest/>
     </div>
     
   );

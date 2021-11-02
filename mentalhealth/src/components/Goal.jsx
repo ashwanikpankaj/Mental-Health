@@ -1,4 +1,5 @@
 import '../styles/goal.css'
+import { Skip } from './Skip'
 import { StaticHeader } from './Staticheader'
 
 export const Goal = () => {
@@ -16,7 +17,7 @@ export const Goal = () => {
                 <p id="mind">Mindfulness</p>
                 <p id="stay">Stay focused</p>
                 <p id="sleep">Sleep</p>
-                <button id="skip">Skip</button>
+                <Skip/>
             </div>
         </>
     )
