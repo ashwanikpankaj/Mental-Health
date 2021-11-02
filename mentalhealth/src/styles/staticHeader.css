@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 .headerBox{
     position: absolute;
     width: 411px;
@@ -27,7 +29,7 @@
 #wifi{
     width: 16.2px;
     height: 13.5px;
-    left:323px;
+    left:327px;
 }
 
 #tower{

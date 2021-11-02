@@ -3,9 +3,10 @@
 #goodbad{
     position: relative;
     width: 411px;
-    height: 763px;
-    background: hsl(0, 0%, 100%);
+    height: 823px;
+    background: #FFFFFF;
     margin: auto;
+    border: 1px solid red;
 }
 
 #feeling{
@@ -24,9 +25,53 @@
     position: absolute;
     width:111.47px;
     height:111.47px;
-    top:173px;
+    top:192.265px;
 }
 
 #good{
+    left:45.265px;
+}
 
+#bad{
+    left:249.265px;
+}
+
+#goodtext,#badtext{
+    position: absolute;
+    width: 114px;
+    height: 31px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #656B75;
+    top: 320px;
+}
+
+#goodtext{
+    left: 43px;
+}
+
+#badtext{
+    left: 248px;
+}
+
+#skip{
+    padding: 12px 85px;
+    position: absolute;
+    width: 358px;
+    height: 48px;
+    left: 26px;
+    top: 621px;
+    border: 1px solid #D8DADC;
+    box-sizing: border-box;
+    border-radius: 30px;
+    color: #656B75;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    background: #FFFFFF;
 }
