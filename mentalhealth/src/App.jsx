@@ -5,6 +5,9 @@ import { Landing } from './components/Landing';
 import { Login } from './components/Login';
 import { Goodbad } from './components/Goodbad';
 
+//-----------by ashwani----------//
+import {Welcome} from "./components/Welcome"
+
 function App() {
 
   const user = {
@@ -30,7 +33,11 @@ function App() {
       <Goodbad/>
       <h1>Welcome to Our App</h1>
       <button onClick={addauser}>Add user</button>
+      <div>
+     <Welcome></Welcome>
+     </div>
     </div>
+    
   );
 }
 
