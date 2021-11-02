@@ -3,7 +3,9 @@ import './App.css';
 import axios from 'axios';
 import { Landing } from './components/Landing';
 import { Login } from './components/Login';
-import {StaticHeader} from "./components/Staticheader"
+import { StaticHeader } from "./components/Staticheader"
+import { Welcome } from "./components/Welcome"
+import {Goodbad} from "./components/Goodbad"
 
 function App() {
 
@@ -28,9 +30,14 @@ function App() {
       <StaticHeader></StaticHeader>
       <Landing />
       <Login/>
+      <Goodbad/>
       <h1>Welcome to Our App</h1>
       <button onClick={addauser}>Add user</button>
+      <div>
+     <Welcome></Welcome>
+     </div>
     </div>
+    
   );
 }
 
