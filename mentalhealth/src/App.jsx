@@ -8,20 +8,6 @@ import {Goodbad} from "./components/Goodbad"
 
 function App() {
 
-  const user = {
-    name: "rohit",
-    email:"rohitkumar2222@gmail.com",
-    password:"orhinadldad"
-  };
-
-  const addauser = () => {
-
-    axios.post("http://localhost:7765/register", user)
-      .then(res => {
-        console.log(res);
-        console.log(res.data);
-      })
-  }
 
 
   return (
@@ -29,14 +15,27 @@ function App() {
       <Landing />
       <Login/>
       <Goodbad/>
-      <h1>Welcome to Our App</h1>
-      <button onClick={addauser}>Add user</button>
-      <div>
      <Welcome></Welcome>
-     </div>
     </div>
     
   );
 }
 
 export default App;
+
+
+// const user = {
+//   name: "rohit",
+//   email:"rohitkumar2222@gmail.com",
+//   password:"orhinadldad"
+// };
+
+// const addauser = () => {
+
+//   axios.post("http://localhost:7765/register", user)
+//     .then(res => {
+//       console.log(res);
+//       console.log(res.data);
+//     })
+// }
+//<button onClick={addauser}>Add user</button>
