@@ -7,6 +7,7 @@ import { Welcome } from "./components/Welcome"
 import {Goodbad} from "./components/Goodbad"
 import { Goal } from './components/Goal';
 import { Funtest } from './components/Funtest';
+import { Waterfall } from './components/Waterfall';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
      <Welcome></Welcome>
      <Goal/>
      <Funtest/>
+     <Waterfall/>
     </div>
     
   );

@@ -26,7 +26,7 @@ function Welcome (){
          <button className="skip">Skip</button>
          </div>
          <div className="dot-icon">
-          <div></div><div></div><div></div>
+          <div id="first-dot"></div><div></div><div></div>
           </div>
           <div>
           <button className="next" onClick={()=>setCount(count+1)}>Next</button>
@@ -49,7 +49,7 @@ function Welcome (){
      <button className="skip">Skip</button>
      </div>
      <div className="dot-icon">
-      <div></div><div></div><div></div>
+      <div></div><div id="second-dot"></div><div></div>
       </div>
       <div>
       <button className="next" onClick={()=>setCount(count+1)}  >Next</button>
@@ -72,7 +72,7 @@ function Welcome (){
          <button className="skip">Skip</button>
          </div>
          <div className="dot-icon">
-          <div></div><div></div><div></div>
+          <div></div><div></div><div id="third-dot"></div>
           </div>
           <div>
           <button className="next" onClick={()=>setCount(count+1)} disabled={count===3?true:false}>Next</button>
