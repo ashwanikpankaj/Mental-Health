@@ -1,12 +1,12 @@
 import '../styles/landing.css'
+import '../styles/meditate1.css'
 import { AppStatusBar } from './App-status-bar'
 import { Bottom } from './Bottom'
 import { BottomNavBar } from './Bottom-nav-bar'
 import { Navbar } from './Navbar'
-import { Rectangle } from './Rectangle'
 
 
-export function Landing() {
+export function Meditate1() {
     return (
         <>
             <div className="lpage_maindiv">
@@ -19,11 +19,7 @@ export function Landing() {
                 </div>
 
                 <div>
-                    <img id="lpage_girl" src="./landing_images/girl.png" alt="" />
-                </div>
-
-                <div>
-                    <Rectangle />
+                    <img id="m1_girl" src="./landing_images/mindfulness1.png" alt="" />
                 </div>
 
                 <div>

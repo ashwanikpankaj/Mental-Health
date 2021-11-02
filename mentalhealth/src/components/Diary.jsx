@@ -1,12 +1,12 @@
 import '../styles/landing.css'
+import '../styles/diary.css'
 import { AppStatusBar } from './App-status-bar'
 import { Bottom } from './Bottom'
 import { BottomNavBar } from './Bottom-nav-bar'
 import { Navbar } from './Navbar'
 import { Rectangle } from './Rectangle'
 
-
-export function Landing() {
+export function Diary() {
     return (
         <>
             <div className="lpage_maindiv">
@@ -19,7 +19,7 @@ export function Landing() {
                 </div>
 
                 <div>
-                    <img id="lpage_girl" src="./landing_images/girl.png" alt="" />
+                    <img id="d_girl" src="./landing_images/diary.png" alt="" />
                 </div>
 
                 <div>
@@ -27,7 +27,7 @@ export function Landing() {
                 </div>
 
                 <div>
-                    <BottomNavBar /> 
+                    <BottomNavBar />
                 </div>
 
                 <div>

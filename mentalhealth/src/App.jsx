@@ -1,13 +1,19 @@
 
 import './App.css';
 import axios from 'axios';
+import { Game } from './components/Game';
 import { Landing } from './components/Landing';
+import { Meditate } from './components/Meditate';
+import { Diary } from './components/Diary';
+import { Game1 } from './components/Game1';
+import { Diary1 } from './components/Diary1';
+import { Meditate1 } from './components/Meditate1';
 
 function App() {
 
   const user = {
-    name: "Pratik12",
-    email:"pratikjadhav99@gmail.com",
+    name: "prakash",
+    email:"prakash@gmail.com",
     password:"pratikjadhav"
   };
 
@@ -23,9 +29,15 @@ function App() {
   return (
     <div className="App">
       <Landing />
-      <h1>Welcome to Our App</h1>
+      <Meditate />
+      <Meditate1 />
+      <Diary />
+      <Diary1 />
+      <Game />
+      <Game1 />
+      {/* <h1>Welcome to Our App</h1>
 
-      <button onClick={addauser}>Add user</button>
+      <button onClick={addauser}>Add user</button> */}
     </div>
   );
 }

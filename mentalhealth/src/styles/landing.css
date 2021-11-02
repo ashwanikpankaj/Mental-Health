@@ -1,6 +1,254 @@
-.lpage1 {
+.lpage_maindiv {
+    position: relative;
     width: 411px;
     height: 823px;
-    background: #ECEFF1;
+    background: #ffffff;
     margin: auto;
+}
+
+/* ---------------------------------------------------------- */
+.lpage_status {
+    position: absolute;
+    left: calc(50% - 411px/2);
+    top: 0px;
+    width: 411px;
+    height: 44px;
+    background: #D8EFFF;
+}
+
+/* ----------------------------------------------------------- */
+.lpage_app_status {
+    position: absolute;
+    top: 44px;
+    width: 411px;
+    height: 48px;
+    background: #D8EFFF;
+}
+
+.slide {
+    position: absolute;
+    width: 24px;
+    height: 16px;
+    top: 16px;
+    left: 26px;
+    bottom: 16px;
+    background: #37474F;
+}
+
+.bell {
+    position: absolute;
+    left: 363.12px;
+    top: 14px;
+    bottom: 13;
+}
+
+/* -------------------------------------------------------- */
+
+#lpage_girl {
+    position: absolute;
+    width: 65px;
+    height: 163.73;
+    left: 174px;
+    top: 164px;
+    bottom: 495.27px;
+}
+
+/* -------------------------------------------------------- */
+.lpage_rectangle {
+    position: absolute;
+    top: 354px;
+    width: 411px;
+    height: 469px;
+    background: #E2DCFE;
+}
+
+.lpage_rectangle1 {
+    position: absolute;
+    width: 351px;
+    height: 71px;
+    left: 30px;
+    top: 34px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(181, 164, 229, 0.25);
+    border-radius: 36px;
+}
+
+.lpage_rectangle2 {
+    position: absolute;
+    width: 351px;
+    height: 71px;
+    left: 30px;
+    top: 120px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(181, 164, 229, 0.25);
+    border-radius: 36px;
+}
+
+.lpage_rectangle3 {
+    position: absolute;
+    width: 351px;
+    height: 71px;
+    left: 30px;
+    top: 206px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(181, 164, 229, 0.25);
+    border-radius: 36px;
+}
+
+.lpage_rectangle4 {
+    position: absolute;
+    width: 351px;
+    height: 71px;
+    left: 30px;
+    top: 292px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(181, 164, 229, 0.25);
+    border-radius: 36px;
+}
+
+#task {
+    position: absolute;
+    width: 187.57px;
+    height: 29.5px;
+    left: 26px;
+    top: 21px;
+    bottom: 20.5px;
+    color: #37474F;
+}
+
+#meditation {
+    position: absolute;
+    width: 209px;
+    height: 21px;
+    left: 24px;
+    top: 25px;
+    bottom: 25px;
+    color: #656B75;
+}
+
+#play {
+    position: absolute;
+    width: 265px;
+    height: 21px;
+    left: 24px;
+    top: 27px;
+    bottom: 23px;
+    color: #656B75;
+}
+
+#diary {
+    position: absolute;
+    width: 192px;
+    height: 21px;
+    left: 24px;
+    top: 27px;
+    bottom: 23px;
+    color: #656B75;
+}
+
+/* --------------------------------------------------------- */
+
+.lpage_bottom_nav_bar {
+    position: absolute;
+    width: 411px;
+    height: 71px;
+    left: calc(50% - 411px/2);
+    top: 736px;
+    background: #D8EFFF;
+    border-radius: 24px 24px 0px 0px;
+}
+
+#home {
+    position: absolute;
+    width: 25px;
+    height: 21.25px;
+    left: 30.5px;
+    top: 12.75;
+    bottom: 37px;
+}
+
+#home1 {
+    position: absolute;
+    width: 37px;
+    height: 18px;
+    left: 24px;
+    top: 39px;
+    bottom: 14px;
+    color: #A28EFC;
+}
+
+#game {
+    position: absolute;
+    width: 28.19px;
+    height: 12.5px;
+    left: 127.41px;
+    top: 17.75px;
+    bottom: 40.75px;
+}
+
+#game1 {
+    position: absolute;
+    width: 38px;
+    height: 18px;
+    left: 122.03px;
+    top: 39px;
+    bottom: 14px;
+    color: #37474F;
+}
+
+#meditate {
+    position: absolute;
+    width: 22.9px;
+    height: 20px;
+    left: 235.05px;
+    top: 14px;
+    bottom: 37px;
+}
+
+#meditate1 {
+    position: absolute;
+    width: 54px;
+    height: 18px;
+    left: 219.02px;
+    top: 39px;
+    bottom: 14px;
+    color: #37474F;
+}
+
+#stats {
+    position: absolute;
+    width: 25px;
+    height: 20.84px;
+    left: 347.5px;
+    top: 15px;
+    bottom: 35.16px;
+}
+
+#stats1 {
+    position: absolute;
+    width: 51px;
+    height: 18px;
+    left: 335px;
+    top: 40px;
+    bottom: 13px;
+    color: #37474F;
+}
+
+/* ------------------------------------------------------ */
+
+#bottom {
+    position: absolute;
+    width: 411px;
+    height: 16px;
+    background: #FFFFFF;
+    top: 807px;
+}
+
+#bottom1 {
+    position: absolute;
+    width: 114px;
+    top: 8px;
+    left: 149px;
+    bottom: 8px;
+    color: #656B75;
 }
