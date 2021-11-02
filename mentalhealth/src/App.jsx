@@ -3,7 +3,6 @@ import './App.css';
 import axios from 'axios';
 import { Landing } from './components/Landing';
 import { Login } from './components/Login';
-import { StaticHeader } from "./components/Staticheader"
 import { Welcome } from "./components/Welcome"
 import {Goodbad} from "./components/Goodbad"
 
@@ -27,7 +26,6 @@ function App() {
 
   return (
     <div className="App">
-      <StaticHeader></StaticHeader>
       <Landing />
       <Login/>
       <Goodbad/>

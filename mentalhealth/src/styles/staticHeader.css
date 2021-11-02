@@ -1,28 +1,43 @@
 .headerBox{
-    display: flex;
-    width:411px ;
-    height:44 ;
-    justify-content: space-between;
-    padding: 5px;
-    margin:  auto;
-    box-sizing:border-box;
-    background-color: white;
+    position: absolute;
+    width: 411px;
+    height: 44px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
 }
 
-.headerCol2{
-    display: flex;
-    padding:  3px;
-    margin-right: 15px;
+#time{
+    position: absolute;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    margin:0px;
+    left: 24px;
+    top: 12px;
+    color: #000000;
 }
 
-.headerCol1{
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 16px;
-  font-weight: 700;
-  margin-left: 9px;
-  
+#wifi,#tower,#battery{
+    position: absolute;
+    top: 12px;
 }
 
-.headerCol2>img{
-    margin-left: 9px;
+#wifi{
+    width: 16.2px;
+    height: 13.5px;
+    left:323px;
+}
+
+#tower{
+    width: 15px;
+    height: 15px;
+    left:347px;
+}
+
+#battery{
+    width: 9px;
+    height: 15px;
+    left:370px;
 }
