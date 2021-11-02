@@ -3,7 +3,7 @@
 #login {
     position: relative;
     width: 411px;
-    height: 763px;
+    height: 823px;
     background: #FFFFFF;
     margin: auto;
 }
@@ -13,7 +13,7 @@
     width:163px;
     height:163px;
     left: 122px;
-    top:19px;
+    top:53px;
 }
 
 .fields{
@@ -28,15 +28,15 @@
 }
 
 #form>input:nth-child(1){
-    top:250px
+    top:294px
 }
 
 #form>input:nth-child(2){
-    top:318px
+    top:362px
 }
 
 #form>input:nth-child(3){
-    top:386px
+    top:430px
 }
 
 #form>input:nth-child(4){
@@ -44,7 +44,7 @@
     width: 362px;
     height: 54px;
     left:24px;
-    top:454px;
+    top:498px;
     padding: 12px 85px;
     background: #A28EFC;
     color: #FFFFFF;
@@ -60,7 +60,7 @@
 
 p{
     position: absolute;
-    top: 530px;
+    top: 574px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
@@ -82,7 +82,7 @@ p{
     position:absolute;
     width:362px;
     height: 48px;
-    top: 595px;
+    top: 639px;
     left:24px;
     border: 1px solid #D8DADC;
     box-sizing: border-box;
@@ -97,7 +97,7 @@ p{
 }
 
 #google{
-    top: 655px;
+    top: 699px;
 }
 
 #facebook>img{

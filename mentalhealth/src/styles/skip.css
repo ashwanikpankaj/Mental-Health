@@ -16,3 +16,7 @@
     line-height: 24px;
     background: #FFFFFF;
 }
+
+#skip:active{
+    border: 1px solid #656B75;
+}
