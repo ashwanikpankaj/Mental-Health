@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 #BluetoohContainer{
     position: relative;
     width: 411px;
@@ -26,7 +28,7 @@ label  {
     left: calc(50% - 248px/2 + 17px);
     top: 0px;
 
-    font-family: Roboto;
+    font-family: "Poppins";
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
@@ -42,13 +44,12 @@ label  {
     
 }
 
-img{
+#gamesimg{
         position: absolute;
         left: 18%;
         right: 16.67%;
         top: 26%;
         bottom: 17%;
-        background: #37474F;
 }
 
 #BluetoohRow2{
