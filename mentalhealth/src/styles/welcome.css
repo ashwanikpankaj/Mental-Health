@@ -94,6 +94,11 @@
   background-color: #d8dadc;
   color: white;
   border: 0px;
+  transition: all 0.2s ease-in;
+}
+
+.skip:active{
+  border: 1px solid #656B75;
 }
 
 .next {
@@ -103,4 +108,8 @@
   background-color: #a28efc;
   color: white;
   border: 0px;
+  transition: all 0.2s ease-in;
+}
+.next:active {
+  background: #534883;
 }
