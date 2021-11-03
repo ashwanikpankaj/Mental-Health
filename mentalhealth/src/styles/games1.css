@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
 #Games {
   position: relative;
   width: 411px;
@@ -54,7 +57,7 @@
   height: 27px;
   left: 168px;
   top: 12px;
-  font-family: Roboto;
+  font-family: "Poppins";
   font-style: normal;
   font-weight: bold;
   font-size: 24px;

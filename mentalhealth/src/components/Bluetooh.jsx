@@ -8,7 +8,7 @@ export const Bluetooh = () => {
             <div id="BluetoohContainer">
                 <StaticHeader></StaticHeader>
                 <div id="BluetoohRow1">
-                    <img src="arrow.jpg" alt="" />
+                    <img id="gamesimg" src="arrow.jpg" alt="" />
                     <label>How to connect VR headset</label>
                 </div>
 
