@@ -74,8 +74,6 @@
   border-radius: 30px;
   height: 44px;
   width: 146px;
-  left: 26px !important;
-  top: 545px !important;
   background-color: #8773df;
   border: 0px;
   color: #ffffff;
@@ -86,11 +84,15 @@
   line-height: 23px;
   letter-spacing: 0em;
   text-align: center;
-  margin-top: 40px;
+ 
 }
 
 #play {
-  margin-right: 50px;
+ margin-top: 520px;
+}
+#download{
+  margin-top: 38px;
+margin-right: -195px;
 }
 #vr-headset {
   width: 300px;
