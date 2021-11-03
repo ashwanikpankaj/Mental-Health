@@ -1,0 +1,66 @@
+#Games {
+  position: relative;
+  width: 411px;
+  height: 823px;
+  background: #ffffff;
+  margin: auto;
+  border: 1px solid black;
+}
+
+#circlesText {
+  height: 36px;
+  width: 299px;
+  left: 48px;
+  top: 112px;
+  border-radius: nullpx;
+  color: #37474f;
+}
+
+#circlegame {
+  position: absolute;
+  width: 359px;
+  height: 372.55px;
+  left: 26px;
+  top: 178.48px;
+  background: #ffffff;
+}
+
+#answer6 {
+  position: absolute;
+  width: 363px;
+  height: 48px;
+  left: 26px;
+  top: 582px;
+  background: #a28efc;
+  border-radius: 30px;
+  border: none;
+}
+
+#answer8 {
+  position: absolute;
+  width: 363px;
+  height: 48px;
+  left: 26px;
+  top: 660px;
+  background: #fc8282;
+  border-radius: 30px;
+  border: none;
+}
+
+#Text6,
+#Text8 {
+  position: absolute;
+  width: 114px;
+  height: 27px;
+  left: 168px;
+  top: 12px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+}

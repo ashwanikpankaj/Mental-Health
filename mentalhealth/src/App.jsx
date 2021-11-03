@@ -12,6 +12,8 @@ import { Login } from './components/Login';
 import { Welcome } from "./components/Welcome"
 import {Goodbad} from "./components/Goodbad"
 import { Goal } from './components/Goal';
+import { Games } from "./components/Games"
+import {Bluetooh} from "./components/Bluetooh"
 import { Funtest } from './components/Funtest';
 import { Waterfall } from './components/Waterfall';
 import { Colors } from './components/Colors';
@@ -31,7 +33,9 @@ function App() {
       <Login/>
       <Goodbad/>
      <Welcome></Welcome>
-     <Goal/>
+      <Goal />
+      <Games></Games>
+      <Bluetooh></Bluetooh>
      <Funtest/>
      <Waterfall/>
      <Colors/>
