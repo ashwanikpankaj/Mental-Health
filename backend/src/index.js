@@ -25,10 +25,13 @@ app.get("/auth/google/failure", function(req, res) {
     return res.send("Something went wrong");
 })
 
+
 app.get('/auth/google',
   passport.authenticate('google', { scope:
       [ 'email', 'profile' ] }
 ));
+
+
 
 app.get( '/auth/google/callback',
     passport.authenticate( 'google', {
@@ -36,7 +39,7 @@ app.get( '/auth/google/callback',
 }), function(req, res) {
     const {user, token} = req.user
     // return res.status(200).json({user, token });
-    res.send(user,token).redirect('http://localhost:7765')
+    res.redirect('http://localhost:3000')
 });
 
 
