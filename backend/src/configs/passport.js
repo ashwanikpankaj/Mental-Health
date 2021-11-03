@@ -16,27 +16,26 @@ passport.use(new GoogleStrategy({
   },
   async function(request, accessToken, refreshToken, profile, done) {
     const email = profile?._json?.email
+    const name = profile?._json?.name
 
-    console.log(profile)
+    let user;
+    try { 
+      user = await User.findOne({email}).lean().exec();
 
-    // let user;
-    // try { 
-    //   user = await User.findOne({email}).lean().exec();
+      if(!user) {
+        user = await User.create({
+          name:name,
+          email: email,
+          password: uuidV4()
+        })
+      }
 
-    //   if(!user) {
-    //     user = await User.create({
-    //       name:"dummy",
-    //       email: email,
-    //       password: uuidV4()
-    //     })
-    //   }
+      const token = newToken(user);
+      return done(null, {user, token})
 
-    //   const token = newToken(user);
-    //   return done(null, {user, token})
-
-    // } catch(err) {
-    //   console.log("err", err)
-    // }
+    } catch(err) {
+      console.log("err", err)
+    }
   }
 ));
 

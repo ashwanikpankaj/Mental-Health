@@ -5,12 +5,8 @@ import { StaticHeader } from './Staticheader'
 export const Login = () => {
 
     const googleAuth = () => {
-        
-        // axios.get("http://localhost:7765/auth/google")
-        //     .then(res => {
-        //         console.log(res);
-        //         console.log(res.data);
-        //     })
+        console.log("clicked")
+        window.location.href='http://localhost:7765/auth/google'
     }
 
     return (

@@ -36,7 +36,7 @@ app.get( '/auth/google/callback',
 }), function(req, res) {
     const {user, token} = req.user
     // return res.status(200).json({user, token });
-    res.send(user,token).redirect('http://localhost:7765')
+    res.redirect('http://localhost:3000')
 });
 
 
