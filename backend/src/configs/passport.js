@@ -18,6 +18,7 @@ passport.use(new GoogleStrategy({
     const email = profile?._json?.email
     const name = profile?._json?.name
 
+    console.log(email)
     let user;
     try { 
       user = await User.findOne({email}).lean().exec();

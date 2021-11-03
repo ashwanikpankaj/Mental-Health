@@ -9,8 +9,6 @@ const newToken = (user) => {
 
 const register = async (req, res) => {
 
-    console.log(req.body)
-
     let user;
     try {
         // First we check if user with same email already exists

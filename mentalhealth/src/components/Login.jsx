@@ -1,25 +1,116 @@
 import '../styles/login.css'
 import axios from 'axios';
 import { StaticHeader } from './Staticheader'
+import { useState } from 'react';
+
+import styled from "styled-components";
+
+// Styled component named StyledButton
+const Button = styled.input`
+    position: absolute;
+    width: 362px;
+    height: 54px;
+    left:24px;
+    top:498px;
+    padding: 12px 85px;
+    background: #A28EFC;
+    color: #FFFFFF;
+    border-radius: 30px;
+    font-family: 'Poppins';
+    font-style: normal; 
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 30px;
+    text-align: center;
+    border:none;
+    cursor: pointer;
+    transition: all 0.4s ease-in;
+
+    &:active {
+        background: #534883;
+    }
+`;
+
 
 export const Login = () => {
 
+    const [signuperror,setSignUpError] = useState(false)
+
+    const [userData,setUserData] = useState({
+        name:"",
+        email:"",
+        password:""
+    })
+
+    const handlechange = (e) =>{
+
+        const {name,value} = e.target;
+        setUserData({
+            ...userData,
+            [name]:value,
+        })
+    }
+
+    const emptyData = () =>{
+        setUserData({
+            name:"",
+            email:"",
+            password:""
+        })
+
+    }
+
+    const normalSignUp = (e) => {
+
+        e.preventDefault()
+
+        if(!userData.name || !userData.email || !userData.password){
+            return
+        }
+
+        axios.post("http://localhost:7765/register", userData)
+            .then(res => {
+                setSignUpError(false)
+                emptyData()
+                console.log(res);
+                console.log(res.data);
+            }).catch(function(e) {
+                setSignUpError(true)
+                emptyData()
+                console.error("e",e.response);
+            })
+    }
+
     const googleAuth = () => {
         console.log("clicked")
-        window.location.href='http://localhost:7765/auth/google'
+        window.location.href = 'http://localhost:7765/auth/google'
+
+        // axios.get("http://localhost:7765/auth/google")
+        // .then(res => {
+        //   console.log(res);
+        //   console.log(res.data);
+        //   window.location.pathname='http://localhost:3000'
+        // })
     }
 
     return (
         <>
             <div id="login">
+
                 <StaticHeader />
+
+                {signuperror?<p id="alreadylogin">Already registered, please go to login</p>:""}
+
                 <div><img id="logo" src="blueaura.png"></img></div>
-                <form id="form">
-                    <input className="fields" type="text" placeholder="Name" />
-                    <input className="fields" type="text" placeholder="Email" />
-                    <input className="fields" type="password" placeholder="Password (8+ CHARACTERS)" />
-                    <input type="submit" value="Create an account" />
+
+                <form onSubmit={normalSignUp} id="form">
+                    <input value={userData.name} name="name" onChange={handlechange} className="fields" type="text" placeholder="Name" />
+                    <input value={userData.email} name="email" onChange={handlechange} className="fields" type="email" placeholder="E-mail" />
+                    <input value={userData.password} name="password" onChange={handlechange} id="passwordfield" style={{ backgroundImage: "url('eyebrow.svg')" }} className="fields" type="password" placeholder="Password (8+ CHARACTERS)" />
+                    {/* <input type="submit" value="Create an account" /> */}
+                    <Button type="submit" value="Create an account" />
                 </form>
+
                 <div>
                     <p id="member">Already a member?</p>
                     <p id="Login">Login</p>
@@ -27,6 +118,7 @@ export const Login = () => {
 
                 <button id="facebook"><img src="facebook.jpg"></img>Sign up with facebook</button>
                 <button id="google" onClick={googleAuth}><img src="google.jpg"></img>Sign up with Google</button>
+            
             </div>
         </>
     )

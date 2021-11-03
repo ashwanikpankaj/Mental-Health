@@ -25,6 +25,22 @@
     border: 1px solid #C4C4C4;
     box-sizing: border-box;
     border-radius: 37px;
+    padding:20px;
+    font-size: 17px;
+    font-family: 'Poppins';
+    font-style: normal; 
+    transition: all 0.3s ease-in;
+}
+
+input[type="password"] {
+    font-family: Verdana;
+    font-size: 20px;
+  }
+
+.fields:focus {
+    border:1px solid rgb(129, 163, 202);
+    outline:none;
+    background-color: rgba(206, 219, 233, 0.5);
 }
 
 #form>input:nth-child(1){
@@ -39,25 +55,6 @@
     top:430px
 }
 
-#form>input:nth-child(4){
-    position: absolute;
-    width: 362px;
-    height: 54px;
-    left:24px;
-    top:498px;
-    padding: 12px 85px;
-    background: #A28EFC;
-    color: #FFFFFF;
-    border-radius: 30px;
-    font-family: 'Poppins';
-    font-style: normal; 
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 30px;
-    text-align: center;
-    border:none;
-}
-
 p{
     position: absolute;
     top: 574px;
@@ -69,13 +66,19 @@ p{
     color: #656B75;
 }
 
+#alreadylogin{
+    top:240px;
+    left:60px;
+}
+
 #member{
     left: 100px;
 }
 
 #Login{
     left: 264px;
-    text-decoration-line: underline
+    text-decoration-line: underline;
+    cursor: pointer;
 }
 
 #facebook,#google{
@@ -94,6 +97,12 @@ p{
     font-size: 14px;
     line-height: 21px;
     color: #656B75;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+#facebook:active,#google:active{
+    border: 1px solid #656B75;
 }
 
 #google{
@@ -115,3 +124,20 @@ p{
     top: 6px;
     left:20px;
 }
+
+::placeholder {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #D4D6D7;
+  }
+
+  #passwordfield {
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    background-position: 325px 0.7rem;
+  }
