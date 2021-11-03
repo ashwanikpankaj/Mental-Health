@@ -1,4 +1,4 @@
-import '../styles/login.css'
+import '../styles/signup.css'
 import axios from 'axios';
 import { StaticHeader } from './Staticheader'
 import { useState } from 'react';
@@ -32,11 +32,12 @@ const Button = styled.input`
 `;
 
 
-export const Login = () => {
+export const Signup = () => {
 
     const [signuperror,setSignUpError] = useState(false)
 
     const [userData,setUserData] = useState({
+        name:"",
         email:"",
         password:""
     })
@@ -52,6 +53,7 @@ export const Login = () => {
 
     const emptyData = () =>{
         setUserData({
+            name:"",
             email:"",
             password:""
         })
@@ -62,11 +64,11 @@ export const Login = () => {
 
         e.preventDefault()
 
-        if(!userData.email || !userData.password){
+        if(!userData.name || !userData.email || !userData.password){
             return
         }
 
-        axios.post("http://localhost:7765/login", userData)
+        axios.post("http://localhost:7765/register", userData)
             .then(res => {
                 setSignUpError(false)
                 emptyData()
@@ -93,23 +95,24 @@ export const Login = () => {
 
     return (
         <>
-            <div id="login">
+            <div id="signup">
 
                 <StaticHeader />
 
-                {signuperror?<p id="invalid">Invalid email or password</p>:""}
+                {signuperror?<p id="alreadySignup">Already registered, please go to login</p>:""}
 
-                <div><img id="logo" src="blueaura.png"></img></div>
+                <div><img id="signlogo" src="blueaura.png"></img></div>
 
-                <form onSubmit={normalSignUp} id="form">
-                    <input value={userData.email} name="email" onChange={handlechange} className="fields" type="email" placeholder="E-mail" />
-                    <input value={userData.password} name="password" onChange={handlechange} id="passwordfield" style={{ backgroundImage: "url('eyebrow.svg')" }} className="fields" type="password" placeholder="Password (8+ CHARACTERS)" />
-                    <Button type="submit" value="Login to account" />
+                <form onSubmit={normalSignUp} id="signform">
+                    <input value={userData.name} name="name" onChange={handlechange} className="signfields" type="text" placeholder="Name" />
+                    <input value={userData.email} name="email" onChange={handlechange} className="signfields" type="email" placeholder="E-mail" />
+                    <input value={userData.password} name="password" onChange={handlechange} id="signpasswordfield" style={{ backgroundImage: "url('eyebrow.svg')" }} className="signfields" type="password" placeholder="Password (8+ CHARACTERS)" />
+                    <Button type="submit" value="Create an account" />
                 </form>
 
                 <div>
-                    <p id="newapp">New to app?</p>
-                    <p id="Signuproute">Sign up</p>
+                    <p id="member">Already a member?</p>
+                    <p id="Login">Login</p>
                 </div>
 
                 <button id="facebook"><img src="facebook.jpg"></img>Sign up with facebook</button>

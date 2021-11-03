@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-#login {
+#signup {
     position: relative;
     width: 411px;
     height: 823px;
@@ -8,7 +8,7 @@
     margin: auto;
 }
 
-#logo{
+#signlogo{
     position: absolute;
     width:163px;
     height:163px;
@@ -16,7 +16,7 @@
     top:53px;
 }
 
-.fields{
+.signfields{
     position: absolute;
     width: 363px;
     height: 48px;
@@ -37,17 +37,21 @@ input[type="password"] {
     font-size: 20px;
   }
 
-.fields:focus {
+.signfields:focus {
     border:1px solid rgb(129, 163, 202);
     outline:none;
     background-color: rgba(206, 219, 233, 0.5);
 }
 
-#form>input:nth-child(1){
+#signform>input:nth-child(1){
+    top:294px
+}
+
+#signform>input:nth-child(2){
     top:362px
 }
 
-#form>input:nth-child(2){
+#signform>input:nth-child(3){
     top:430px
 }
 
@@ -62,17 +66,17 @@ p{
     color: #656B75;
 }
 
-#invalid{
-    top:280px;
-    left:100px;
+#alreadySignup{
+    top:240px;
+    left:60px;
 }
 
-#newapp{
-    left: 120px;
+#member{
+    left: 100px;
 }
 
-#Signuproute{
-    left: 223px;
+#Login{
+    left: 264px;
     text-decoration-line: underline;
     cursor: pointer;
 }
@@ -132,7 +136,7 @@ p{
     color: #D4D6D7;
   }
 
-  #passwordfield {
+  #signpasswordfield {
     background-size: 24px 24px;
     background-repeat: no-repeat;
     background-position: 325px 0.7rem;
