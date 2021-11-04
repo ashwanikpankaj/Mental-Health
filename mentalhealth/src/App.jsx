@@ -56,6 +56,7 @@ function App() {
       <Personality />
       <Avatar />
       <Onboarding />
+      <DailyTask/>
     </div>
 
   );
