@@ -29,19 +29,6 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 function App() {
   return (
     <div className="App">
-      <Landing />
-      <Landing1 />
-      <DailyTask />
-      <Meditate />
-      <Meditate1 />
-      <Diary />
-      <Diary1 />
-      <Game />
-      <Game1 />
-      <Signup />
-      <Login />
-      <Goodbad />
-      <Welcome></Welcome>
       <Router>
         <Landing />
         <Landing1 />
