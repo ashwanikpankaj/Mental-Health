@@ -13,7 +13,7 @@ export const Goodbad = () => {
                 <img id="bad" src='bad.jpg'></img>
                     <p id="goodtext">GOOD</p>
                     <p id="badtext">BAD</p>
-                <Skip prop="skip"/>
+                <Skip prop="Skip"/>
             </div>
         </>
     )
