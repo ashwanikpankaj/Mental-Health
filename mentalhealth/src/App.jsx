@@ -22,12 +22,26 @@ import { Avatar } from './components/Avatar';
 import { Landing1 } from './components/Landing1';
 import { Login } from './components/Login';
 import { Onboarding } from './components/Onboarding';
+import { DailyTask } from './components/Daily-task';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 function App() {
   return (
     <div className="App">
+      <Landing />
+      <Landing1 />
+      <DailyTask />
+      <Meditate />
+      <Meditate1 />
+      <Diary />
+      <Diary1 />
+      <Game />
+      <Game1 />
+      <Signup />
+      <Login />
+      <Goodbad />
+      <Welcome></Welcome>
       <Router>
         <Landing />
         <Landing1 />
@@ -61,5 +75,3 @@ function App() {
 }
 
 export default App;
-
-
