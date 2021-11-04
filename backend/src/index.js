@@ -25,10 +25,13 @@ app.get("/auth/google/failure", function(req, res) {
     return res.send("Something went wrong");
 })
 
+
 app.get('/auth/google',
   passport.authenticate('google', { scope:
       [ 'email', 'profile' ] }
 ));
+
+
 
 app.get( '/auth/google/callback',
     passport.authenticate( 'google', {
