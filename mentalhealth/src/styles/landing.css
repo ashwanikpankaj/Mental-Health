@@ -7,6 +7,13 @@
     height: 823px;
     background: #FFFFFF;
     margin: auto;
+    
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
 }
 
 /* ---------------------------------------------------------- */
@@ -87,12 +94,18 @@
 /* -------------------------------------------------------- */
 
 #lpage_girl {
-    position: absolute;
+    /* position: absolute; */
     width: 65px;
     height: 163.73;
-    left: 174px;
+    /* left: 174px; */
+}
+
+#girldiv{
+    position: absolute;
+    width: 350px;
+    height: 163.73;
+    left: 35px;
     top: 164px;
-    bottom: 495.27px;
 }
 
 /* -------------------------------------------------------- */
@@ -361,6 +374,93 @@
 }
 
 #bottom1 {
+    position: absolute;
+    top: 4px;
     width: 114px;
-    color: #656B75;
+    height: 0px;
+    background-color: #656B75;
+    border:2px solid #656B75;
+    left: 149px;
+    border-radius: 80px;
+}
+
+
+.nav-menu{
+    background-color:#FFFFFF;
+    width:231px;
+    height:807px;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: -300%;
+    transition: 10ms;
+    z-index: 5;
+}
+
+.nav-menu.active{
+    left: 0;
+    transition: 10ms;
+}
+
+.nav-text{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 8px 0px 8px 16px;
+    list-style: none;
+    height: 60px;
+}
+
+.nav-text a{
+    text-decoration: none;
+    color: black;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    width:95%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.nav-text a:hover{
+    background-color: rgb(197, 215, 216);
+}
+
+.nav-menu-items{
+    width:100%;
+    position:absolute;
+    top:170px;
+}
+
+#spantag{
+    margin-left: 16px;
+}
+
+#girlprofile{
+    position: absolute;
+    width:48px;
+    height:48px;
+    left: 26px;
+    top: 49px;
+}
+
+#profilename{
+
+    position: absolute;
+    width: 158px;
+    height: 30px;
+    left: 27px;
+    top: 101px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #37474F;
 }

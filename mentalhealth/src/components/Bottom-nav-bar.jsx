@@ -1,9 +1,14 @@
 import '../styles/landing.css'
 
-export function BottomNavBar() {
+export function BottomNavBar({props}) {
+
+    const hamburgerclick = () =>{
+        props()
+    }
+    
     return (
         <>
-            <div className="lpage_bottom_nav_bar">
+            <div onClick={hamburgerclick} className="lpage_bottom_nav_bar">
                 <img id="home" src="./landing_images/home.png" alt="" />
                 <div id="home1">Home</div>
 

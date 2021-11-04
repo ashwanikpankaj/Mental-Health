@@ -24,6 +24,8 @@ import { Login } from './components/Login';
 import { Onboarding } from './components/Onboarding';
 import { DailyTask } from './components/Daily-task';
 
+import {BrowserRouter as Router,Switch,Route} from 'react-router-dom'
+
 function App() {
   return (
     <div className="App">
@@ -40,6 +42,27 @@ function App() {
       <Login />
       <Goodbad />
       <Welcome></Welcome>
+      <Router>
+        <Landing />
+        <Landing1 />
+        <Meditate />
+        <Meditate1 />
+        <Diary />
+      <Diary1 />
+      <Game />
+      <Game1 />
+        <Switch>
+          <Route path='/'/>
+        </Switch>
+      </Router>
+      
+      
+      
+
+      <Signup/>
+      <Login/>
+      <Goodbad/>
+     <Welcome></Welcome>
       <Goal />
       <Games></Games>
       <Bluetooh></Bluetooh>
