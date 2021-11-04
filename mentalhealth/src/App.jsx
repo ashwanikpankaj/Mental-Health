@@ -30,17 +30,21 @@ function App() {
     <div className="App">
       <Router>
         <Landing />
+        <Landing1 />
+        <Meditate />
+        <Meditate1 />
+        <Diary />
+      <Diary1 />
+      <Game />
+      <Game1 />
         <Switch>
           <Route path='/'/>
         </Switch>
       </Router>
-      <Landing1 />
-      <Meditate />
-      <Meditate1 />
-      <Diary />
-      <Diary1 />
-      <Game />
-      <Game1 />
+      
+      
+      
+
       <Signup/>
       <Login/>
       <Goodbad/>

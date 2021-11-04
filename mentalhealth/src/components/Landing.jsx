@@ -6,8 +6,9 @@ import { BottomNavBar } from './Bottom-nav-bar'
 import { Navbar } from './Navbar'
 import { Rectangle } from './Rectangle'
 // import { StaticHeader } from './Staticheader'
-import { SiderbarData } from './SidebarData'
-import {Link} from 'react-router-dom'
+// import { SiderbarData } from './SidebarData'
+// import {Link} from 'react-router-dom'
+import { Sidebar } from './Sidebar'
 
 export function Landing() {
 
@@ -42,8 +43,9 @@ export function Landing() {
                 <div>
                     <Bottom />
                 </div>
+                <Sidebar prop={sidebar}/>
 
-                <nav className={sidebar? 'nav-menu active':'nav-menu'}>
+                {/* <nav className={sidebar? 'nav-menu active':'nav-menu'}>
 
                     <img id="girlprofile" src="girlprofile.jpg"/>
                     <p id="profilename">Sakshi Agarwal</p>
@@ -59,7 +61,7 @@ export function Landing() {
                           )  
                         })}
                     </ul>
-                </nav>
+                </nav> */}
             </div>
         </>
     )
