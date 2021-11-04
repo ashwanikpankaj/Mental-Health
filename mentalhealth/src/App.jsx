@@ -20,6 +20,7 @@ import { Colors } from './components/Colors';
 import { Personality } from './components/Personality';
 import { Avatar } from './components/Avatar';
 import { Login } from './components/Login';
+import { Onboarding } from './components/Onboarding';
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
      <Colors/>
      <Personality/>
      <Avatar/>
+     <Onboarding/>
     </div>
     
   );
