@@ -10,10 +10,10 @@ import { Diary1 } from './components/Diary1';
 import { Meditate1 } from './components/Meditate1';
 import { Signup } from './components/Signup';
 import { Welcome } from "./components/Welcome"
-import {Goodbad} from "./components/Goodbad"
+import { Goodbad } from "./components/Goodbad"
 import { Goal } from './components/Goal';
 import { Games } from "./components/Games"
-import {Bluetooh} from "./components/Bluetooh"
+import { Bluetooh } from "./components/Bluetooh"
 import { Funtest } from './components/Funtest';
 import { Waterfall } from './components/Waterfall';
 import { Colors } from './components/Colors';
@@ -22,36 +22,36 @@ import { Avatar } from './components/Avatar';
 import { Landing1 } from './components/Landing1';
 import { Login } from './components/Login';
 import { Onboarding } from './components/Onboarding';
+import { DailyTask } from './components/Daily-task';
 
 function App() {
   return (
     <div className="App">
       <Landing />
       <Landing1 />
+      <DailyTask />
       <Meditate />
       <Meditate1 />
       <Diary />
       <Diary1 />
       <Game />
       <Game1 />
-      <Signup/>
-      <Login/>
-      <Goodbad/>
-     <Welcome></Welcome>
+      <Signup />
+      <Login />
+      <Goodbad />
+      <Welcome></Welcome>
       <Goal />
       <Games></Games>
       <Bluetooh></Bluetooh>
-     <Funtest/>
-     <Waterfall/>
-     <Colors/>
-     <Personality/>
-     <Avatar/>
-     <Onboarding/>
+      <Funtest />
+      <Waterfall />
+      <Colors />
+      <Personality />
+      <Avatar />
+      <Onboarding />
     </div>
-    
+
   );
 }
 
 export default App;
-
-
