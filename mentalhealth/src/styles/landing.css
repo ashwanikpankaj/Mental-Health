@@ -7,6 +7,13 @@
     height: 823px;
     background: #FFFFFF;
     margin: auto;
+    
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
 }
 
 /* ---------------------------------------------------------- */
@@ -367,8 +374,14 @@
 }
 
 #bottom1 {
+    position: absolute;
+    top: 4px;
     width: 114px;
-    color: #656B75;
+    height: 0px;
+    background-color: #656B75;
+    border:2px solid #656B75;
+    left: 149px;
+    border-radius: 80px;
 }
 
 
@@ -382,10 +395,6 @@
     left: -300%;
     transition: 10ms;
 
-}
-
-#imgdiv{
-    border: 1px solid red;
 }
 
 .nav-menu.active{
@@ -432,13 +441,6 @@
 #spantag{
     margin-left: 16px;
 }
-
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding:0;
-}
-
 
 #girlprofile{
     position: absolute;
