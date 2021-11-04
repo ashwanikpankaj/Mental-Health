@@ -4,14 +4,15 @@ import { Bottom } from './Bottom'
 import { BottomNavBar } from './Bottom-nav-bar'
 import { Navbar } from './Navbar'
 import { Rectangle } from './Rectangle'
+// import { StaticHeader } from './Staticheader'
 
 
 export function Landing() {
     return (
         <>
             <div className="lpage_maindiv">
-                <div >
-                    <Navbar />
+                <div>
+                    <Navbar/>
                 </div>
 
                 <div>

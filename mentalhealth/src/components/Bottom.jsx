@@ -4,7 +4,7 @@ export function Bottom() {
     return (
         <>
             <div id="bottom">
-                <div id="bottom1"></div>
+                <hr id="bottom1" />
             </div>
         </>
     )

@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 .lpage_maindiv {
     position: relative;
     width: 411px;
@@ -7,13 +10,51 @@
 }
 
 /* ---------------------------------------------------------- */
-.lpage_status {
+
+
+.headerBox1 {
     position: absolute;
-    left: calc(50% - 411px/2);
-    top: 0px;
     width: 411px;
     height: 44px;
+    left: 0px;
+    top: 0px;
     background: #D8EFFF;
+}
+
+#time1 {
+    position: absolute;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    margin:0px;
+    left: 24px;
+    top: 12px;
+    color: #000000;
+}
+
+#wifi1,#tower1,#battery1{
+    position: absolute;
+    top: 12px;
+    /* background: #D8EFFF; */
+}
+
+#wifi1 {
+    width: 16.2px;
+    height: 13.5px;
+    left:324px;
+}
+
+#tower1 {
+    width: 15px;
+    height: 15px;
+    left:348px;
+}
+
+#battery1 {
+    width: 9px;
+    height: 15px;
+    left:375px;
 }
 
 /* ----------------------------------------------------------- */
@@ -33,6 +74,7 @@
     left: 26px;
     bottom: 16px;
     background: #37474F;
+    cursor: pointer;
 }
 
 .bell {
@@ -90,6 +132,7 @@
     height: 71px;
     left: 30px;
     top: 206px;
+    /* bottom: 192px; */
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(181, 164, 229, 0.25);
     border-radius: 36px;
@@ -114,6 +157,13 @@
     top: 21px;
     bottom: 20.5px;
     color: #37474F;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 19.6694px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
 }
 
 #meditation {
@@ -124,9 +174,16 @@
     top: 25px;
     bottom: 25px;
     color: #656B75;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
 }
 
-#play {
+#playing {
     position: absolute;
     width: 265px;
     height: 21px;
@@ -134,6 +191,13 @@
     top: 27px;
     bottom: 23px;
     color: #656B75;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
 }
 
 #diary {
@@ -144,6 +208,22 @@
     top: 27px;
     bottom: 23px;
     color: #656B75;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+}
+
+#heart2 {
+    width: 20px;
+    height: 18.35px;
+    position: absolute;
+    left: 313px;
+    top: 27px;
+    bottom: 25.65px;
 }
 
 /* --------------------------------------------------------- */
@@ -175,6 +255,15 @@
     top: 39px;
     bottom: 14px;
     color: #A28EFC;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
 }
 
 #game {
@@ -194,6 +283,15 @@
     top: 39px;
     bottom: 14px;
     color: #37474F;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
 }
 
 #meditate {
@@ -213,6 +311,15 @@
     top: 39px;
     bottom: 14px;
     color: #37474F;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
 }
 
 #stats {
@@ -232,6 +339,15 @@
     top: 40px;
     bottom: 13px;
     color: #37474F;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
 }
 
 /* ------------------------------------------------------ */
@@ -245,10 +361,6 @@
 }
 
 #bottom1 {
-    position: absolute;
     width: 114px;
-    top: 8px;
-    left: 149px;
-    bottom: 8px;
     color: #656B75;
 }

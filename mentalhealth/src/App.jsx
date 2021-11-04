@@ -19,11 +19,13 @@ import { Waterfall } from './components/Waterfall';
 import { Colors } from './components/Colors';
 import { Personality } from './components/Personality';
 import { Avatar } from './components/Avatar';
+import { Landing1 } from './components/Landing1';
 
 function App() {
   return (
     <div className="App">
       <Landing />
+      <Landing1 />
       <Meditate />
       <Meditate1 />
       <Diary />
