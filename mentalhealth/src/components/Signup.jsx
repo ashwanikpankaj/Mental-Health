@@ -2,10 +2,9 @@ import '../styles/signup.css'
 import axios from 'axios';
 import { StaticHeader } from './Staticheader'
 import { useState } from 'react';
-
 import styled from "styled-components";
+import { Link,Redirect,useHistory } from 'react-router-dom'
 
-// Styled component named StyledButton
 const Button = styled.input`
     position: absolute;
     width: 362px;
@@ -34,6 +33,7 @@ const Button = styled.input`
 
 export const Signup = () => {
 
+    const history = useHistory();
     const [signuperror,setSignUpError] = useState(false)
 
     const [userData,setUserData] = useState({
@@ -74,6 +74,7 @@ export const Signup = () => {
                 emptyData()
                 console.log(res);
                 console.log(res.data);
+                history.push("/login");
             }).catch(function(e) {
                 setSignUpError(true)
                 emptyData()
@@ -117,7 +118,7 @@ export const Signup = () => {
 
                 <button id="facebook"><img src="facebook.jpg"></img>Sign up with facebook</button>
                 <button id="google" onClick={googleAuth}><img src="google.jpg"></img>Sign up with Google</button>
-            
+    
             </div>
         </>
     )

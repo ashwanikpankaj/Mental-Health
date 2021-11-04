@@ -1,6 +1,7 @@
 import '../styles/funtest.css'
 import { Skip } from './Skip'
 import { StaticHeader } from './Staticheader'
+import { Link, Redirect, useHistory } from 'react-router-dom'
 
 export const Funtest = () => {
 
@@ -10,8 +11,16 @@ export const Funtest = () => {
                 <StaticHeader />
                 <p id="funtestp">Take a fun test to help us know you.</p>
                 <img id="funtestimg" src="funtest.jpg"></img>
+
+                <Link to="/colors">
                 <button id="start">Start</button>
+                </Link>
+
+                <Link to="/loadingpage">
                 <Skip prop="Skip"/>
+                </Link>
+
+
             </div>
         </>
     )
