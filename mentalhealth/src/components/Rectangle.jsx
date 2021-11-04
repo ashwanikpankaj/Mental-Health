@@ -1,9 +1,15 @@
 import '../styles/landing.css'
 
-export function Rectangle() {
+export function Rectangle({props}) {
+
+    const hamburgerclick = () =>{
+        props()
+    }
+    
+
     return (
         <>
-            <div className="lpage_rectangle">
+            <div onClick={hamburgerclick} className="lpage_rectangle">
                 <div className="lpage_rectangle1">
                     <div id="task">Todays Task :</div>
                 </div>

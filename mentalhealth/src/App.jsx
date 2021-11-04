@@ -23,10 +23,17 @@ import { Landing1 } from './components/Landing1';
 import { Login } from './components/Login';
 import { Onboarding } from './components/Onboarding';
 
+import {BrowserRouter as Router,Switch,Route} from 'react-router-dom'
+
 function App() {
   return (
     <div className="App">
-      <Landing />
+      <Router>
+        <Landing />
+        <Switch>
+          <Route path='/'/>
+        </Switch>
+      </Router>
       <Landing1 />
       <Meditate />
       <Meditate1 />
