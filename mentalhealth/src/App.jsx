@@ -24,14 +24,59 @@ import { Login } from './components/Login';
 import { Onboarding } from './components/Onboarding';
 import { DailyTask } from './components/Daily-task';
 
-import {BrowserRouter as Router,Switch,Route} from 'react-router-dom'
+import { Switch, Route } from 'react-router-dom'
+import { Loadingpage } from './components/Loadingpage';
+import { Allsettogo } from './components/Allsettogo';
 
 function App() {
   return (
     <div className="App">
-      <Landing />
+
+      <Switch>
+        <Route path="/" exact>
+          <Onboarding />
+        </Route>
+
+        <Route path="/login">
+          <Login />
+        </Route>
+
+        <Route path="/blueaura">
+          <Goodbad />
+        </Route>
+
+        <Route path="/goal">
+          <Goal />
+        </Route>
+
+        <Route path="/funtest">
+          <Funtest />
+        </Route>
+
+        <Route path="/colors">
+        <Colors />
+        </Route>
+
+        <Route path="/loadingpage">
+        <Loadingpage/>
+        </Route>
+
+        <Route path="/createavatar">
+        <Avatar />
+        </Route>
+
+        <Route path="/allset">
+        <Allsettogo/>
+        </Route>
+
+        <Route path="/landingpage">
+        <Landing />
+        </Route>
+      </Switch>
+
+
+      
       <Landing1 />
-      <DailyTask />
       <Meditate />
       <Meditate1 />
       <Diary />
@@ -39,35 +84,19 @@ function App() {
       <Game />
       <Game1 />
       <Signup />
-      <Login />
-      <Goodbad />
+
+
       <Welcome></Welcome>
-      <Router>
-        <Landing />
-        <Landing1 />
-        <Meditate />
-        <Meditate1 />
-        <Diary />
-      <Diary1 />
-      <Game />
-      <Game1 />
-        <Switch>
-          <Route path='/'/>
-        </Switch>
-      </Router>
-      <Signup/>
-      <Login/>
-      <Goodbad/>
-     <Welcome></Welcome>
-      <Goal />
       <Games></Games>
       <Bluetooh></Bluetooh>
-      <Funtest />
+
       <Waterfall />
-      <Colors />
+
       <Personality />
-      <Avatar />
+
       <Onboarding />
+      <DailyTask />
+
     </div>
 
   );

@@ -2,7 +2,7 @@ import '../styles/login.css'
 import axios from 'axios';
 import { StaticHeader } from './Staticheader'
 import { useState } from 'react';
-
+import { Link,Redirect,useHistory } from 'react-router-dom'
 import styled from "styled-components";
 
 // Styled component named StyledButton
@@ -33,7 +33,7 @@ const Button = styled.input`
 
 
 export const Login = () => {
-
+    const history = useHistory();
     const [signuperror,setSignUpError] = useState(false)
 
     const [userData,setUserData] = useState({
@@ -72,6 +72,7 @@ export const Login = () => {
                 emptyData()
                 console.log(res);
                 console.log(res.data);
+                history.push("/blueaura");
             }).catch(function(e) {
                 setSignUpError(true)
                 emptyData()
