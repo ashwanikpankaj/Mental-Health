@@ -55,10 +55,6 @@ function App() {
           <Route path='/'/>
         </Switch>
       </Router>
-      
-      
-      
-
       <Signup/>
       <Login/>
       <Goodbad/>
