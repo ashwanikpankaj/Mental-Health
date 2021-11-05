@@ -2,14 +2,14 @@ import { SiderbarData } from './SidebarData'
 import {Link} from 'react-router-dom'
 import '../styles/landing.css'
 
-export const Sidebar= ({prop})=>{
+export const Sidebar= ({prop,username})=>{
 
     return(
         <>
             <nav className={prop ? 'nav-menu active' : 'nav-menu'}>
 
                 <img id="girlprofile" src="girlprofile.jpg" />
-                <p id="profilename">Sakshi Agarwal</p>
+                <p id="profilename">{username}</p>
                 <ul className='nav-menu-items'>
                     {SiderbarData.map((item, index) => {
                         return (

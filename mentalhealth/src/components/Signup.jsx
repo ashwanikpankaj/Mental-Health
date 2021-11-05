@@ -82,16 +82,12 @@ export const Signup = () => {
             })
     }
 
-    const googleAuth = () => {
-        console.log("clicked")
-        window.location.href = 'http://localhost:7765/auth/google'
 
-        // axios.get("http://localhost:7765/auth/google")
-        // .then(res => {
-        //   console.log(res);
-        //   console.log(res.data);
-        //   window.location.pathname='http://localhost:3000'
-        // })
+
+    const googleAuth = () => {
+
+        window.open('http://localhost:7765/auth/google','_self');
+
     }
 
     return (

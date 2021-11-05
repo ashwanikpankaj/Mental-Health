@@ -435,7 +435,7 @@
 .nav-menu-items{
     width:100%;
     position:absolute;
-    top:170px;
+    top:155px;
 }
 
 #spantag{
@@ -446,16 +446,15 @@
     position: absolute;
     width:48px;
     height:48px;
-    left: 26px;
+    left: 30px;
     top: 49px;
 }
 
 #profilename{
 
     position: absolute;
-    width: 158px;
     height: 30px;
-    left: 27px;
+    left: 32px;
     top: 101px;
     font-family: "Poppins";
     font-style: normal;
