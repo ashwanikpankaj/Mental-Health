@@ -9,9 +9,6 @@ function Welcome (){
 
     const [count,setCount] = useState(1);
 
-
-    console.log(count)
-
     return  count == 1?(
         <div className="cont"> 
         <StaticHeader/>

@@ -72,6 +72,11 @@ function App() {
         <Route path="/landingpage">
         <Landing />
         </Route>
+
+        <Route path="/welcome">
+          <Welcome></Welcome>
+        </Route>
+
       </Switch>
 
 
@@ -86,7 +91,7 @@ function App() {
       <Signup />
 
 
-      <Welcome></Welcome>
+      
       <Games></Games>
       <Bluetooh></Bluetooh>
 

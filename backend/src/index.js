@@ -50,7 +50,7 @@ app.get( '/auth/google/callback',
 }), function(req, res) {
     // const {user, token} = req.user
     // return res.status(200).json({user, token });
-    res.redirect('http://localhost:3000/landingpage')
+    res.redirect('http://localhost:3000/blueaura')
 });
 
 

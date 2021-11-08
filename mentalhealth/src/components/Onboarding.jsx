@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 import '../styles/onboarding.css'
 import { StaticHeader } from './Staticheader'
+import { Link,useHistory } from 'react-router-dom'
+import { useEffect } from 'react'
 
 const Div = styled.div`
     position: absolute;
@@ -13,6 +15,15 @@ const Div = styled.div`
 `;
 
 export const Onboarding = () =>{
+
+    const history = useHistory();
+
+    useEffect(()=>{
+        setTimeout(()=>{
+            history.push("/welcome");
+        },3000)
+    },[])
+
     return <>
     <div id="onboarding">
     <StaticHeader />
