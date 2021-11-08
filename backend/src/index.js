@@ -1,5 +1,6 @@
 
 const express = require('express');
+<<<<<<< HEAD
 
 const app = express();
 
@@ -34,22 +35,38 @@ app.get('/auth/facebook/callback',
   });
 //----------------------------//
 
+=======
+const passport = require("./configs/passport")
+const session = require('express-session');
+>>>>>>> e901b095a44a4fa35c29f9196b19cc2ea297a84d
 const {register, login} = require("./controllers/authController")
 
-var cors = require('cors')
+const cors = require('cors')
 
 
 
-app.use(cors()) 
+// app.use(cors()) 
+app.use(cors({origin: 'http://localhost:3000', credentials: true}));
 app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+
+app.use(
+    session({
+        secret: 'secretcode',
+        resave: true,
+        saveUninitialized: true,
+    })
+)
+
 app.use(passport.initialize());
+app.use(passport.session());
 
 passport.serializeUser(function({user, token}, done) {
     done(null, {user, token});
 });
   
 passport.deserializeUser(function({user, token}, done) {
-    done(err, {user, token});
+    done(null, {user, token});
 });
 
 
@@ -69,14 +86,19 @@ app.get( '/auth/google/callback',
     passport.authenticate( 'google', {
         failureRedirect: '/auth/google/failure'
 }), function(req, res) {
-    const {user, token} = req.user
+    // const {user, token} = req.user
     // return res.status(200).json({user, token });
-    res.redirect('http://localhost:3000')
+    res.redirect('http://localhost:3000/landingpage')
 });
 
 
 
 app.post("/register", register);
 app.post("/login", login);
+
+app.get('/getuser', (req, res) => {
+    res.send(req.user);
+})
+
 
 module.exports = app;

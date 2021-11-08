@@ -10,10 +10,10 @@ import { Diary1 } from './components/Diary1';
 import { Meditate1 } from './components/Meditate1';
 import { Signup } from './components/Signup';
 import { Welcome } from "./components/Welcome"
-import {Goodbad} from "./components/Goodbad"
+import { Goodbad } from "./components/Goodbad"
 import { Goal } from './components/Goal';
 import { Games } from "./components/Games"
-import {Bluetooh} from "./components/Bluetooh"
+import { Bluetooh } from "./components/Bluetooh"
 import { Funtest } from './components/Funtest';
 import { Waterfall } from './components/Waterfall';
 import { Colors } from './components/Colors';
@@ -22,47 +22,88 @@ import { Avatar } from './components/Avatar';
 import { Landing1 } from './components/Landing1';
 import { Login } from './components/Login';
 import { Onboarding } from './components/Onboarding';
+import { DailyTask } from './components/Daily-task';
 
-import {BrowserRouter as Router,Switch,Route,Link} from 'react-router-dom'
+import { Switch, Route } from 'react-router-dom'
+import { Loadingpage } from './components/Loadingpage';
+import { Allsettogo } from './components/Allsettogo';
 
 function App() {
   return (
     <div className="App">
-      {/* <Router>
-        <Landing />
-        <Switch>
-          <Route path='/'/>
-        </Switch>
-      </Router>
-      <Landing1 /> */}
+
       <Switch>
-        <Route path="/" exact><Welcome></Welcome></Route>
-       <Route path="/signup"><Signup></Signup></Route>
+        <Route path="/" exact>
+          <Onboarding />
+        </Route>
+
+        <Route path="/welcome"><Welcome></Welcome></Route>
+
+        <Route path="/signup"><Signup></Signup></Route>
+
+        <Route path="/login">
+          <Login />
+        </Route>
+      
+        <Route path="/blueaura">
+          <Goodbad />
+        </Route>
+
+        <Route path="/goal">
+          <Goal />
+        </Route>
+
+        <Route path="/funtest">
+          <Funtest />
+        </Route>
+
+        <Route path="/colors">
+        <Colors />
+        </Route>
+
+        <Route path="/loadingpage">
+        <Loadingpage/>
+        </Route>
+
+        <Route path="/createavatar">
+        <Avatar />
+        </Route>
+
+        <Route path="/allset">
+        <Allsettogo/>
+        </Route>
+
+        <Route path="/landingpage">
+        <Landing />
+        </Route>
       </Switch>
-      {/* <Meditate />
+
+
+      
+      <Landing1 />
+      <Meditate />
       <Meditate1 />
       <Diary />
       <Diary1 />
       <Game />
       <Game1 />
-      <Signup/>
-      <Login/>
-      <Goodbad/>
-     <Welcome></Welcome>
-      <Goal />
+
+
+
+      
       <Games></Games>
       <Bluetooh></Bluetooh>
-     <Funtest/>
-     <Waterfall/>
-     <Colors/>
-     <Personality/>
-     <Avatar/>
-     <Onboarding/> */}
+
+      <Waterfall />
+
+      <Personality />
+
+      <Onboarding />
+      <DailyTask />
+
     </div>
-    
+
   );
 }
 
 export default App;
-
-

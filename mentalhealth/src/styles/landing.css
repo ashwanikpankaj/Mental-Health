@@ -162,7 +162,7 @@
     border-radius: 36px;
 }
 
-#task {
+#task1 {
     position: absolute;
     width: 187.57px;
     height: 29.5px;
@@ -394,7 +394,7 @@
     top: 0;
     left: -300%;
     transition: 10ms;
-
+    z-index: 5;
 }
 
 .nav-menu.active{
@@ -435,7 +435,7 @@
 .nav-menu-items{
     width:100%;
     position:absolute;
-    top:170px;
+    top:155px;
 }
 
 #spantag{
@@ -446,16 +446,15 @@
     position: absolute;
     width:48px;
     height:48px;
-    left: 26px;
+    left: 30px;
     top: 49px;
 }
 
 #profilename{
 
     position: absolute;
-    width: 158px;
     height: 30px;
-    left: 27px;
+    left: 32px;
     top: 101px;
     font-family: "Poppins";
     font-style: normal;

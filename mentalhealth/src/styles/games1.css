@@ -7,7 +7,6 @@
   height: 823px;
   background: #ffffff;
   margin: auto;
-  border: 1px solid black;
 }
 
 #circlesText {
@@ -45,7 +44,7 @@
   height: 48px;
   left: 26px;
   top: 660px;
-  background: #fc8282;
+  background:#a28efc;
   border-radius: 30px;
   border: none;
 }

@@ -11,7 +11,7 @@ export function Rectangle({props}) {
         <>
             <div onClick={hamburgerclick} className="lpage_rectangle">
                 <div className="lpage_rectangle1">
-                    <div id="task">Todays Task :</div>
+                    <div id="task1">Todays Task :</div>
                 </div>
 
                 <div className="lpage_rectangle2">

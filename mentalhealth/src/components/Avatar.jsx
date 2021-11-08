@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import '../styles/avatar.css'
 import { StaticHeader } from './Staticheader'
 
@@ -8,8 +9,15 @@ export const Avatar = () => {
             <div id="avatar">
                 <StaticHeader />
                 <p id="choose">Choose your avatar</p>
-                <img id="boy" src="boy.jpg"></img>
-                <img id="girl" src="girl.jpg"></img>
+                <Link to="/allset">
+                    <img id="boy" src="boy.jpg"></img>
+                </Link>
+
+                <Link to="/allset">
+                    <img id="girl" src="girl.jpg"></img>
+                </Link>
+
+
                 <p id="male">Male</p>
                 <p id="female">Female</p>
             </div>

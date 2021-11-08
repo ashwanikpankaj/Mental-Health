@@ -3,20 +3,29 @@ import { AppStatusBar } from './App-status-bar'
 import { Bottom } from './Bottom'
 import { BottomNavBar } from './Bottom-nav-bar'
 import { Navbar } from './Navbar'
+import { useState } from 'react'
+import { Sidebar } from './Sidebar'
 
 export function Landing1() {
+
+    const [sidebar,setSidebar] = useState(false)
+
+    const showSidebar = () => setSidebar(true)
+    const hideSidebar = () => setSidebar(false)
+
+
     return (
         <>
         <div className="lpage_maindiv">
             <div>
-                <Navbar />
+                <Navbar props={hideSidebar}/>
             </div>
 
             <div>
-                <AppStatusBar />
+                <AppStatusBar props={showSidebar}/>
             </div>
 
-            <div>
+            <div onClick={hideSidebar}>
                 <img id="img_one" src="./landing_images/one.png" alt="" />
                 <img id="img_two" src="./landing_images/two.png" alt="" />
                 <img id="img_three" src="./landing_images/three.png" alt="" />
@@ -29,12 +38,13 @@ export function Landing1() {
             </div>
 
             <div>
-                <BottomNavBar />
+                <BottomNavBar props={hideSidebar}/>
             </div>
 
             <div>
-                <Bottom />
+                <Bottom/>
             </div>
+            <Sidebar prop={sidebar}/>
         </div>
         </>
     )
