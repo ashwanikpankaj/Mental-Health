@@ -37,10 +37,14 @@ function App() {
           <Onboarding />
         </Route>
 
+        <Route path="/welcome"><Welcome></Welcome></Route>
+
+        <Route path="/signup"><Signup></Signup></Route>
+
         <Route path="/login">
           <Login />
         </Route>
-
+      
         <Route path="/blueaura">
           <Goodbad />
         </Route>
@@ -88,7 +92,7 @@ function App() {
       <Diary1 />
       <Game />
       <Game1 />
-      <Signup />
+
 
 
       
