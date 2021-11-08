@@ -23,19 +23,23 @@ import { Landing1 } from './components/Landing1';
 import { Login } from './components/Login';
 import { Onboarding } from './components/Onboarding';
 
-import {BrowserRouter as Router,Switch,Route} from 'react-router-dom'
+import {BrowserRouter as Router,Switch,Route,Link} from 'react-router-dom'
 
 function App() {
   return (
     <div className="App">
-      <Router>
+      {/* <Router>
         <Landing />
         <Switch>
           <Route path='/'/>
         </Switch>
       </Router>
-      <Landing1 />
-      <Meditate />
+      <Landing1 /> */}
+      <Switch>
+        <Route path="/" exact><Welcome></Welcome></Route>
+       <Route path="/signup"><Signup></Signup></Route>
+      </Switch>
+      {/* <Meditate />
       <Meditate1 />
       <Diary />
       <Diary1 />
@@ -53,7 +57,7 @@ function App() {
      <Colors/>
      <Personality/>
      <Avatar/>
-     <Onboarding/>
+     <Onboarding/> */}
     </div>
     
   );

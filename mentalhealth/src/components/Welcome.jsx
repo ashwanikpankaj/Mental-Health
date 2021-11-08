@@ -5,6 +5,8 @@ import {useState} from "react";
 
 import { StaticHeader } from './Staticheader'
 
+import {Link} from 'react-router-dom'
+
 function Welcome (){
 
     const [count,setCount] = useState(1);
@@ -74,9 +76,11 @@ function Welcome (){
          <div className="dot-icon">
           <div></div><div></div><div id="third-dot"></div>
           </div>
+          <Link to="/signup">
           <div>
-          <button className="next" onClick={()=>setCount(count+1)} disabled={count===3?true:false}>Next</button>
+        <button className="next" onClick={()=>setCount(count+1)} >Next</button>
           </div>
+          </Link>
          </div>  
         </div>
         <div className="bottom-line"><div></div></div>
