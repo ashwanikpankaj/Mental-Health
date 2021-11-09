@@ -30,6 +30,7 @@ import { Allsettogo } from './components/Allsettogo';
 import { ScoreCard } from './components/ScoreCard';
 import { Dfcategories } from './components/DfCategories';
 import { Doctors } from './components/Doctorspage';
+import { Individualdoctor } from './components/IndividualDoc';
 
 function App() {
   return (
@@ -92,6 +93,9 @@ function App() {
           <Doctors/>
         </Route>
 
+        <Route path="/individualdoctor/:id">
+          <Individualdoctor/>
+        </Route>
       </Switch>
 
 
