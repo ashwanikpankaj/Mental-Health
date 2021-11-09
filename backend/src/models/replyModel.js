@@ -2,9 +2,9 @@ const mongoose = require("mongoose");
 
 let replySchema = new mongoose.Schema({
     message: { type: String, trim:true, required: true },
-    category:{
+    postid:{
         type: mongoose.Schema.Types.ObjectId,
-        ref: "category",
+        ref: "post",
         required: true,
       },
     likes:{ type: Number, trim:true, required: true }
