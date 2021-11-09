@@ -10,8 +10,8 @@ router.post("/", async (req, res) => {
 
 router.get("/", async (req, res) => {
 
-    let categorys = await Category.find().lean();
-    res.status(201).send({ categorys });
+    let categories = await Category.find().lean();
+    res.status(201).send({ categories });
 });
 
 

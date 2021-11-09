@@ -28,6 +28,7 @@ import { Switch, Route } from 'react-router-dom'
 import { Loadingpage } from './components/Loadingpage';
 import { Allsettogo } from './components/Allsettogo';
 import { Dfcategories } from './components/DfCategories';
+import { Doctors } from './components/Doctorspage';
 
 function App() {
   return (
@@ -82,6 +83,14 @@ function App() {
           <Welcome></Welcome>
         </Route>
 
+        <Route path="/therapy">
+        <Dfcategories/>
+        </Route>
+
+        <Route path="/doctors/:id">
+          <Doctors/>
+        </Route>
+
       </Switch>
 
 
@@ -93,7 +102,7 @@ function App() {
       <Diary1 />
       <Game />
       <Game1 />
-
+      
 
 
       
@@ -106,7 +115,7 @@ function App() {
 
       {/* <Onboarding /> */}
       <DailyTask />
-      <Dfcategories/>
+      
 
     </div>
 
