@@ -8,14 +8,15 @@
   position: relative;
   margin: auto;
   margin-top: 10px;
-  background-color: white;
+  background-color: white !important;
+  
 }
 
 .waterfall-heading-div {
   width: 411px;
   height: 48px;
   background-color: #d8efff;
-  margin-top: 40px;
+  margin-top: 15px;
   position: relative;
 }
 .waterfall-heading-div > img {

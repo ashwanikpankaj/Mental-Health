@@ -1,23 +1,22 @@
-import { StaticHeader } from "./Staticheader";
-
+import { StaticHeader } from './Staticheader'
 import "../styles/waterfall.css";
-
-import YouTube from 'react-youtube';
-
-var getYoutubeId = require("get-youtube-id")
+import YouTube from "react-youtube";
+var getYoutubeId = require("get-youtube-id");
 
 export const Waterfall = () => {
   const opts = {
-    height: '218',
-    width: '411',
+    height: "218",
+    width: "411",
     playerVars: {
       // https://developers.google.com/youtube/player_parameters
       autoplay: 0, // autoplay off it
-    }
-  }
+    },
+  };
   return (
-    <div id="waterfall-cont">
-      <StaticHeader />
+    <div id="waterfall-cont" >
+      <div style={{marginBottom:"0px"}}>5</div>
+      <StaticHeader></StaticHeader>
+      
       <div className="waterfall-heading-div">
         <img src="leftarrow.png" onClick={() => console.log("hello")} />
         <h1>Waterfall</h1>
@@ -27,7 +26,11 @@ export const Waterfall = () => {
         <YouTube videoId="MFLVmAE4cqg" opts={opts} />
       </div>
       <h1 id="breathe-text">Take a deep breathe and walk through nature.</h1>
-      <div id="relax-text"> Relaxing virtual environments (VEs) can help you learn and practice self love management skills.</div>
+      <div id="relax-text">
+        {" "}
+        Relaxing virtual environments (VEs) can help you learn and practice self
+        love management skills.
+      </div>
       <button id="play">Play</button>
       <button id="download">Download</button>
       <div id="vr-headset">
@@ -36,7 +39,9 @@ export const Waterfall = () => {
       </div>
       <h1 id="buy">BUY VR Headset at 50% off</h1>
       <button id="buy-btn">Click to buy -</button>
-      <a id="amazon" href="https://www.amazon.in/">amazon.in</a>
+      <a id="amazon" href="https://www.amazon.in/">
+        amazon.in
+      </a>
     </div>
   );
 };
