@@ -3,13 +3,18 @@ const app = express();
 const passport = require("./configs/passport")
 const session = require('express-session');
 const cors = require('cors')
-const {register, login} = require("./controllers/authController")
 const fbpassport = require("./configs/fbpassport");
+
+//add controllers here
+const {register, login} = require("./controllers/authController")
+const doctorController = require("./controllers/doctorController");
+const categoryController = require("./controllers/categoryController");
+const postController = require("./controllers/postController");
+const replyController = require("./controllers/replyController");
 
 app.use(cors({origin: 'http://localhost:3000', credentials: true}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-
 app.use(
     session({
         secret: 'secretcode',
@@ -19,6 +24,10 @@ app.use(
 )
 app.use(passport.initialize());
 app.use(passport.session());
+app.use("/categories", categoryController);
+app.use("/doctors", doctorController);
+app.use("/posts", postController);
+app.use("/replies", replyController);
 
 passport.serializeUser(function({user, token}, done) {
     done(null, {user, token});
@@ -40,8 +49,7 @@ app.get('/auth/facebook/callback',
    res.redirect('http://localhost:3000/blueaura');
   });
 
-//--------------------------------//
-
+  
 //---------------google auth----------//
 
 app.get("/auth/google/failure", function(req, res) {
@@ -60,8 +68,8 @@ app.get( '/auth/google/callback',
     res.redirect('http://localhost:3000/blueaura')
 });
 
-//--------------------------------//
 
+//-----------------Normal Login---------------//
 
 app.post("/register", register);
 app.post("/login", login);
@@ -74,5 +82,6 @@ function isLoggedIn(req, res, next) {
         return next();
     res.redirect('http://localhost:3000');
 }
+
 
 module.exports = app;
