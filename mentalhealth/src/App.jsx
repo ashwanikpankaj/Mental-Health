@@ -30,6 +30,8 @@ import { ScoreCard } from './components/ScoreCard';
 import { Dfcategories } from './components/DfCategories';
 import { MeditateCrousel } from './components/Meditate-carousel';
 import { Doctors } from './components/Doctorspage';
+import { Vrinsitu } from './components/Vrinsitu';
+import { GamesCrousel } from './components/Games-crousel';
 
 function App() {
   return (
@@ -120,7 +122,8 @@ function App() {
       <Dfcategories/>
       
      <MeditateCrousel/>
-      
+      <Vrinsitu/>
+      <GamesCrousel/>
 
     </div>
 
