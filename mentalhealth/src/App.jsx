@@ -31,6 +31,7 @@ import { Dfcategories } from './components/DfCategories';
 import { MeditateCrousel } from './components/Meditate-carousel';
 import { Doctors } from './components/Doctorspage';
 import { Individualdoctor } from './components/IndividualDoc';
+import { Prakash } from "./components/Prakash";
 
 function App() {
   return (
@@ -123,7 +124,8 @@ function App() {
       <DailyTask />
       <Dfcategories/>
       
-     <MeditateCrousel/>
+      <MeditateCrousel />
+      <Prakash></Prakash>
       
 
     </div>
