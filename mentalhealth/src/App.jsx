@@ -26,8 +26,10 @@ import { DailyTask } from './components/Daily-task';
 import { Switch, Route } from 'react-router-dom'
 import { Loadingpage } from './components/Loadingpage';
 import { Allsettogo } from './components/Allsettogo';
+import { ScoreCard } from './components/ScoreCard';
 import { Dfcategories } from './components/DfCategories';
 import { MeditateCrousel } from './components/Meditate-carousel';
+import { Doctors } from './components/Doctorspage';
 
 function App() {
   return (
@@ -82,6 +84,14 @@ function App() {
           <Welcome></Welcome>
         </Route>
 
+        <Route path="/therapy">
+        <Dfcategories/>
+        </Route>
+
+        <Route path="/doctors/:id">
+          <Doctors/>
+        </Route>
+
       </Switch>
 
 
@@ -93,22 +103,25 @@ function App() {
       <Diary1 />
       <Game />
       <Game1 />
-
+      
 
 
       
       <Games></Games>
+      <ScoreCard></ScoreCard>
       <Bluetooh></Bluetooh>
 
       <Waterfall />
 
       <Personality />
 
-      <Onboarding />
+      {/* <Onboarding /> */}
       <DailyTask />
       <Dfcategories/>
       
      <MeditateCrousel/>
+      
+
     </div>
 
   );

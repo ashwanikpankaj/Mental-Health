@@ -2,14 +2,15 @@ import { StaticHeader } from './Staticheader'
 import "../styles/games1.css"
 import { useState } from 'react'
 
+let count = 0;
 
-// #fc8282
 export const Games = () => {
     const [redcolor, setRedcolor] = useState("")
     const [greencolor, setGreencolor] = useState("")
     const [temp,setTemp]=useState(1)
+    
     function handleCorrect() {
-       
+        count++;
         setGreencolor("#A7F072")
         setTimeout(() => {
             setTemp(2)
@@ -39,8 +40,9 @@ export const Games = () => {
             <div id="Games">
                 <StaticHeader></StaticHeader>
              <p id="circlesText">How many triangles do you see?</p>
-                <img id="circlegame" src="trianglegame.jpg"></img>
-                <button style={{  background:redcolor}} onClick={handleWrong} id="answer6"><div id="Text6">10</div></button>
+                    <img id="circlegame" src="trianglegame.jpg"></img>
+                    
+                <button  style={{  background:redcolor}} onClick={handleWrong} id="answer6"><div id="Text6">10</div></button>
                 <button style={{  background:greencolor}}  id="answer8"><div id="Text8" onClick={handleCorrect}>16</div></button>
 
             </div>

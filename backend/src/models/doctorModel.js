@@ -4,6 +4,7 @@ let doctorSchema = new mongoose.Schema({
     name: { type: String, trim:true, required: true },
     photo:{ type: String, trim:true, required: true },
     qualification:{ type: String, trim:true, required: true },
+    profession:{type: String, trim:true, required: true},
     specialization:[{
         type: mongoose.Schema.Types.ObjectId,
         ref: "category",

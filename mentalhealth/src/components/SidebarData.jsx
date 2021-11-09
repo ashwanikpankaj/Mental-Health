@@ -15,7 +15,7 @@ export const SiderbarData = [
     },
     {
         title : "Therapy",
-        path:'/',
+        path:'/therapy',
         icon:"therapy.svg",
         cName:'nav-text'
     },
