@@ -27,6 +27,7 @@ import { DailyTask } from './components/Daily-task';
 import { Switch, Route } from 'react-router-dom'
 import { Loadingpage } from './components/Loadingpage';
 import { Allsettogo } from './components/Allsettogo';
+import { Dfcategories } from './components/DfCategories';
 
 function App() {
   return (
@@ -105,6 +106,7 @@ function App() {
 
       <Onboarding />
       <DailyTask />
+      <Dfcategories/>
 
     </div>
 
