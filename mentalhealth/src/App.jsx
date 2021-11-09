@@ -29,6 +29,8 @@ import { ScoreCard } from './components/ScoreCard';
 import { Therapies } from './components/Therapy';
 import { MeditateCrousel } from './components/Meditate-carousel';
 import { Doctors } from './components/Doctorspage';
+import { Vrinsitu } from './components/Vrinsitu';
+import { GamesCrousel } from './components/Games-crousel';
 import { Individualdoctor } from './components/IndividualDoc';
 import { DiscussionForum } from './components/DiscussionForum';
 import { Postissue } from './components/Postcreation';
@@ -135,10 +137,9 @@ function App() {
       <Personality />
       <DailyTask />
      <MeditateCrousel/>
+      <Vrinsitu/>
+      <GamesCrousel/>
 
-     
-    
-    
     </div>
 
   );

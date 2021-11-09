@@ -1,6 +1,7 @@
 import { StaticHeader } from './Staticheader'
 import "../styles/waterfall.css";
 import YouTube from "react-youtube";
+import { Bottom } from './Bottom';
 
 export const Waterfall = () => {
   const opts = {
@@ -40,6 +41,7 @@ export const Waterfall = () => {
       <a id="amazon" href="https://www.amazon.in/">
         amazon.in
       </a>
+      <Bottom/>
     </div>
   );
 };
