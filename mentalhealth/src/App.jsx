@@ -76,6 +76,11 @@ function App() {
         <Route path="/landingpage">
         <Landing />
         </Route>
+
+        <Route path="/welcome">
+          <Welcome></Welcome>
+        </Route>
+
       </Switch>
 
 
