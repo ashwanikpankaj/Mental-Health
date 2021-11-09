@@ -27,6 +27,7 @@ import { DailyTask } from './components/Daily-task';
 import { Switch, Route } from 'react-router-dom'
 import { Loadingpage } from './components/Loadingpage';
 import { Allsettogo } from './components/Allsettogo';
+import { ScoreCard } from './components/ScoreCard';
 
 function App() {
   return (
@@ -97,6 +98,7 @@ function App() {
 
       
       <Games></Games>
+      <ScoreCard></ScoreCard>
       <Bluetooh></Bluetooh>
 
       <Waterfall />
