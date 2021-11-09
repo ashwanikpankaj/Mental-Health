@@ -23,12 +23,12 @@ import { Landing1 } from './components/Landing1';
 import { Login } from './components/Login';
 import { Onboarding } from './components/Onboarding';
 import { DailyTask } from './components/Daily-task';
-
 import { Switch, Route } from 'react-router-dom'
 import { Loadingpage } from './components/Loadingpage';
 import { Allsettogo } from './components/Allsettogo';
 import { ScoreCard } from './components/ScoreCard';
 import { Dfcategories } from './components/DfCategories';
+import { MeditateCrousel } from './components/Meditate-carousel';
 import { Doctors } from './components/Doctorspage';
 import { Individualdoctor } from './components/IndividualDoc';
 
@@ -121,6 +121,9 @@ function App() {
 
       {/* <Onboarding /> */}
       <DailyTask />
+      <Dfcategories/>
+      
+     <MeditateCrousel/>
       
 
     </div>
