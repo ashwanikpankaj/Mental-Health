@@ -32,6 +32,7 @@ import { MeditateCrousel } from './components/Meditate-carousel';
 import { Doctors } from './components/Doctorspage';
 import { Vrinsitu } from './components/Vrinsitu';
 import { GamesCrousel } from './components/Games-crousel';
+import { Individualdoctor } from './components/IndividualDoc';
 
 function App() {
   return (
@@ -94,6 +95,9 @@ function App() {
           <Doctors/>
         </Route>
 
+        <Route path="/individualdoctor/:id">
+          <Individualdoctor/>
+        </Route>
       </Switch>
 
 

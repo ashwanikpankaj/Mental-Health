@@ -21,6 +21,13 @@ router.get("/:id", async (req, res) => {
     res.status(201).send({ doctor });
 });
 
+router.get("/category/:id", async (req, res) => {
+
+    console.log(req.params.id)
+    let doctor = await Doctor.find({ specialization: req.params.id }).populate("specialization").lean();
+    res.status(201).send({ doctor });
+});
+
 
 router.patch("/:id", async (req, res) => {
 
