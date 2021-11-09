@@ -1,6 +1,5 @@
 
 const express = require('express');
-<<<<<<< HEAD
 
 const app = express();
 
@@ -35,10 +34,8 @@ app.get('/auth/facebook/callback',
   });
 //----------------------------//
 
-=======
 const passport = require("./configs/passport")
 const session = require('express-session');
->>>>>>> e901b095a44a4fa35c29f9196b19cc2ea297a84d
 const {register, login} = require("./controllers/authController")
 
 const cors = require('cors')
