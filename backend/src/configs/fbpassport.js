@@ -6,10 +6,6 @@ const User = require("../models/userModel")
 const { v4: uuidV4 } = require('uuid');
 const {newToken} = require("../controllers/authController")
 
-// const newToken = (user) => {
-//   return jwt.sign({ user }, process.env.JWT_SECRET_KEY)
-// }
-
 passport.use(new FacebookStrategy({
   clientID: process.env.APP_ID,
   clientSecret: process.env.APP_SECRET,
@@ -17,7 +13,7 @@ passport.use(new FacebookStrategy({
   profileFields: ['id', 'displayName', 'email']
 },
 
-  async function (accessToken, refreshToken, profile, done) {
+async function (accessToken, refreshToken, profile, done) {
 
     console.log("profile",profile)
     const email = profile?._json?.email;
