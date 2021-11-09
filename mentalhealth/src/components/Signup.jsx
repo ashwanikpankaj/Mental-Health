@@ -3,7 +3,7 @@ import axios from 'axios';
 import { StaticHeader } from './Staticheader'
 import { useState } from 'react';
 import styled from "styled-components";
-import { Link,Redirect,useHistory } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 
 const Button = styled.input`
     position: absolute;
@@ -104,7 +104,7 @@ export const Signup = () => {
 
                 {signuperror?<p id="alreadySignup">Already registered, please go to login</p>:""}
 
-                <div><img id="signlogo" src="blueaura.png"></img></div>
+                <div><img id="signlogo" src="blueaura.png" alt="alt"></img></div>
 
                 <form onSubmit={normalSignUp} id="signform">
                     <input value={userData.name} name="name" onChange={handlechange} className="signfields" type="text" placeholder="Name" />
@@ -118,8 +118,8 @@ export const Signup = () => {
                     <p id="Login">Login</p>
                 </div>
 
-                <button id="facebook" onClick={facebookAuth}><img src="facebook.jpg"></img>Sign up with facebook</button>
-                <button id="google" onClick={googleAuth}><img src="google.jpg"></img>Sign up with Google</button>
+                <button id="facebook" onClick={facebookAuth}><img src="facebook.jpg" alt="alt"></img>Sign up with facebook</button>
+                <button id="google" onClick={googleAuth}><img src="google.jpg" alt="alt"></img>Sign up with Google</button>
     
             </div>
         </>

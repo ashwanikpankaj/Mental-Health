@@ -2,10 +2,9 @@ import '../styles/login.css'
 import axios from 'axios';
 import { StaticHeader } from './Staticheader'
 import { useState } from 'react';
-import { Link,Redirect,useHistory } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 import styled from "styled-components";
 
-// Styled component named StyledButton
 const Button = styled.input`
     position: absolute;
     width: 362px;
@@ -100,7 +99,7 @@ export const Login = () => {
 
                 {signuperror?<p id="invalid">Invalid email or password</p>:""}
 
-                <div><img id="logo" src="blueaura.png"></img></div>
+                <div><img id="logo" src="blueaura.png" alt="leftarrow"></img></div>
 
                 <form onSubmit={normalSignUp} id="form">
                     <input value={userData.email} name="email" onChange={handlechange} className="fields" type="email" placeholder="E-mail" />
@@ -113,8 +112,8 @@ export const Login = () => {
                     <p id="Signuproute">Sign up</p>
                 </div>
 
-                <button id="facebook"><img src="facebook.jpg"></img>Sign up with facebook</button>
-                <button id="google" onClick={googleAuth}><img src="google.jpg"></img>Sign up with Google</button>
+                <button id="facebook"><img src="facebook.jpg" alt="facebook"></img>Sign up with facebook</button>
+                <button id="google" onClick={googleAuth}><img src="google.jpg" alt="google"></img>Sign up with Google</button>
             
             </div>
         </>

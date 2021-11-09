@@ -8,7 +8,7 @@ export const Sidebar= ({prop,username})=>{
         <>
             <nav className={prop ? 'nav-menu active' : 'nav-menu'}>
 
-                <img id="girlprofile" src="girlprofile.jpg" />
+                <img id="girlprofile" src="girlprofile.jpg" alt="alt"/>
                 <p id="profilename">{username?username:"Dummy name"}</p>
                 <ul className='nav-menu-items'>
                     {SiderbarData.map((item, index) => {

@@ -10,11 +10,11 @@ export const Avatar = () => {
                 <StaticHeader />
                 <p id="choose">Choose your avatar</p>
                 <Link to="/allset">
-                    <img id="boy" src="boy.jpg"></img>
+                    <img id="boy" src="boy.jpg" alt="boy"></img>
                 </Link>
 
                 <Link to="/allset">
-                    <img id="girl" src="girl.jpg"></img>
+                    <img id="girl" src="girl.jpg" alt="girl"></img>
                 </Link>
 
 

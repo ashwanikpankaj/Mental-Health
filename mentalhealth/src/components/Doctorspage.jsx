@@ -32,7 +32,7 @@ export const Doctors = () => {
     return (
         <>
             <div id="doctorspage">
-                <StaticHeader />
+                <StaticHeader></StaticHeader>
                 <h1>Hello</h1>
 
                 {

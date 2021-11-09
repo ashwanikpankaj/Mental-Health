@@ -1,14 +1,12 @@
 import { StaticHeader } from './Staticheader'
 import "../styles/waterfall.css";
 import YouTube from "react-youtube";
-var getYoutubeId = require("get-youtube-id");
 
 export const Waterfall = () => {
   const opts = {
     height: "218",
     width: "411",
     playerVars: {
-      // https://developers.google.com/youtube/player_parameters
       autoplay: 0, // autoplay off it
     },
   };
@@ -18,7 +16,7 @@ export const Waterfall = () => {
       <StaticHeader></StaticHeader>
       
       <div className="waterfall-heading-div">
-        <img src="leftarrow.png" onClick={() => console.log("hello")} />
+        <img src="leftarrow.png" onClick={() => console.log("hello")}  alt="leftarrow"/>
         <h1>Waterfall</h1>
       </div>
       <div className="waterfall-video-div">
@@ -35,7 +33,7 @@ export const Waterfall = () => {
       <button id="download">Download</button>
       <div id="vr-headset">
         <h1>How to connect VR headset?</h1>
-        <img src="waterfallrightarrow.png" />
+        <img src="waterfallrightarrow.png" alt="waterfall"/>
       </div>
       <h1 id="buy">BUY VR Headset at 50% off</h1>
       <button id="buy-btn">Click to buy -</button>

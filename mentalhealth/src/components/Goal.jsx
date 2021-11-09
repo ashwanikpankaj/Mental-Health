@@ -1,7 +1,7 @@
 import '../styles/goal.css'
 import { Skip } from './Skip'
 import { StaticHeader } from './Staticheader'
-import { Link, Redirect, useHistory } from 'react-router-dom'
+import { Link} from 'react-router-dom'
 
 export const Goal = () => {
 
@@ -12,19 +12,19 @@ export const Goal = () => {
                 <p id="whatisgoal">What is your Goal?</p>
 
                 <Link to="/funtest">
-                    <img id="anxietyimg" src="anxiety.jpg"></img>
+                    <img id="anxietyimg" src="anxiety.jpg" alt="anxiety"></img>
                 </Link>
 
                 <Link to="/funtest">
-                    <img id="mindfulnessimg" src="mindfulness.png"></img>
+                    <img id="mindfulnessimg" src="mindfulness.png" alt="mindfulness"></img>
                 </Link>
 
                 <Link to="/funtest">
-                    <img id="sleepimg" src="sleep.jpg"></img>
+                    <img id="sleepimg" src="sleep.jpg" alt="sleep"></img>
                 </Link>
 
                 <Link to="/funtest">
-                    <img id="Stayfocusedimg" src="Stayfocused.jpg"></img>
+                    <img id="Stayfocusedimg" src="Stayfocused.jpg" alt="Stayfocused"></img>
                 </Link>
 
 

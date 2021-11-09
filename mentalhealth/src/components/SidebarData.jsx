@@ -21,7 +21,7 @@ export const SiderbarData = [
     },
     {
         title : "Community",
-        path:'/',
+        path:'/discussionforum',
         icon:"community.svg",
         cName:'nav-text'
     },

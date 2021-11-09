@@ -1,6 +1,5 @@
 
 import './App.css';
-import axios from 'axios';
 import { Game } from './components/Game';
 import { Landing } from './components/Landing';
 import { Meditate } from './components/Meditate';
@@ -27,10 +26,13 @@ import { Switch, Route } from 'react-router-dom'
 import { Loadingpage } from './components/Loadingpage';
 import { Allsettogo } from './components/Allsettogo';
 import { ScoreCard } from './components/ScoreCard';
-import { Dfcategories } from './components/DfCategories';
+import { Therapies } from './components/Therapy';
 import { MeditateCrousel } from './components/Meditate-carousel';
 import { Doctors } from './components/Doctorspage';
 import { Individualdoctor } from './components/IndividualDoc';
+import { DiscussionForum } from './components/DiscussionForum';
+import { Postissue } from './components/Postcreation';
+import { Categories } from './components/Categories';
 
 function App() {
   return (
@@ -86,7 +88,7 @@ function App() {
         </Route>
 
         <Route path="/therapy">
-        <Dfcategories/>
+        <Therapies/>
         </Route>
 
         <Route path="/doctors/:id">
@@ -96,6 +98,19 @@ function App() {
         <Route path="/individualdoctor/:id">
           <Individualdoctor/>
         </Route>
+
+        <Route path="/discussionforum">
+          <DiscussionForum/>
+        </Route>
+
+        <Route path="/posttheissue">
+          <Postissue/>
+        </Route>
+
+        <Route path="/categories">
+          <Categories/>
+        </Route>
+
       </Switch>
 
 
@@ -118,14 +133,12 @@ function App() {
       <Waterfall />
 
       <Personality />
-
-      {/* <Onboarding /> */}
       <DailyTask />
-      <Dfcategories/>
-      
      <MeditateCrousel/>
-      
 
+     
+    
+    
     </div>
 
   );
