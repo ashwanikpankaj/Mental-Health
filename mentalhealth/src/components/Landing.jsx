@@ -24,9 +24,11 @@ export function Landing() {
         fetchUser()
     },[])
 
+
+    //http://localhost:7765/getuser
     const fetchUser = () => {
         axios
-        .get("http://localhost:7765/getuser", {withCredentials: true})
+        .get("http://localhost:7765/profile", {withCredentials: true})
         .then(res => {
             console.log("here2")
             console.log("data",res.data.user)

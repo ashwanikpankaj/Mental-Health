@@ -90,6 +90,12 @@ export const Signup = () => {
 
     }
 
+    const facebookAuth = () => {
+
+        window.open('http://localhost:7765/auth/facebook/','_self');
+
+    }
+
     return (
         <>
             <div id="signup">
@@ -112,7 +118,7 @@ export const Signup = () => {
                     <p id="Login">Login</p>
                 </div>
 
-                <button id="facebook"><img src="facebook.jpg"></img>Sign up with facebook</button>
+                <button id="facebook" onClick={facebookAuth}><img src="facebook.jpg"></img>Sign up with facebook</button>
                 <button id="google" onClick={googleAuth}><img src="google.jpg"></img>Sign up with Google</button>
     
             </div>

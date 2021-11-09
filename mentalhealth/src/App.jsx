@@ -28,6 +28,7 @@ import { Switch, Route } from 'react-router-dom'
 import { Loadingpage } from './components/Loadingpage';
 import { Allsettogo } from './components/Allsettogo';
 import { ScoreCard } from './components/ScoreCard';
+import { Dfcategories } from './components/DfCategories';
 
 function App() {
   return (
@@ -105,8 +106,9 @@ function App() {
 
       <Personality />
 
-      <Onboarding />
+      {/* <Onboarding /> */}
       <DailyTask />
+      <Dfcategories/>
 
     </div>
 
