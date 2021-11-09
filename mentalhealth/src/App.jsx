@@ -103,7 +103,7 @@ function App() {
 
       <Personality />
 
-      <Onboarding />
+      {/* <Onboarding /> */}
       <DailyTask />
 
     </div>
