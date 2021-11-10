@@ -40,6 +40,8 @@ import { Postshow } from './components/Postshow';
 import { Individualpost } from './components/IndividualPost';
 import {Bookingcomplete} from "./components/Bookingcomplete"
 import { TherapistAppointment } from './components/Therapistappointment';
+import { Cardpayment } from './components/Cardpayment';
+import { Otpverification } from './components/Otpverification';
 
 function App() {
   return (
@@ -164,6 +166,8 @@ function App() {
       <GamesCrousel />
       <Bookingcomplete></Bookingcomplete>
       <TherapistAppointment/>
+      <Cardpayment/>
+      <Otpverification/>
 
     </div>
 
