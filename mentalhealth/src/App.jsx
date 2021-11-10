@@ -32,11 +32,13 @@ import { Doctors } from './components/Doctorspage';
 import { Vrinsitu } from './components/Vrinsitu';
 import { GamesCrousel } from './components/Games-crousel';
 import { Individualdoctor } from './components/IndividualDoc';
+import { Prakash } from "./components/Prakash";
 import { DiscussionForum } from './components/DiscussionForum';
 import { Postissue } from './components/Postcreation';
 import { Categories } from './components/Categories';
 import { Postshow } from './components/Postshow';
 import { Individualpost } from './components/IndividualPost';
+import {Bookingcomplete} from "./components/Bookingcomplete"
 
 function App() {
   return (
@@ -148,10 +150,18 @@ function App() {
       <Waterfall />
 
       <Personality />
+
       <DailyTask />
+    
+      
+
+      <Prakash></Prakash>
+      
      <MeditateCrousel/>
       <Vrinsitu/>
-      <GamesCrousel/>
+      <GamesCrousel />
+      
+      <Bookingcomplete></Bookingcomplete>
 
     </div>
 
