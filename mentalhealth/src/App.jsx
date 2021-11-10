@@ -36,10 +36,10 @@ import { Prakash } from "./components/Prakash";
 import { DiscussionForum } from './components/DiscussionForum';
 import { Postissue } from './components/Postcreation';
 import { Categories } from './components/Categories';
-import { Book } from './components/Book';
 import { Postshow } from './components/Postshow';
 import { Individualpost } from './components/IndividualPost';
 import {Bookingcomplete} from "./components/Bookingcomplete"
+import { TherapistAppointment } from './components/Therapistappointment';
 
 function App() {
   return (
@@ -161,10 +161,9 @@ function App() {
      <MeditateCrousel/>
       <Vrinsitu/>
       <GamesCrousel/>
-      <Book/>
       <GamesCrousel />
-      
       <Bookingcomplete></Bookingcomplete>
+      <TherapistAppointment/>
 
     </div>
 
