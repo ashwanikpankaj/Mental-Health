@@ -1,6 +1,5 @@
 import "../styles/ScoreCard.css"
 import { StaticHeader } from './Staticheader'
-import { useState } from "react"
 export const ScoreCard = () => {
 
     return (
@@ -8,7 +7,7 @@ export const ScoreCard = () => {
             <div id="cardOuterBox">
                  <StaticHeader></StaticHeader>
                 <h3  id="cardHeading"> Amazing Sakshi!</h3>
-                <img src="winner.jpg" id="cardwinner"/>
+                <img src="winner.jpg" id="cardwinner" alt="cardwinner"/>
                 <h3 id="cardEarn">You have earned</h3>
                 <h2 id="cardPoint"> 350 pts</h2>
             </div>

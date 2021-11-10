@@ -7,6 +7,11 @@ let postSchema = new mongoose.Schema({
         ref: "category",
         required: true,
       },
+    userid:{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "user",
+        required: true,
+      },
     likes:{ type: Number, trim:true, required: true }
 },
 { 

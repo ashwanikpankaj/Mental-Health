@@ -1,28 +1,19 @@
-
 import "../styles/welcome.css"
-
 import {useState} from "react";
-
 import { StaticHeader } from './Staticheader'
-
 import {Link} from 'react-router-dom'
 
 function Welcome (){
 
     const [count,setCount] = useState(1);
 
-    const [skipcount,setSkipcount]  = useState(1)
-
-
     console.log(count)
 
-    console.log(skipcount)
-
-    return  count == 1  ?(
+    return  count === 1  ?(
         <div className="cont"> 
         <StaticHeader/>
         <div className="img-div">
-        <img src="welcome.png"/> 
+        <img src="welcome.png" alt="welcome"/> 
         </div>
         <h1 className="welcome">Welcome</h1>
         <div className="bottom-box">
@@ -42,10 +33,10 @@ function Welcome (){
         <div className="bottom-line"><div></div></div>
         </div>
        
-    ): count==2 ? ( <div className="cont">  
+    ): count===2 ? ( <div className="cont">  
      <StaticHeader/>
     <div  className="img-div">
-    <img src="self-love.png"/> 
+    <img src="self-love.png" alt="self"/> 
     </div>
     <h1 className="welcome">Self-Love</h1>
     <div className="bottom-box">
@@ -68,7 +59,7 @@ function Welcome (){
         <div className="cont"> 
          <StaticHeader/> 
         <div  className="img-div">
-        <img src="meditate.png"/> 
+        <img src="meditate.png" alt="meditate"/> 
         </div>
         <h1 className="welcome">Play & Meditate</h1>
         <div className="bottom-box">

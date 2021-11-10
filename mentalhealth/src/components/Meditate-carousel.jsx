@@ -1,6 +1,5 @@
 import { useState, useRef } from "react";
 import Carousel from "react-elastic-carousel";
-import styled from "styled-components";
 import { StaticHeader } from "./Staticheader";
 import { BottomNavBar } from "../components/Bottom-nav-bar";
 import { Bottom } from "../components/Bottom";
@@ -33,7 +32,7 @@ function MeditateCrousel() {
       <StaticHeader></StaticHeader>
       <div id="meditate-heading-div">
         <button>
-          <img src="leftarrow.png" />
+          <img src="leftarrow.png" alt="leftarrow"/>
         </button>
         <div>MEDITATE</div>
       </div>

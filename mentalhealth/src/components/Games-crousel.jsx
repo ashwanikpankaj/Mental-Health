@@ -34,7 +34,7 @@ function GamesCrousel() {
         <button>
           <img src="leftarrow.png" />
         </button>
-        <div>VR-INSITU</div>
+        <div>GAMES</div>
       </div>
       <Carousel
         ref={carouselRef}

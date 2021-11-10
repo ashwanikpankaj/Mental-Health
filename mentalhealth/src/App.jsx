@@ -26,13 +26,16 @@ import { Switch, Route } from 'react-router-dom'
 import { Loadingpage } from './components/Loadingpage';
 import { Allsettogo } from './components/Allsettogo';
 import { ScoreCard } from './components/ScoreCard';
-import { Dfcategories } from './components/DfCategories';
+import { Therapies } from './components/Therapy';
 import { MeditateCrousel } from './components/Meditate-carousel';
 import { Doctors } from './components/Doctorspage';
 import { Vrinsitu } from './components/Vrinsitu';
 import { GamesCrousel } from './components/Games-crousel';
 import { Individualdoctor } from './components/IndividualDoc';
 import { Prakash } from "./components/Prakash";
+import { DiscussionForum } from './components/DiscussionForum';
+import { Postissue } from './components/Postcreation';
+import { Categories } from './components/Categories';
 
 function App() {
   return (
@@ -88,7 +91,7 @@ function App() {
         </Route>
 
         <Route path="/therapy">
-        <Dfcategories/>
+        <Therapies/>
         </Route>
 
         <Route path="/doctors/:id">
@@ -98,6 +101,19 @@ function App() {
         <Route path="/individualdoctor/:id">
           <Individualdoctor/>
         </Route>
+
+        <Route path="/discussionforum">
+          <DiscussionForum/>
+        </Route>
+
+        <Route path="/posttheissue">
+          <Postissue/>
+        </Route>
+
+        <Route path="/categories">
+          <Categories/>
+        </Route>
+
       </Switch>
 
 
@@ -122,9 +138,9 @@ function App() {
       <Personality />
 
       <DailyTask />
-      <Dfcategories/>
+    
       
-      <MeditateCrousel />
+
       <Prakash></Prakash>
       
      <MeditateCrousel/>

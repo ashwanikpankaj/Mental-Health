@@ -1,5 +1,5 @@
 import { StaticHeader } from "./Staticheader";
-import "../styles/dfcategories.css";
+import "../styles/therapy.css";
 import styled from "styled-components";
 import { Bottom } from "./Bottom";
 import axios from 'axios';
@@ -29,7 +29,7 @@ const Button = styled.button`
   }
 `;
 
-const Dfcategories = () =>{
+const Therapies = () =>{
 
   const [btns,setbtns] = useState([])
 
@@ -49,22 +49,18 @@ const Dfcategories = () =>{
       })
   }
 
-
   return (
     <div id="dfcategory-cont">
       <StaticHeader></StaticHeader>
       <div className="category-heading">
         <button className="category-heading-btn">
           {" "}
-          <img src="leftarrow.png" />
+          <img src="leftarrow.png" alt="leftarrow"/>
         </button>
-        <h1>CATEGORIES</h1>
+        <h1>THERAPY</h1>
       </div>
 
-      <Link to="/doctors">
-        <Button className="all-btn">ALL</Button>
-      </Link>
-
+      <p id="concern">What is your concern?</p>
       {btns.map((e,index) => (
         <Link to={`/doctors/${e._id}`}>
           <Button key={index} className={e.categoryname.toLowerCase()}>{e.categoryname}</Button>
@@ -76,4 +72,4 @@ const Dfcategories = () =>{
   );
 }
 
-export { Dfcategories };
+export { Therapies };

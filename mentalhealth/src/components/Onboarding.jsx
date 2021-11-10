@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import '../styles/onboarding.css'
 import { StaticHeader } from './Staticheader'
-import { Link,useHistory } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 import { useEffect } from 'react'
 
 const Div = styled.div`

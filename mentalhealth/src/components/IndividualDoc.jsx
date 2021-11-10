@@ -36,7 +36,7 @@ export const Individualdoctor = () => {
 
                         <div>
                             <h1>{doc.name}</h1>
-                            <img src={doc.photo}></img>
+                            <button>Book</button>
                         </div>
             </div>
         </>
