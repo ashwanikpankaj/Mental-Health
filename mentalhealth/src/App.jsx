@@ -36,6 +36,7 @@ import { Prakash } from "./components/Prakash";
 import { DiscussionForum } from './components/DiscussionForum';
 import { Postissue } from './components/Postcreation';
 import { Categories } from './components/Categories';
+import {Bookingcomplete} from "./components/Bookingcomplete"
 
 function App() {
   return (
@@ -145,7 +146,9 @@ function App() {
       
      <MeditateCrousel/>
       <Vrinsitu/>
-      <GamesCrousel/>
+      <GamesCrousel />
+      
+      <Bookingcomplete></Bookingcomplete>
 
     </div>
 

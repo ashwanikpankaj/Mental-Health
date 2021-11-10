@@ -33,7 +33,7 @@ function MeditateCrousel() {
       <div id="meditate-heading-div">
         <button>
           <img src="leftarrow.png" alt="leftarrow"/>
-        </button>
+        </button> 
         <div>MEDITATE</div>
       </div>
       <Carousel
