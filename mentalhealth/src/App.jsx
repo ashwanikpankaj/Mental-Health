@@ -1,6 +1,5 @@
 
 import './App.css';
-import axios from 'axios';
 import { Game } from './components/Game';
 import { Landing } from './components/Landing';
 import { Meditate } from './components/Meditate';
@@ -30,6 +29,8 @@ import { ScoreCard } from './components/ScoreCard';
 import { Dfcategories } from './components/DfCategories';
 import { MeditateCrousel } from './components/Meditate-carousel';
 import { Doctors } from './components/Doctorspage';
+import { Vrinsitu } from './components/Vrinsitu';
+import { GamesCrousel } from './components/Games-crousel';
 import { Individualdoctor } from './components/IndividualDoc';
 import { Prakash } from "./components/Prakash";
 
@@ -120,13 +121,15 @@ function App() {
 
       <Personality />
 
-      {/* <Onboarding /> */}
       <DailyTask />
       <Dfcategories/>
       
       <MeditateCrousel />
       <Prakash></Prakash>
       
+     <MeditateCrousel/>
+      <Vrinsitu/>
+      <GamesCrousel/>
 
     </div>
 
