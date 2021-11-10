@@ -1,7 +1,6 @@
 import { StaticHeader } from "./Staticheader";
 import { Bottom } from "./Bottom";
 import "../styles/postcreation.css";
-import { Link } from 'react-router-dom'
 import axios from 'axios';
 import { useEffect, useState } from 'react'
 
@@ -15,7 +14,8 @@ export const Postissue = () => {
         message: "",
         category: "",
         userid: user._id,
-        likes: 0
+        likes: 0,
+        replycount:0,
     })
 
     useEffect(() => {
@@ -55,7 +55,6 @@ export const Postissue = () => {
           console.log(res);
           console.log(res.data);
         })
-        //addData(postData)
     }
 
     return (

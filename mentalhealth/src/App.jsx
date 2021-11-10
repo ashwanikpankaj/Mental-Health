@@ -35,6 +35,8 @@ import { Individualdoctor } from './components/IndividualDoc';
 import { DiscussionForum } from './components/DiscussionForum';
 import { Postissue } from './components/Postcreation';
 import { Categories } from './components/Categories';
+import { Postshow } from './components/Postshow';
+import { Individualpost } from './components/IndividualPost';
 
 function App() {
   return (
@@ -112,6 +114,17 @@ function App() {
         <Route path="/categories">
           <Categories/>
         </Route>
+
+        <Route path="/postshow/:id">
+          <Postshow/>
+        </Route>
+
+        
+        <Route path="/individualpost/:id">
+          <Individualpost/>
+        </Route>
+
+        
 
       </Switch>
 
