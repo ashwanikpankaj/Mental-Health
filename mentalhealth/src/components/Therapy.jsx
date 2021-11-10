@@ -51,7 +51,9 @@ const Therapies = () =>{
 
   return (
     <div id="dfcategory-cont">
+
       <StaticHeader></StaticHeader>
+
       <div className="category-heading">
         <button className="category-heading-btn">
           {" "}
@@ -61,6 +63,7 @@ const Therapies = () =>{
       </div>
 
       <p id="concern">What is your concern?</p>
+
       {btns.map((e,index) => (
         <Link to={`/doctors/${e._id}`}>
           <Button key={index} className={e.categoryname.toLowerCase()}>{e.categoryname}</Button>
@@ -68,6 +71,7 @@ const Therapies = () =>{
       ))}
 
       <Bottom />
+      
     </div>
   );
 }

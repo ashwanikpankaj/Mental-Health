@@ -60,12 +60,12 @@ const Categories = () =>{
         <h1>CATEGORIES</h1>
       </div>
 
-      <Link to="/">
+      <Link to="/postshow/all">
           <Button className="all-btn">ALL</Button>
       </Link>
 
       {btns.map((e,index) => (
-        <Link to={`/doctors/${e._id}`}>
+        <Link to={`/postshow/${e._id}`}>
           <Button key={index} className={e.categoryname.toLowerCase()}>{e.categoryname}</Button>
         </Link>
       ))}

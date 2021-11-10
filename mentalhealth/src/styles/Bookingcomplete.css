@@ -1,0 +1,228 @@
+
+#BookingOutterBox{
+position: relative;
+width: 411px;
+height: 823px;
+background: #FFFFFF; 
+margin: auto;
+
+}
+
+#Booking-heading-div{
+  width: 411px;
+  height: 48px;
+  position: absolute;
+  top: 44px;
+  background-color: #d8efff;
+}
+
+#Booking-heading-div > div {
+  position: absolute;
+  left: 44px;
+  top: 10px;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #37474f;
+}
+
+#Booking-heading-div > button {
+  position: absolute;
+  left: 15px;
+  top: 16px;
+  background-color: #d8efff;
+  border: 0px;
+}
+
+#Booking-doc-image{
+position: absolute;
+left: 5.84%;
+right: 74.7%;
+top: 16.89%;
+bottom: 73.39%;
+}
+
+#Booking-doc-name{
+position: absolute;
+left: 28.95%;
+right: 46.96%;
+top: 18.1%;
+bottom: 78.98%;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+
+/* TEXT/HEADING COLOR */
+
+color: #37474F;
+}
+
+#Booking-doc-category{
+    
+position: absolute;
+left: 28.95%;
+right: 55.23%;
+top: 20.53%;
+bottom: 77.64%;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 10px;
+line-height: 15px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+
+/* TEXT/ BODY COLOR */
+
+color: #656B75;
+
+}
+
+#Booking-doc-specialist{
+    
+position: absolute;
+left: 28.95%;
+right: 6.33%;
+top: 23.45%;
+bottom: 73.63%;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 21px;
+
+/* TEXT/ BODY COLOR */
+
+color: #656B75;
+}
+
+#Booking-doc-qualification{
+position: absolute;
+left: 28.95%;
+right: 16.79%;
+top: 26.97%;
+bottom: 70.47%;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 21px;
+
+color: #656B75;
+}
+
+#Booking-doc-contact{
+position: absolute;
+width: 278px;
+height: 21px;
+left: 118px;
+top: 275px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 21px;
+text-align: left;
+color: #656B75;
+}
+
+#Booking-Session-Date{
+position: absolute;
+width: 191px;
+height: 21px;
+left: 119px;
+top: 311px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 21px;
+/* identical to box height */
+
+text-align: left;
+/* TEXT/ BODY COLOR */
+
+color: #656B75;
+}
+
+#Booking-Time{
+ position: absolute;
+width: 197px;
+height: 21px;
+left: 119px;
+top: 347px;
+text-align: left;
+font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 21px;
+/* identical to box height */
+
+
+/* TEXT/ BODY COLOR */
+
+color: #656B75;
+}
+
+#Booking-Total{
+    position: absolute;
+width: 166px;
+height: 24px;
+left: 29px;
+top: 441px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+
+
+display: flex;
+align-items: center;
+
+color: #37474F;
+}
+
+
+#Booking-Total-value{
+    
+position: absolute;
+width: 53px;
+height: 24px;
+left: 335px;
+top: 441px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+
+/* TEXT/HEADING COLOR */
+
+color: #37474F;
+}

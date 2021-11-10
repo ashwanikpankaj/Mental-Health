@@ -10,8 +10,8 @@ router.post("/", async (req, res) => {
 
 router.get("/", async (req, res) => {
 
-    let posts = await Post.find().populate("category").lean();
-    res.status(201).send({ posts });
+    let post = await Post.find().populate("category").lean();
+    res.status(201).send({ post });
 });
 
 
@@ -21,6 +21,11 @@ router.get("/:id", async (req, res) => {
     res.status(201).send({ post });
 });
 
+router.get("/category/:id", async (req, res) => {
+
+    let post = await Post.find({ category: req.params.id }).populate("category").lean();
+    res.status(201).send({ post });
+});
 
 router.patch("/:id", async (req, res) => {
 
