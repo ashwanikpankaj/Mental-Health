@@ -133,8 +133,8 @@ function App() {
 
 
       
-      <Landing1 />
-      <Meditate />
+      {/* <Landing1 /> */}
+      {/* <Meditate />
       <Meditate1 />
       <Diary />
       <Diary1 />
@@ -163,7 +163,7 @@ function App() {
       <GamesCrousel/>
       <GamesCrousel />
       <Bookingcomplete></Bookingcomplete>
-      <TherapistAppointment/>
+      <TherapistAppointment/> */}
 
     </div>
 

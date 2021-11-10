@@ -2,13 +2,14 @@
 #heading-div {
     width: 411px;
     height: 48px;
-    position: absolute;
+    position: fixed;
     top: 44px;
     background-color: #d8efff;
+    z-index: 1;
   }
   #heading-div > div {
     position: absolute;
-    left: 44px;
+    left: 58px;
     top: 10px;
     font-family: Poppins;
     font-size: 20px;
@@ -21,7 +22,7 @@
   }
   #heading-div > button {
     position: absolute;
-    left: 15px;
+    left: 28.16px;
     top: 16px;
     background-color: #d8efff;
     border: 0px;
