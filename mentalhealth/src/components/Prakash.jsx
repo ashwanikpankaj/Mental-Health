@@ -1,15 +1,14 @@
 
 import "../styles/prakash.css"
 import { StaticHeader } from "./Staticheader";
+import { Heading } from "./Heading";
 export const Prakash = () => {
   return (
     <>
           <div id="docDetailBox">
          <StaticHeader></StaticHeader>
-        <div id="docDetailHeading">
-          <img id="docDetailArrow" src="leftArrowdoc1.jpg" />
-          <h1 id="docDetailTherapist">THERAPIST</h1>
-        </div>
+        <Heading image="leftArrowdoc1.jpg" heading="THERAPIST"></Heading>
+
 
         <img src="doctorpic.jpg" id="docDetailImg" />
         <h2 id="docName">Arti Vyas</h2>

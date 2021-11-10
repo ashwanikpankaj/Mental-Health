@@ -3,18 +3,13 @@ import { Bottom } from "./Bottom";
 import { StaticHeader } from "./Staticheader";
 import { Skip } from './Skip'
 import { Link } from 'react-router-dom'
+import { Heading } from "./Heading";
 export const Bookingcomplete = () => {
   return (
     <>
         <div id="BookingOutterBox">
         <StaticHeader></StaticHeader>
-        <div id="Booking-heading-div">
-          <button>
-            <img src="leftarrow.png" />
-          </button>
-          <div>BOOKING COMPLETE</div>
-        </div>
-              
+        <Heading image="leftArrowdoc1.jpg" heading="BOOKING COMPLETE"></Heading>
          <div id="Booking-doc-image">
              <img src="bookingdocimage.jpg" alt="doctor image" />     
          </div>
