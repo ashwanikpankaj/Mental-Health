@@ -35,6 +35,7 @@ import { Individualdoctor } from './components/IndividualDoc';
 import { DiscussionForum } from './components/DiscussionForum';
 import { Postissue } from './components/Postcreation';
 import { Categories } from './components/Categories';
+import { Book } from './components/Book';
 
 function App() {
   return (
@@ -139,6 +140,7 @@ function App() {
      <MeditateCrousel/>
       <Vrinsitu/>
       <GamesCrousel/>
+      <Book/>
 
     </div>
 

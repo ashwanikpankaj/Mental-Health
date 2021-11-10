@@ -4,9 +4,7 @@ import { StaticHeader } from './Staticheader'
 import {Link} from 'react-router-dom'
 
 function Welcome (){
-
     const [count,setCount] = useState(1);
-
     console.log(count)
 
     return  count === 1  ?(

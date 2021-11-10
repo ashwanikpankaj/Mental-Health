@@ -1,0 +1,28 @@
+
+#heading-div {
+    width: 411px;
+    height: 48px;
+    position: absolute;
+    top: 44px;
+    background-color: #d8efff;
+  }
+  #heading-div > div {
+    position: absolute;
+    left: 44px;
+    top: 10px;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #37474f;
+  }
+  #heading-div > button {
+    position: absolute;
+    left: 15px;
+    top: 16px;
+    background-color: #d8efff;
+    border: 0px;
+  }
