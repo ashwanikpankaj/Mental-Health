@@ -11,6 +11,7 @@ const doctorController = require("./controllers/doctorController");
 const categoryController = require("./controllers/categoryController");
 const postController = require("./controllers/postController");
 const replyController = require("./controllers/replyController");
+const likeController = require("./controllers/likeController");
 
 app.use(cors({origin: 'http://localhost:3000', credentials: true}));
 app.use(express.json());
@@ -28,6 +29,7 @@ app.use("/categories", categoryController);
 app.use("/doctors", doctorController);
 app.use("/posts", postController);
 app.use("/replies", replyController);
+app.use("/likes", likeController);
 
 passport.serializeUser(function({user, token}, done) {
     done(null, {user, token});

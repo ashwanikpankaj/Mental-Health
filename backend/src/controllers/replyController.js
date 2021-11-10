@@ -21,6 +21,12 @@ router.get("/:id", async (req, res) => {
     res.status(201).send({ reply });
 });
 
+router.get("/post/:id", async (req, res) => {
+
+    let reply = await Reply.find({ postid: req.params.id }).populate("postid").lean();
+    res.status(201).send({ reply });
+});
+
 
 router.patch("/:id", async (req, res) => {
 

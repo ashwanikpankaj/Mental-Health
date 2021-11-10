@@ -14,7 +14,6 @@ export const Postissue = () => {
         message: "",
         category: "",
         userid: user._id,
-        likes: 0,
         replycount:0,
     })
 

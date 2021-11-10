@@ -12,7 +12,6 @@ let postSchema = new mongoose.Schema({
         ref: "user",
         required: true,
       },
-    likes:{ type: Number, trim:true, required: true },
     replycount:{ type: Number, trim:true, required: true }
 },
 { 
