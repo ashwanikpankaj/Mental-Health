@@ -7,17 +7,17 @@ import "../styles/meditate-carousel.css";
 
 const items = [
   {
-    source: "quickness.png",
+    source: "/quickness.png",
     title: "How quick are you?",
     desc: "This game will test your information processing, the initial identification and analysis of incoming sensory input.",
   },
   {
-    source: "attention.png",
+    source: "/attention.png",
     title: "How you filter information?",
     desc: "Attention span is the time to give your brain concentration on a task. This game will help you know your concentration ability.",
   },
   {
-    source: "memory.png",
+    source: "/memory.png",
     title: "Let’s check your memory power.",
     desc: "This game is to test your memory power and help increase your ability to remember things",
   },
@@ -32,7 +32,7 @@ function GamesCrousel() {
       <StaticHeader></StaticHeader>
       <div id="meditate-heading-div">
         <button>
-          <img src="leftarrow.png" />
+          <img src="/leftarrow.png" />
         </button>
         <div>GAMES</div>
       </div>
@@ -41,6 +41,7 @@ function GamesCrousel() {
         itemsToShow={1}
         showArrows={false}
         pagination={false}
+        // enableAutoPlay autoPlaySpeed={1500}
         onChange={(currentItem) => setActiveItemIndex(currentItem.index)}
       >
         {items.map((item, i) => (

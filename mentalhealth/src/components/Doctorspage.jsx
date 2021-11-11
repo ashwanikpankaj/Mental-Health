@@ -66,7 +66,7 @@ export const Doctors = () => {
                                 <Link to={`/individualdoctor/${e._id}`}>
                                     <button>Details</button>
                                 </Link>
-                                <Link to={`/individualdoctor/${e._id}`}>
+                                <Link to={`/booking/${e._id}`}>
                                     <button>Book</button>
                                 </Link>
                             </div>

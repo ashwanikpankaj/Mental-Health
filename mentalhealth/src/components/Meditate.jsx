@@ -31,7 +31,7 @@ export function Meditate() {
                 </div>
 
                 <div>
-                    <Rectangle props={hideSidebar}/>
+                    <Rectangle props={hideSidebar} image="./landing_images/purple.png" indicator="yes"/>
                 </div>
 
                 <div>

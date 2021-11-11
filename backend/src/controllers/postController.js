@@ -33,6 +33,23 @@ router.patch("/:id", async (req, res) => {
     res.status(200).send({ post });
 });
 
+router.patch("/increase/:id", async (req, res) => {
+
+    let post = await Post.findByIdAndUpdate(req.params.id, { $inc: { replycount: 1 } }, { new: true });
+    res.status(200).send({ post });
+});
+
+router.patch("/increaselikes/:id", async (req, res) => {
+
+    let post = await Post.findByIdAndUpdate(req.params.id, { $inc: { likescount: 1 } }, { new: true });
+    res.status(200).send({ post });
+});
+
+router.patch("/decreaselikes/:id", async (req, res) => {
+
+    let post = await Post.findByIdAndUpdate(req.params.id, { $inc: { likescount: -1 } }, { new: true });
+    res.status(200).send({ post });
+});
 
 router.delete("/:id", async (req, res) => {
 

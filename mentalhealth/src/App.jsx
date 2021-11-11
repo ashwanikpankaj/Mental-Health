@@ -38,8 +38,11 @@ import { Postissue } from './components/Postcreation';
 import { Categories } from './components/Categories';
 import { Postshow } from './components/Postshow';
 import { Individualpost } from './components/IndividualPost';
-import {Bookingcomplete} from "./components/Bookingcomplete"
+import { Bookingcomplete } from "./components/Bookingcomplete"
 import { TherapistAppointment } from './components/Therapistappointment';
+import { Welcomegif } from "./components/Welcomegif";
+import { Community } from './components/Community';
+import { Book } from './components/BookingPage';
 import { Cardpayment } from './components/Cardpayment';
 import { Otpverification } from './components/Otpverification';
 
@@ -59,7 +62,7 @@ function App() {
         <Route path="/login">
           <Login />
         </Route>
-      
+
         <Route path="/blueaura">
           <Goodbad />
         </Route>
@@ -73,23 +76,23 @@ function App() {
         </Route>
 
         <Route path="/colors">
-        <Colors />
+          <Colors />
         </Route>
 
         <Route path="/loadingpage">
-        <Loadingpage/>
+          <Loadingpage />
         </Route>
 
         <Route path="/createavatar">
-        <Avatar />
+          <Avatar />
         </Route>
 
         <Route path="/allset">
-        <Allsettogo/>
+          <Allsettogo />
         </Route>
 
         <Route path="/landingpage">
-        <Landing />
+          <Landing />
         </Route>
 
         <Route path="/welcome">
@@ -97,52 +100,81 @@ function App() {
         </Route>
 
         <Route path="/therapy">
-        <Therapies/>
+          <Therapies />
         </Route>
 
         <Route path="/doctors/:id">
-          <Doctors/>
+          <Doctors />
         </Route>
 
         <Route path="/individualdoctor/:id">
-          <Individualdoctor/>
+          <Individualdoctor />
         </Route>
 
         <Route path="/discussionforum">
-          <DiscussionForum/>
+          <DiscussionForum />
         </Route>
 
         <Route path="/posttheissue">
-          <Postissue/>
+          <Postissue />
         </Route>
 
         <Route path="/categories">
-          <Categories/>
+          <Categories />
         </Route>
 
         <Route path="/postshow/:id">
-          <Postshow/>
+          <Postshow />
         </Route>
 
-        
         <Route path="/individualpost/:id">
-          <Individualpost/>
+          <Individualpost />
         </Route>
-       <Route path="/games">
-          <GamesCrousel/>   
-       </Route>
+
+        <Route path="/booking/:id">
+          <Book />
+        </Route>
+
+        <Route path="/therapistappointment">
+          <TherapistAppointment />
+        </Route>
+
+        <Route path="/cardpayment">
+          <Cardpayment />
+        </Route>
+
+        <Route path="/otppage">
+          <Otpverification />
+        </Route>
+
+        <Route path="/processing">
+          <Welcomegif />
+        </Route>
+
+        <Route path="/bookingcomplete">
+          <Bookingcomplete />
+        </Route>
+
+        <Route path="/games">
+          <GamesCrousel />
+        </Route>
         <Route path="/meditate">
-        <MeditateCrousel/>
+          <MeditateCrousel />
         </Route>
         <Route path="/vr-insitu">
-          <Vrinsitu/>
+          <Vrinsitu />
         </Route>
         <Route path="/naturevideo">
-        <Waterfall />
+          <Waterfall />
         </Route>
+
       </Switch>
 
-    
+
+
+      {/*       
+      <Meditate />
+      <Game />
       <Landing1 />
       <Meditate />
       <Meditate1 />
@@ -150,28 +182,26 @@ function App() {
       <Diary1 />
       <Game />
       <Game1 />
-      
-
-
-      
+      <GamesCrousel />
+      <MeditateCrousel/>
       <Games></Games>
       <ScoreCard></ScoreCard>
       <Bluetooh></Bluetooh>
-
-
-
       <Personality />
-
       <DailyTask />
-    
-      
-
       <Prakash></Prakash>
       
       <Bookingcomplete></Bookingcomplete>
-      <TherapistAppointment/>
-      <Cardpayment/>
-      <Otpverification/>
+      <TherapistAppointment />
+      <Cardpayment />
+      <Otpverification />
+
+     <MeditateCrousel/>
+      <Vrinsitu/>
+      <GamesCrousel />
+
+      <Community></Community> */}
+
 
     </div>
 

@@ -1,3 +1,5 @@
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import "../styles/otp-verification.css";
 import { Bottom } from "./Bottom";
@@ -28,12 +30,15 @@ function Otpverification() {
       <Heading image={"leftarrow.png"} heading={"CARD PAYMENT"} />
       <div className="verification">Verfication</div>
       <div id="enter-otp">Enter OTP</div>
-      {arr.map((item) => (
-        <Input id={`otpinput${item}`} type="text" />
+      {arr.map((item)=>(
+          <Input id={`otpinput${item}`} type="number" value={Math.floor(Math.random() * 10)}/>
       ))}
       <img src="otp.png" id="otp-image" />
       <Bottom />
+
+      <Link to="/processing">
       <button id="otp-btn">Verify OTP</button>
+      </Link>
     </div>
   );
 }
