@@ -8,8 +8,7 @@
   position: relative;
   margin: auto;
   margin-top: 10px;
-  background-color: white !important;
-  
+  background-color: white !important; 
 }
 
 .waterfall-heading-div {
@@ -64,10 +63,6 @@
   width: 411px;
   height: 218px;
 }
-/* .waterfall-video-div > img {
-  width: 100%;
-  height: 100%;
-} */
 
 #play,
 #download {
@@ -84,7 +79,8 @@
   line-height: 23px;
   letter-spacing: 0em;
   text-align: center;
- margin-top: 40px;
+  margin-top: 40px;
+  cursor: pointer;
  
 }
 

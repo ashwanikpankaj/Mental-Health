@@ -29,7 +29,7 @@ function Otpverification() {
       <div className="verification">Verfication</div>
       <div id="enter-otp">Enter OTP</div>
       {arr.map((item) => (
-        <Input id={`otpinput${item}`} type="text" />
+        <Input id={`otpinput${item}`} type="text" key={item} />
       ))}
       <img src="otp.png" id="otp-image" />
       <Bottom />
