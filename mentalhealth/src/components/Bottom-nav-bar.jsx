@@ -1,4 +1,5 @@
 import '../styles/landing.css'
+import { Link } from 'react-router-dom'
 
 export function BottomNavBar({props}) {
 
@@ -10,7 +11,7 @@ export function BottomNavBar({props}) {
         <>
             <div onClick={hamburgerclick} className="lpage_bottom_nav_bar">
                 <img id="home" src="/./landing_images/home.png" alt="" />
-                <div id="home1">Home</div>
+                <Link to="/home-page" ><div id="home1">Home</div></Link>
 
                 <img id="game" src="/./landing_images/game.png" alt="" />
                 <div id="game1">Game</div>
@@ -19,7 +20,7 @@ export function BottomNavBar({props}) {
                 <div id="meditate1">Meditate</div>
 
                 <img id="stats" src="/./landing_images/stats.png" alt="" />
-                <div id="stats1">My Stats</div>
+                <Link to="/daily-task-page" ><div id="stats1">My Stats</div></Link>
             </div>
         </>
     )

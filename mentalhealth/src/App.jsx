@@ -167,10 +167,16 @@ function App() {
         <Route path="/naturevideo">
           <Waterfall />
         </Route>
+        <Route path="/home-page">
+          <Landing />
+        </Route>
+        <Route path="/daily-task-page">
+          <DailyTask />
+        </Route>
 
       </Switch>
 
-
+<Landing />
 
       {/*       
       <Meditate />
