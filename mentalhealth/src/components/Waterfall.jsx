@@ -2,22 +2,11 @@ import { StaticHeader } from "./Staticheader";
 import "../styles/waterfall.css";
 import YouTube from "react-youtube";
 import { Bottom } from "./Bottom";
-import { Feelingnow } from "./Feelingnow";
-import { useState } from "react";
+import { Heading } from "./Heading";
+import { Link } from "react-router-dom";
 
 export const Waterfall = () => {
-  const [count, setCount] = useState(0);
-  const [videocount, setvideoCount] = useState(0);
-
-  function displayPopUp() {
-    return setTimeout(() => {
-      setCount(1);
-    }, 10000);
-  }
-
-  const x = videocount === 1 ? displayPopUp() : null;
-  console.log("x",x)
-
+  
   const opts = {
     height: "218",
     width: "411",
@@ -28,28 +17,24 @@ export const Waterfall = () => {
 
   return (
     <div id="waterfall-cont"  >
-      <Feelingnow count={count} />
-      <div style={{ marginBottom: "0px" }}>5</div>
-      <StaticHeader></StaticHeader>
+       <StaticHeader/>
+      <Heading heading={"WATERFALL"} image={"leftarrow.png"}/>
 
-      <div className="waterfall-heading-div">
-        <img src="leftarrow.png" alt="leftarrow" />
-        <h1>Waterfall</h1>
-      </div>
       <div className="waterfall-video-div">
-        {/*  <img src="waterfallvideo.png"/> */}
         <YouTube videoId="MFLVmAE4cqg" opts={opts} />
       </div>
+      
       <h1 id="breathe-text">Take a deep breathe and walk through nature.</h1>
       <div id="relax-text">
-        {" "}
         Relaxing virtual environments (VEs) can help you learn and practice self
         love management skills.
       </div>
-      <button id="play" onClick={() => setvideoCount(1)}>
-        Play
-      </button>
-      <button id="download">Download</button>
+
+      <button id="play">Play</button>
+      <Link to="/meditate-home">
+      <button id="download">HOME</button>
+      </Link>
+
       <div id="vr-headset">
         <h1>How to connect VR headset?</h1>
         <img src="waterfallrightarrow.png" alt="waterfall" />
@@ -59,6 +44,7 @@ export const Waterfall = () => {
       <a id="amazon" href="https://www.amazon.in/">
         amazon.in
       </a>
+
       <Bottom />
     </div>
   );

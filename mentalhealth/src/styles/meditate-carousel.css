@@ -5,7 +5,7 @@
   margin: auto;
   position: relative;
 }
-#meditate-heading-div {
+/* #meditate-heading-div {
   width: 411px;
   height: 48px;
   position: absolute;
@@ -31,7 +31,7 @@
   top: 16px;
   background-color: #d8efff;
   border: 0px;
-}
+} */
 .slider-div{
  margin-top: 140px;
 }

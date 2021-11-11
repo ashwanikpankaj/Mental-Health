@@ -7,11 +7,12 @@
   height: 823px;
   position: relative;
   margin: auto;
-  margin-top: 10px;
   background-color: white !important; 
 }
 
 .waterfall-heading-div {
+  position:sticky;
+  top:44px;
   width: 411px;
   height: 48px;
   background-color: #d8efff;
@@ -36,16 +37,20 @@
 }
 
 #breathe-text {
+  position: absolute;
+  top: 346px;
+  left:36px;
   width: 340px;
   height: 60px;
   font-size: 20px;
   color: #37474f;
-  margin: 25px;
-  padding: 10px;
   font-weight: 700;
 }
 
 #relax-text {
+  position: absolute;
+  top:436px;
+  left:48px;
   width: 315px;
   height: 72px;
   color: #787878;
@@ -56,16 +61,20 @@
   line-height: 24px;
   letter-spacing: 0em;
   text-align: center;
-  margin-left: 48px;
+
 }
 
 .waterfall-video-div {
+  position: absolute;
+  top:92px;
   width: 411px;
   height: 218px;
 }
 
 #play,
 #download {
+  position: absolute;
+  top:548px;
   border-radius: 30px;
   height: 44px;
   width: 146px;
@@ -79,24 +88,25 @@
   line-height: 23px;
   letter-spacing: 0em;
   text-align: center;
-  margin-top: 40px;
   cursor: pointer;
  
 }
 
 #play {
-margin-left:-10px;
-margin-right: 60px;
+left:26px;
+}
+#download{
+  left:239px;
 }
 
 #vr-headset {
+  position: absolute;
+  top:640px;
   width: 300px;
   height: 24px;
   color: #656b75;
   position: relative;
-  margin-top: 31px;
-  margin-left: 0px;
-  margin-bottom: 30px;
+  
 }
 #vr-headset > h1 {
   font-size: 16px;
@@ -109,12 +119,15 @@ margin-right: 60px;
 }
 #vr-headset > img {
   position: absolute;
-  right: -20px;
-  top: 15px;
+  right: -30px;
+  top: 7px;
   height: 12px;
   cursor: pointer;
 }
 #buy {
+  position:absolute;
+  top:700px;
+  left:35px;
   width: 340px;
   height: 24px;
   font-family: "Poppins";
@@ -124,20 +137,22 @@ margin-right: 60px;
   line-height: 24px;
   letter-spacing: 0em;
   text-align: center;
-  margin-top: 25px;
-  margin-left: 15px;
-  margin-bottom: 20px;
 }
 
 #buy-btn{
+    position: absolute;
+    top:750px;
+    left:106px;
     border: 0px;
     font-size: 16px;
     color:#656B75;
-    margin-left:-50px;
     background-color: #ffffff;
     
 }
 #amazon{
+position: absolute;
+top:750px;
+left:221px;
 font-family: "Poppins";
 font-size: 20px;
 font-style: normal;
