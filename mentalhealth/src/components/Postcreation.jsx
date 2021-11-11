@@ -15,6 +15,7 @@ export const Postissue = () => {
         category: "",
         userid: user._id,
         replycount:0,
+        likescount:0
     })
 
     useEffect(() => {

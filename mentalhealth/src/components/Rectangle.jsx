@@ -1,6 +1,6 @@
 import '../styles/landing.css'
 
-export function Rectangle({props}) {
+export function Rectangle({props,image,indicator}) {
 
     const hamburgerclick = () =>{
         props()
@@ -16,12 +16,12 @@ export function Rectangle({props}) {
 
                 <div className="lpage_rectangle2">
                     <div id="meditation">Tap to start 15 min meditation</div>
-                    <img id="heart2" src="./landing_images/heart.png" alt="" />
+                    <img id="heart2" src= {image?image:"./landing_images/heart.png" } alt="" />
                 </div>
 
                 <div className="lpage_rectangle3">
                     <div id="playing">Let's Increase your focus-Tap to play</div>
-                    <img id="heart2" src="./landing_images/heart.png" alt="" />
+                    <img id="heart2" src= {indicator?"./landing_images/heart.png":image?image:"./landing_images/heart.png"} alt="" />
                 </div>
 
                 <div className="lpage_rectangle4">

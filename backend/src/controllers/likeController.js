@@ -1,10 +1,21 @@
 const express = require("express");
 const router = express.Router();
 const Like = require("../models/likeModel");
+const axios = require("axios").default;
 
 router.post("/", async (req, res) => {
 
     let like = await Like.create(req.body);
+
+    axios
+    .patch(`http://localhost:7765/posts/increaselikes/${req.body.postid}`, { likescount:1 })
+    .then(res => {
+        console.log("data", res.data)
+    })
+    .catch(err => {
+        console.log("Error", err);
+    })
+
     res.status(201).send({ like });
 });
 
@@ -38,6 +49,16 @@ router.get("/percomment/:postid/:userid", async (req, res) => {
 router.delete("/deletelike/:postid/:userid", async (req, res) => {
 
     let deletedlike = await Like.deleteOne({ $and: [ { postid: req.params.postid }, { userid: req.params.userid } ] });
+
+    axios
+    .patch(`http://localhost:7765/posts/decreaselikes/${req.params.postid}`, { likescount:-1 })
+    .then(res => {
+        console.log("data", res.data)
+    })
+    .catch(err => {
+        console.log("Error", err);
+    })
+
     res.status(200).send({ deletedlike });
 });
 

@@ -20,12 +20,6 @@ router.get("/:id", async (req, res) => {
     res.status(201).send({ slot });
 });
 
-router.get("/category/:id", async (req, res) => {
-
-    let slot = await Slot.find({ category: req.params.id }).lean();
-    res.status(201).send({ slot });
-});
-
 router.patch("/:id", async (req, res) => {
 
     let slot = await Slot.findByIdAndUpdate(req.params.id, req.body, { new: true });

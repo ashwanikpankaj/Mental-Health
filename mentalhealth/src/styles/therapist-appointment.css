@@ -55,7 +55,7 @@
     font-size: 16px;
    
 }
-#atm-card-mode + div +img {
+#rightimage {
     position: absolute;
     top:231px;
     left:360px;

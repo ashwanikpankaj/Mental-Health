@@ -31,7 +31,7 @@ export function Game() {
                 </div>
 
                 <div>
-                    <Rectangle props={hideSidebar}/>
+                    <Rectangle props={hideSidebar} image="./landing_images/purple.png"/>
                 </div>
 
                 <div>
