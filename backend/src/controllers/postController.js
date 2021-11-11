@@ -33,6 +33,7 @@ router.patch("/:id", async (req, res) => {
     res.status(200).send({ post });
 });
 
+
 router.delete("/:id", async (req, res) => {
 
     let deletedpost = await Post.deleteOne({ _id: req.params.id });

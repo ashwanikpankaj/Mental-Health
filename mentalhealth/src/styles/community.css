@@ -1,0 +1,58 @@
+#community-Box{
+position: relative;
+width: 411px;
+height: 823px;
+background: #FFFFFF;
+margin:auto;
+}
+
+#community-create-Box{
+position: relative;
+width: 374px;
+height: 249px;
+left: 17px;
+top: 113px;
+
+/* NEUTRAL / grey */
+
+border: 0.5px solid #D8DADC;
+box-sizing: border-box;
+border-radius: 8px;
+}
+
+#community-Post{
+position: absolute;
+width: 138px;
+height: 30px;
+left: 25px;
+top: 123px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+/* TEXT/HEADING COLOR */
+
+color: #37474F;
+}
+
+#community-right-arrow{
+    position: absolute;
+left: 35.79%;
+right: 33.33%;
+top: 25%;
+bottom: 25%;
+
+/* TEXT/HEADING COLOR */
+
+background: #37474F;
+
+
+}

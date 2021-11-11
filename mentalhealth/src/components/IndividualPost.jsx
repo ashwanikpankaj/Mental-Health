@@ -3,7 +3,6 @@ import '../styles/individualpost.css'
 import { StaticHeader } from './Staticheader'
 import axios from 'axios';
 import { useEffect, useState } from 'react'
-// import { Link } from 'react-router-dom'
 
 export const Individualpost = () => {
 
@@ -149,7 +148,7 @@ export const Individualpost = () => {
                     <h1>{post.message}</h1>
                     <h1>{allLike}:Likes</h1>
                     <h1>{comments}:comments</h1>
-                    <button onClick={LikeDislike}>{like?"Dislike":"Like"}</button>
+                    <i onClick={LikeDislike} className="fa fa-heart" style={{fontSize:"24px",color: like?"#FC8282":"grey"}}></i>
                     <form onSubmit={sendData}>
                         <input type="text" name="message" onChange={handleChange} placeholder="add your reply" />
                         <input type="submit" value="Reply" />

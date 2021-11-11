@@ -40,8 +40,8 @@ import { Postshow } from './components/Postshow';
 import { Individualpost } from './components/IndividualPost';
 import {Bookingcomplete} from "./components/Bookingcomplete"
 import { TherapistAppointment } from './components/Therapistappointment';
-import { Cardpayment } from './components/Cardpayment';
-import { Otpverification } from './components/Otpverification';
+import { Welcomegif } from "./components/Welcomegif";
+import { Community } from './components/Community';
 
 function App() {
   return (
@@ -170,9 +170,9 @@ function App() {
       <Prakash></Prakash>
       
       <Bookingcomplete></Bookingcomplete>
-      <TherapistAppointment/>
-      <Cardpayment/>
-      <Otpverification/>
+      <TherapistAppointment />
+      <Welcomegif></Welcomegif>
+      <Community></Community>
 
     </div>
 

@@ -12,6 +12,7 @@ const categoryController = require("./controllers/categoryController");
 const postController = require("./controllers/postController");
 const replyController = require("./controllers/replyController");
 const likeController = require("./controllers/likeController");
+const slotController = require("./controllers/slotController");
 
 app.use(cors({origin: 'http://localhost:3000', credentials: true}));
 app.use(express.json());
@@ -30,6 +31,7 @@ app.use("/doctors", doctorController);
 app.use("/posts", postController);
 app.use("/replies", replyController);
 app.use("/likes", likeController);
+app.use("/slots", slotController);
 
 passport.serializeUser(function({user, token}, done) {
     done(null, {user, token});
