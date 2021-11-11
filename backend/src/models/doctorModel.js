@@ -11,7 +11,12 @@ let doctorSchema = new mongoose.Schema({
         required: true,
       }], 
     intro:{ type: String, trim:true, required: true },
-    ratings:{type: Number, trim:true, required: true}
+    ratings:{type: Number, trim:true, required: true},
+    slots:[{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "slot",
+        required: true,
+      }]
 },
 { 
     versionKey: false,
