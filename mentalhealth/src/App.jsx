@@ -40,6 +40,7 @@ import { Postshow } from './components/Postshow';
 import { Individualpost } from './components/IndividualPost';
 import {Bookingcomplete} from "./components/Bookingcomplete"
 import { TherapistAppointment } from './components/Therapistappointment';
+import { Welcomegif } from "./components/Welcomegif";
 
 function App() {
   return (
@@ -163,7 +164,8 @@ function App() {
       <GamesCrousel/>
       <GamesCrousel />
       <Bookingcomplete></Bookingcomplete>
-      <TherapistAppointment/>
+      <TherapistAppointment />
+      <Welcomegif></Welcomegif>
 
     </div>
 
