@@ -35,7 +35,9 @@
 }
 #otpinput1 {
   left: 70px;
+
 }
+
 #otpinput2 {
   left: 142px;
 }
@@ -45,11 +47,21 @@
 #otpinput4 {
   left: 286px;
 }
+
+#otpinput1:focus,#otpinput2:focus,#otpinput3:focus,#otpinput4:focus{
+
+  background-color:#D8EFFF; 
+  border:1px solid #C4C4C4;
+  outline: none;
+}
+
+
 #otp-image {
   position: absolute;
   top: 373px;
   left: 100px;
 }
+
 #otp-btn {
   position: absolute;
   height: 44px;
@@ -62,7 +74,10 @@
   border: 0px;
   font-size: 16px;
   cursor: pointer;
+  transition: all 0.2s ease-in;
 }
-#otp-btn:active {
+#otp-btn:focus {
     background: #534883;
   }
+ 
+

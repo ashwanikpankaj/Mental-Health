@@ -38,7 +38,7 @@ import { Postissue } from './components/Postcreation';
 import { Categories } from './components/Categories';
 import { Postshow } from './components/Postshow';
 import { Individualpost } from './components/IndividualPost';
-import {Bookingcomplete} from "./components/Bookingcomplete"
+import { Bookingcomplete } from "./components/Bookingcomplete"
 import { TherapistAppointment } from './components/Therapistappointment';
 import { Welcomegif } from "./components/Welcomegif";
 import { Community } from './components/Community';
@@ -62,7 +62,7 @@ function App() {
         <Route path="/login">
           <Login />
         </Route>
-      
+
         <Route path="/blueaura">
           <Goodbad />
         </Route>
@@ -76,23 +76,23 @@ function App() {
         </Route>
 
         <Route path="/colors">
-        <Colors />
+          <Colors />
         </Route>
 
         <Route path="/loadingpage">
-        <Loadingpage/>
+          <Loadingpage />
         </Route>
 
         <Route path="/createavatar">
-        <Avatar />
+          <Avatar />
         </Route>
 
         <Route path="/allset">
-        <Allsettogo/>
+          <Allsettogo />
         </Route>
 
         <Route path="/landingpage">
-        <Landing />
+          <Landing />
         </Route>
 
         <Route path="/welcome">
@@ -100,39 +100,39 @@ function App() {
         </Route>
 
         <Route path="/therapy">
-        <Therapies/>
+          <Therapies />
         </Route>
 
         <Route path="/doctors/:id">
-          <Doctors/>
+          <Doctors />
         </Route>
 
         <Route path="/individualdoctor/:id">
-          <Individualdoctor/>
+          <Individualdoctor />
         </Route>
 
         <Route path="/discussionforum">
-          <DiscussionForum/>
+          <DiscussionForum />
         </Route>
 
         <Route path="/posttheissue">
-          <Postissue/>
+          <Postissue />
         </Route>
 
         <Route path="/categories">
-          <Categories/>
+          <Categories />
         </Route>
 
         <Route path="/postshow/:id">
-          <Postshow/>
+          <Postshow />
         </Route>
 
         <Route path="/individualpost/:id">
-          <Individualpost/>
+          <Individualpost />
         </Route>
 
         <Route path="/booking/:id">
-          <Book/>
+          <Book />
         </Route>
 
         <Route path="/therapistappointment">
@@ -140,26 +140,39 @@ function App() {
         </Route>
 
         <Route path="/cardpayment">
-          <Cardpayment/>
+          <Cardpayment />
         </Route>
 
         <Route path="/otppage">
-          <Otpverification/>
+          <Otpverification />
         </Route>
 
         <Route path="/processing">
-          <Welcomegif/>
+          <Welcomegif />
         </Route>
 
         <Route path="/bookingcomplete">
-          <Bookingcomplete/>
+          <Bookingcomplete />
+        </Route>
+
+        <Route path="/games">
+          <GamesCrousel />
+        </Route>
+        <Route path="/meditate">
+          <MeditateCrousel />
+        </Route>
+        <Route path="/vr-insitu">
+          <Vrinsitu />
+        </Route>
+        <Route path="/naturevideo">
+          <Waterfall />
         </Route>
 
       </Switch>
 
-      
 
-{/*       
+
+      {/*       
       <Meditate />
       <Game />
       <Landing1 />
@@ -170,29 +183,25 @@ function App() {
       <Game />
       <Game1 />
       <GamesCrousel />
-
-
       <MeditateCrousel/>
       <Games></Games>
       <ScoreCard></ScoreCard>
       <Bluetooh></Bluetooh>
-
-      <Waterfall />
-
       <Personality />
-
       <DailyTask />
-    
-      
-
       <Prakash></Prakash>
       
+      <Bookingcomplete></Bookingcomplete>
+      <TherapistAppointment />
+      <Cardpayment />
+      <Otpverification />
+
      <MeditateCrousel/>
       <Vrinsitu/>
       <GamesCrousel />
-      <Bookingcomplete></Bookingcomplete>
-    
+
       <Community></Community> */}
+
 
     </div>
 

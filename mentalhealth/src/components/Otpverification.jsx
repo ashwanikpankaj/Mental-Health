@@ -7,8 +7,8 @@ import { Heading } from "./Heading";
 import { StaticHeader } from "./Staticheader";
 
 function Otpverification() {
-  const arr = [1,2,3,4];
- 
+  const arr = [1, 2, 3, 4];
+
   const Input = styled.input`
     position: absolute;
     width: 56px;
@@ -33,7 +33,7 @@ function Otpverification() {
       {arr.map((item)=>(
           <Input id={`otpinput${item}`} type="number" value={Math.floor(Math.random() * 10)}/>
       ))}
-      <img src="otp.png" id="otp-image"/>
+      <img src="otp.png" id="otp-image" />
       <Bottom />
 
       <Link to="/processing">

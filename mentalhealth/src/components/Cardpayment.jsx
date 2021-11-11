@@ -40,19 +40,19 @@ function Cardpayment() {
 
       <form id="payment-form" onSubmit={handleSubmit}>
         <label className="card-number">Card Number</label>
-        <input type="number" placeholder="16 digit-Card number" className="card-number-input payment-input-focus"
+        <input type="text" placeholder="16 digit-Card number" className="card-number-input"
         name="cardnumber" value={formdata.cardnumber} onChange={handleChange}/>
 
         <label className="card-holder-name">Card Holders Name</label>
-        <input type="text" placeholder="Card Holders Name" className="card-holder-name-input  payment-input-focus" 
+        <input type="text" placeholder="Card Holders Name" className="card-holder-name-input" 
         name="holdername" value={formdata.holdername} onChange={handleChange}/>
 
         <label id="expiry">Expiry</label>
-        <input type="text" placeholder="Expiry-date"  id="expiry-date-input" className=" payment-input-focus"
+        <input type="text" placeholder="Expiry-date"  id="expiry-date-input" 
          name="expiry" value={formdata.expiry} onChange={handleChange}/>
 
         <label id="cvv">CVV</label>
-        <input type="password" placeholder="CVV" id="cvv-input" className=" payment-input-focus" 
+        <input type="password" placeholder="CVV" id="cvv-input" 
         name="cvv" value={formdata.cvv} onChange={handleChange}/>
 
         <input type="submit" value={sessiontype==="VIDEO"?"RS 599":"RS 399"}/>

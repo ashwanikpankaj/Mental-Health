@@ -4,6 +4,7 @@ import { StaticHeader } from "./Staticheader";
 import { BottomNavBar } from "../components/Bottom-nav-bar";
 import { Bottom } from "../components/Bottom";
 import "../styles/meditate-carousel.css";
+import { Link } from "react-router-dom";
 
 const items = [
   {
@@ -36,6 +37,7 @@ function Vrinsitu() {
         </button>
         <div>VR-INSITU</div>
       </div>
+      <Link to="/naturevideo">
       <Carousel
         ref={carouselRef}
         itemsToShow={1}
@@ -51,6 +53,7 @@ function Vrinsitu() {
           </div>
         ))}
       </Carousel>
+      </Link>
       <BottomNavBar />
       <Bottom />
     </div>
