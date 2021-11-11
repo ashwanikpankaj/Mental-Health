@@ -6,6 +6,20 @@ const axios = require("axios").default;
 router.post("/", async (req, res) => {
 
     let reply = await Reply.create(req.body);
+
+    //axios patch - it required field that needs to be chanagd
+
+    console.log("hereeee",req.body.postid)
+
+    axios
+    .patch(`http://localhost:7765/posts/increase/${req.body.postid}`, { replycount:1 })
+    .then(res => {
+        console.log("data", res.data)
+    })
+    .catch(err => {
+        console.log("Error", err);
+    })
+
     res.status(201).send({ reply });
 });
 

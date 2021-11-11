@@ -42,6 +42,9 @@ import {Bookingcomplete} from "./components/Bookingcomplete"
 import { TherapistAppointment } from './components/Therapistappointment';
 import { Welcomegif } from "./components/Welcomegif";
 import { Community } from './components/Community';
+import { Book } from './components/BookingPage';
+import { Cardpayment } from './components/Cardpayment';
+import { Otpverification } from './components/Otpverification';
 
 function App() {
   return (
@@ -124,17 +127,41 @@ function App() {
           <Postshow/>
         </Route>
 
-        
         <Route path="/individualpost/:id">
           <Individualpost/>
         </Route>
 
-        
+        <Route path="/booking/:id">
+          <Book/>
+        </Route>
+
+        <Route path="/therapistappointment">
+          <TherapistAppointment />
+        </Route>
+
+        <Route path="/cardpayment">
+          <Cardpayment/>
+        </Route>
+
+        <Route path="/otppage">
+          <Otpverification/>
+        </Route>
+
+        <Route path="/processing">
+          <Welcomegif/>
+        </Route>
+
+        <Route path="/bookingcomplete">
+          <Bookingcomplete/>
+        </Route>
 
       </Switch>
 
-
       
+
+{/*       
+      <Meditate />
+      <Game />
       <Landing1 />
       <Meditate />
       <Meditate1 />
@@ -142,10 +169,10 @@ function App() {
       <Diary1 />
       <Game />
       <Game1 />
-      
+      <GamesCrousel />
 
 
-      
+      <MeditateCrousel/>
       <Games></Games>
       <ScoreCard></ScoreCard>
       <Bluetooh></Bluetooh>
@@ -162,12 +189,10 @@ function App() {
       
      <MeditateCrousel/>
       <Vrinsitu/>
-      <GamesCrousel/>
       <GamesCrousel />
       <Bookingcomplete></Bookingcomplete>
-      <TherapistAppointment />
-      <Welcomegif></Welcomegif>
-      <Community></Community>
+    
+      <Community></Community> */}
 
     </div>
 

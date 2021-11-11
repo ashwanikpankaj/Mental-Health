@@ -4,7 +4,22 @@ import { StaticHeader } from "./Staticheader";
 import { Skip } from './Skip'
 import { Link } from 'react-router-dom'
 import { Heading } from "./Heading";
+import axios from 'axios';
+import { useEffect } from "react";
+
+
 export const Bookingcomplete = () => {
+
+  const bookingData = JSON.parse(localStorage.getItem("bookData"))
+
+  useEffect(()=>{
+      axios.post("http://localhost:7765/appointments", bookingData)
+      .then(res => {
+        console.log(res);
+        console.log(res.data);
+      })
+  },[])
+
   return (
     <>
         <div id="BookingOutterBox">

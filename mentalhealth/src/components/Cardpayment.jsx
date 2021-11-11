@@ -3,9 +3,13 @@ import { StaticHeader } from "./Staticheader";
 import "../styles/cardpayment.css";
 import { Bottom } from "./Bottom";
 import { useState } from "react";
+import { useHistory } from "react-router";
 
 
 function Cardpayment() {
+
+  const history = useHistory();
+  const { sessiontype } = JSON.parse(localStorage.getItem("bookData"))
    
   const [formdata,setformData] = useState({
                 cardnumber:"",
@@ -21,14 +25,17 @@ function Cardpayment() {
 
   const handleSubmit = (e)=>{
       e.preventDefault();
+      console.log(formdata)
+      //do validation here
+      history.push("/otppage");
   }
-  console.log(formdata)
+  
   return (
     <div id="card-payment-cont">
       <StaticHeader />
       <Heading image={"leftarrow.png"} heading={"CARD PAYMENT"} />
       <div id="total-payment-mode">TOTAL PAYMENT MODE</div>
-      <div>RS 399</div>
+      <div>{sessiontype==="VIDEO"?"RS 599":"RS 399"}</div>
       <div id="add-new-card">ADD NEW CARD</div>
 
       <form id="payment-form" onSubmit={handleSubmit}>
@@ -48,7 +55,7 @@ function Cardpayment() {
         <input type="password" placeholder="CVV" id="cvv-input" className=" payment-input-focus" 
         name="cvv" value={formdata.cvv} onChange={handleChange}/>
 
-        <input type="submit" value="PAY 399"/>
+        <input type="submit" value={sessiontype==="VIDEO"?"RS 599":"RS 399"}/>
       </form>
 
       <Bottom />

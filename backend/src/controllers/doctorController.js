@@ -35,6 +35,7 @@ router.patch("/:id", async (req, res) => {
     res.status(200).send({ doctor });
 });
 
+
 router.delete("/:id", async (req, res) => {
 
     let deletedDoctor = await Doctor.deleteOne({ _id: req.params.id });
