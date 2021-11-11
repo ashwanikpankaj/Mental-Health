@@ -128,12 +128,21 @@ function App() {
         <Route path="/individualpost/:id">
           <Individualpost/>
         </Route>
-
-        
-
+       <Route path="/games">
+          <GamesCrousel/>   
+       </Route>
+        <Route path="/meditate">
+        <MeditateCrousel/>
+        </Route>
+        <Route path="/vr-insitu">
+          <Vrinsitu/>
+        </Route>
+        <Route path="/naturevideo">
+        <Waterfall />
+        </Route>
       </Switch>
 
-
+      <Waterfall />
       
       <Landing1 />
       <Meditate />
@@ -150,7 +159,7 @@ function App() {
       <ScoreCard></ScoreCard>
       <Bluetooh></Bluetooh>
 
-      <Waterfall />
+
 
       <Personality />
 
@@ -160,10 +169,6 @@ function App() {
 
       <Prakash></Prakash>
       
-     <MeditateCrousel/>
-      <Vrinsitu/>
-      <GamesCrousel/>
-      <GamesCrousel />
       <Bookingcomplete></Bookingcomplete>
       <TherapistAppointment/>
       <Cardpayment/>

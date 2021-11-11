@@ -1,4 +1,3 @@
-import { useState } from "react";
 import styled from "styled-components";
 import "../styles/otp-verification.css";
 import { Bottom } from "./Bottom";
@@ -6,8 +5,8 @@ import { Heading } from "./Heading";
 import { StaticHeader } from "./Staticheader";
 
 function Otpverification() {
-  const arr = [1,2,3,4];
- 
+  const arr = [1, 2, 3, 4];
+
   const Input = styled.input`
     position: absolute;
     width: 56px;
@@ -29,10 +28,10 @@ function Otpverification() {
       <Heading image={"leftarrow.png"} heading={"CARD PAYMENT"} />
       <div className="verification">Verfication</div>
       <div id="enter-otp">Enter OTP</div>
-      {arr.map((item)=>(
-          <Input id={`otpinput${item}`} type="number"/>
+      {arr.map((item) => (
+        <Input id={`otpinput${item}`} type="text" />
       ))}
-      <img src="otp.png" id="otp-image"/>
+      <img src="otp.png" id="otp-image" />
       <Bottom />
       <button id="otp-btn">Verify OTP</button>
     </div>
