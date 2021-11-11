@@ -4,6 +4,7 @@ import { StaticHeader } from "./Staticheader";
 import { BottomNavBar } from "../components/Bottom-nav-bar";
 import { Bottom } from "../components/Bottom";
 import "../styles/meditate-carousel.css";
+import { Heading } from "./Heading";
 
 const items = [
   {
@@ -30,12 +31,8 @@ function GamesCrousel() {
   return (
     <div id="meditate-crousel-cont">
       <StaticHeader></StaticHeader>
-      <div id="meditate-heading-div">
-        <button>
-          <img src="/leftarrow.png" />
-        </button>
-        <div>GAMES</div>
-      </div>
+      <Heading heading={"GAMES"} image={"leftarrow.png"}/>
+      
       <Carousel
         ref={carouselRef}
         itemsToShow={1}

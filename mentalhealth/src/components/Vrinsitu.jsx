@@ -5,6 +5,7 @@ import { BottomNavBar } from "../components/Bottom-nav-bar";
 import { Bottom } from "../components/Bottom";
 import "../styles/meditate-carousel.css";
 import { Link } from "react-router-dom";
+import { Heading } from "./Heading";
 
 const items = [
   {
@@ -31,12 +32,8 @@ function Vrinsitu() {
   return (
     <div id="meditate-crousel-cont">
       <StaticHeader></StaticHeader>
-      <div id="meditate-heading-div">
-        <button>
-          <img src="leftarrow.png" />
-        </button>
-        <div>VR-INSITU</div>
-      </div>
+      <Heading image={"leftarrow.png"} heading={"VR-INSITU"}/>
+      
       <Link to="/naturevideo">
       <Carousel
         ref={carouselRef}

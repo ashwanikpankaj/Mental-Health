@@ -154,9 +154,14 @@ function App() {
         <Route path="/bookingcomplete">
           <Bookingcomplete />
         </Route>
-
+       <Route path="/games-home">
+         <Game/>
+       </Route>
         <Route path="/games">
           <GamesCrousel />
+        </Route>
+        <Route path="/meditate-home">
+        <Meditate/>
         </Route>
         <Route path="/meditate">
           <MeditateCrousel />
@@ -173,6 +178,7 @@ function App() {
         <Route path="/daily-task-page">
           <DailyTask />
         </Route>
+        
 
       </Switch>
 
@@ -183,7 +189,6 @@ function App() {
       <Game />
       <Landing1 />
       <Meditate />
-      <Meditate1 />
       <Diary />
       <Diary1 />
       <Game />
