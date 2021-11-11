@@ -41,6 +41,7 @@ import { Individualpost } from './components/IndividualPost';
 import {Bookingcomplete} from "./components/Bookingcomplete"
 import { TherapistAppointment } from './components/Therapistappointment';
 import { Welcomegif } from "./components/Welcomegif";
+import { Community } from './components/Community';
 
 function App() {
   return (
@@ -166,6 +167,7 @@ function App() {
       <Bookingcomplete></Bookingcomplete>
       <TherapistAppointment />
       <Welcomegif></Welcomegif>
+      <Community></Community>
 
     </div>
 

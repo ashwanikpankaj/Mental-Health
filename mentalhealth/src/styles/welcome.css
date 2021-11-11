@@ -14,9 +14,10 @@
 .img-div {
   width: 359px;
   height: 341px;
-  margin-top: 50px;
+  padding-top: 50px;
   margin-left: 20px;
 }
+
 .bottom-box {
   width: 411px;
   height: 281px;
