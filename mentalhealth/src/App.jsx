@@ -160,6 +160,9 @@ function App() {
         <Route path="/games">
           <GamesCrousel />
         </Route>
+        <Route path="/games-play">
+          <Games></Games>
+        </Route>
         <Route path="/meditate-home">
         <Meditate/>
         </Route>
@@ -174,8 +177,7 @@ function App() {
         </Route>
 
       </Switch>
-      
-      
+   
       {/*       
       <Meditate />
       <Game />
@@ -185,24 +187,15 @@ function App() {
       <Diary1 />
       <Game />
       <Game1 />
-      <GamesCrousel />
-      <MeditateCrousel/>
-      <Games></Games>
       <ScoreCard></ScoreCard>
       <Bluetooh></Bluetooh>
       <Personality />
       <DailyTask />
-      <Prakash></Prakash>
-      
+      <Prakash></Prakash>  
       <Bookingcomplete></Bookingcomplete>
       <TherapistAppointment />
       <Cardpayment />
-      <Otpverification />
-
-     <MeditateCrousel/>
-      <Vrinsitu/>
-      <GamesCrousel />
-
+    
       <Community></Community> */}
 
 
