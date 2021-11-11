@@ -2,8 +2,21 @@ import { StaticHeader } from './Staticheader'
 import "../styles/waterfall.css";
 import YouTube from "react-youtube";
 import { Bottom } from './Bottom';
+import { Feelingnow } from './Feelingnow';
+import { useState } from 'react';
 
 export const Waterfall = () => {
+  const [count ,setCount] = useState(0)
+  const [videocount,setvideoCount] = useState(0)
+   console.log("video",videocount)
+
+  function displayPopUp(){
+  return setTimeout(()=>{
+  setCount(1)
+  },5500)
+ }
+ const x = videocount===1?displayPopUp():null;
+
   const opts = {
     height: "218",
     width: "411",
@@ -13,16 +26,17 @@ export const Waterfall = () => {
   };
   return (
     <div id="waterfall-cont" >
+      <Feelingnow count = {count} />
       <div style={{marginBottom:"0px"}}>5</div>
       <StaticHeader></StaticHeader>
       
       <div className="waterfall-heading-div">
-        <img src="leftarrow.png" onClick={() => console.log("hello")}  alt="leftarrow"/>
+        <img src="leftarrow.png" alt="leftarrow"/>
         <h1>Waterfall</h1>
       </div>
-      <div className="waterfall-video-div">
+      <div className="waterfall-video-div" >
         {/*  <img src="waterfallvideo.png"/> */}
-        <YouTube videoId="MFLVmAE4cqg" opts={opts} />
+        <YouTube videoId="MFLVmAE4cqg" opts={opts}  />
       </div>
       <h1 id="breathe-text">Take a deep breathe and walk through nature.</h1>
       <div id="relax-text">
@@ -30,7 +44,7 @@ export const Waterfall = () => {
         Relaxing virtual environments (VEs) can help you learn and practice self
         love management skills.
       </div>
-      <button id="play">Play</button>
+      <button id="play" onClick={()=>setvideoCount(1)}>Play</button>
       <button id="download">Download</button>
       <div id="vr-headset">
         <h1>How to connect VR headset?</h1>

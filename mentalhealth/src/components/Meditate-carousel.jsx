@@ -32,9 +32,11 @@ function MeditateCrousel() {
     <div id="meditate-crousel-cont">
       <StaticHeader></StaticHeader>
       <div id="meditate-heading-div">
+        <Link to ="/landingpage">
         <button>
           <img src="leftarrow.png" alt="leftarrow"/>
         </button> 
+        </Link>
         <div>MEDITATE</div>
       </div>
       <Link to="/vr-insitu">
