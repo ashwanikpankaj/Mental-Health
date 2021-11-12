@@ -208,7 +208,17 @@ function App() {
     
       <Community></Community> 
       < Otpverification />
-*/}
+
+      <Prakash></Prakash>
+      <TherapistAppointment />
+      <Cardpayment />
+      <Otpverification />
+
+     <MeditateCrousel/>
+      <Vrinsitu/>
+      <GamesCrousel />
+      <Landing />
+      <Community></Community> */}
     </div>
 
   );

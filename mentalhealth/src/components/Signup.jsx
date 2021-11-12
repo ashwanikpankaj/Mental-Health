@@ -102,7 +102,7 @@ export const Signup = () => {
 
                 <StaticHeader />
 
-                {signuperror?<p id="alreadySignup">Already registered, please go to login</p>:""}
+                {signuperror?<p className="commonp" id="alreadySignup">Already registered, please go to login</p>:""}
 
                 <div><img id="signlogo" src="blueaura.png" alt="alt"></img></div>
 
@@ -114,8 +114,8 @@ export const Signup = () => {
                 </form>
 
                 <div>
-                    <p id="member">Already a member?</p>
-                    <p id="Login">Login</p>
+                    <p className="commonp" id="member">Already a member?</p>
+                    <p className="commonp" id="Login">Login</p>
                 </div>
 
                 <button id="facebook" onClick={facebookAuth}><img src="facebook.jpg" alt="alt"></img>Sign up with facebook</button>
