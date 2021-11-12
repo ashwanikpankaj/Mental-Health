@@ -4,14 +4,17 @@ import axios from 'axios';
 import { useParams } from 'react-router'
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { Heading } from './Heading';
 
 export const Postshow = () => {
 
     const obj = useParams();
     const [postlist, setPostList] = useState([])
+    const [cat, setCat] = useState("")
 
     useEffect(() => {
         fetchposts()
+        fetchCatgory()
     }, [])
 
     const fetchposts = () => {
@@ -29,22 +32,51 @@ export const Postshow = () => {
             })
     }
 
+    const fetchCatgory = () => {
+
+        if (obj.id === "all") {
+            setCat("All")
+            return;
+        }
+
+        axios
+            .get(`http://localhost:7765/categories/${obj.id}`, { withCredentials: true })
+            .then(res => {
+                // console.log("data", res.data.category.categoryname)
+                setCat(res.data.category.categoryname)
+            })
+            .catch(err => {
+                console.log("Error", err);
+            })
+    }
+
+
     return (
         <>
             <div id="postshow">
                 <StaticHeader></StaticHeader>
-                <h1>Hello</h1>
-                <h1>Hello</h1>
-                {
-                    postlist.map((e) => (
-                        <div>
+                <Heading image="/leftarrow.png" heading={cat} />
+
+                <div id="postmainDiv">
+                    {
+                        postlist.map((e) => (
                             <Link to={`/individualpost/${e._id}`}>
-                                <h1>{e.message}</h1>
+                                <div id="postInDiv">
+                                    <p id="postCategory">{e.category.categoryname}</p>
+                                    <p id="postMessage">{e.message}</p>
+                                    <p id="postDate">POSTED ON {e.createdAt.slice(0, 10)}</p>
+                                    <i id="hearticon" className="fa fa-heart" style={{fontSize:"24px",color:"#FC8282"}}></i>
+                                    <img id="commenticon" src="/commentbox.png"></img>
+                                    <p id="postReply">{e.replycount}{" "}{e.replycount===1?"comment":"comments"}</p>
+                                    <p id="postLike">{e.likescount}{" "}{e.likescount===1?"like":"likes"}</p>
+                                </div>
                             </Link>
-                            
-                        </div>
-                    ))
-                }
+                        ))
+                    }
+                </div>
+                <div id="docbottom">
+                    <hr id="docbottom1" />
+                </div>
             </div>
         </>
     )
