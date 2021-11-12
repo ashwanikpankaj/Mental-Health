@@ -40,6 +40,24 @@ router.get("/:id", async (req, res) => {
     res.status(201).send({ appointment });
 });
 
+router.get("/user/:userid", async (req, res) => {
+
+    let appointment = await Appointment.find({userid:req.params.userid}).populate(['userid', 'doctorid']).lean();
+
+    let today = new Date().toISOString().slice(0, 10)
+
+    console.log(today)
+
+    let upcoming = appointment.filter((item)=>item.date>today)
+
+    coming = upcoming.length?upcoming[0]:null
+
+    console.log(coming)
+
+    res.status(201).send({ coming });
+});
+
+
 router.patch("/:id", async (req, res) => {
 
     let appointment = await Appointment.findByIdAndUpdate(req.params.id, req.body, { new: true });

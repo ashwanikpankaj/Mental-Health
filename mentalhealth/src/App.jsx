@@ -43,6 +43,7 @@ import { Book } from './components/BookingPage';
 import { Cardpayment } from './components/Cardpayment';
 import { Otpverification } from './components/Otpverification';
 import { Createpost } from './components/Createpost';
+import { Mprofile } from './components/M-profile';
 
 function App() {
   return (
@@ -183,6 +184,9 @@ function App() {
           <DailyTask />
         </Route>
         
+        <Route path="/myprofile">
+        <Mprofile/> 
+        </Route>
 
       </Switch>
     
