@@ -40,6 +40,9 @@
   border-radius: 30px;
   border: none;
 }
+#answer6:hover{
+  cursor: pointer;
+}
 
 #answer8 {
   position: absolute;
@@ -50,6 +53,9 @@
   background:#a28efc;
   border-radius: 30px;
   border: none;
+}
+#answer8:hover{
+  cursor: pointer;
 }
 
 #Text6,
