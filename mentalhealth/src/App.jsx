@@ -45,6 +45,7 @@ import { Community } from './components/Community';
 import { Book } from './components/BookingPage';
 import { Cardpayment } from './components/Cardpayment';
 import { Otpverification } from './components/Otpverification';
+import { Mprofile } from './components/M-profile';
 
 function App() {
   return (
@@ -182,9 +183,10 @@ function App() {
 
       </Switch>
 
-<Landing />
+      
 
-      {/*       
+      {/*   
+      <Mprofile />    
       <Meditate />
       <Game />
       <Landing1 />
