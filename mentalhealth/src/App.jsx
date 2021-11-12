@@ -164,6 +164,9 @@ function App() {
         <Route path="/games-play">
           <Games></Games>
         </Route>
+        <Route path="/games-scorecard">
+        <ScoreCard />
+        </Route>
         <Route path="/meditate-home">
         <Meditate/>
         </Route>
@@ -186,7 +189,7 @@ function App() {
 
       </Switch>
     
-       <Createpost/>
+    
 
 
       {/*       
@@ -198,7 +201,7 @@ function App() {
       <Diary1 />
       <Game />
       <Game1 />
-      <ScoreCard></ScoreCard>
+
       <Bluetooh></Bluetooh>
       <Personality />
       <DailyTask />
@@ -219,7 +222,8 @@ function App() {
       <Vrinsitu/>
       <GamesCrousel />
       <Landing />
-      <Community></Community> */}
+      <Community></Community>
+       <Createpost/> */}
     </div>
 
   );
