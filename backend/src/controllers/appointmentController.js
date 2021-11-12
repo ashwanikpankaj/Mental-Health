@@ -6,7 +6,8 @@ const Doctor = require("../models/doctorModel");
 router.post("/", async (req, res) => {
     console.log("here")
     let appointment = await Appointment.create(req.body);
-    res.status(201).send({ appointment });
+    let doctor = await Doctor.findById(req.body.doctorid).populate("specialization").lean();
+    res.status(201).send({ appointment,doctor });
 });
 
 router.get("/", async (req, res) => {

@@ -79,7 +79,7 @@ app.get( '/auth/google/callback',
 
 app.post("/register", register);
 app.post("/login", login);
-app.get('/profile', isLoggedIn,(req, res) => {
+app.get('/profile',isLoggedIn,(req, res) => {
     res.send(req.user);
 })
 

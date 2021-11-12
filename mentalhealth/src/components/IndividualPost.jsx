@@ -140,7 +140,7 @@ export const Individualpost = () => {
 
     return (
         <>
-            <div id="doctorpage">
+            <div id="individualpost">
                 <StaticHeader />
                 <h1>Hello</h1>
 

@@ -13,45 +13,46 @@ import { Sidebar } from './Sidebar'
 
 export function Landing() {
 
-    const [name,setName] = useState("")
 
-    const [sidebar,setSidebar] = useState(false)
+    const [name, setName] = useState("")
+
+    const [sidebar, setSidebar] = useState(false)
 
     const showSidebar = () => setSidebar(true)
     const hideSidebar = () => setSidebar(false)
 
-    useEffect(()=>{
-        fetchUser()
-    },[])
-
-
-    //http://localhost:7765/getuser
     const fetchUser = () => {
         axios
-        .get("http://localhost:7765/profile", {withCredentials: true})
-        .then(res => {
-            console.log("here2")
-            console.log("data",res.data.user)
-            localStorage.setItem('data', JSON.stringify(res.data));
-            setName(res.data.user.name)
-        })
-        .catch(err => {
-            console.log("Not properly authenticated!");
-            console.log("Error", err);
-        })
-
-        //newWindow.close();
+            .get("http://localhost:7765/profile", { withCredentials: true })
+            .then(res => {
+                console.log("here2")
+                console.log("data", res.data.user)
+                localStorage.setItem('data', JSON.stringify(res.data));
+                setName(res.data.user.name)
+            })
+            .catch(err => {
+                console.log("Not properly authenticated!");
+                console.log("Error", err);
+            })
     }
-    
+
+    useEffect(()=>{
+        if (localStorage.getItem("loginMethod") === "Fastlogin") {
+            fetchUser()
+        } else if (localStorage.getItem("loginMethod") === "Normallogin") {
+            setName(JSON.parse(localStorage.getItem('data')).user.name)
+        }
+    },[])
+
     return (
         <>
             <div className="lpage_maindiv">
                 <div>
-                    <Navbar props={hideSidebar}/>
+                    <Navbar props={hideSidebar} />
                 </div>
 
                 <div>
-                    <AppStatusBar props={showSidebar}/>
+                    <AppStatusBar props={showSidebar} />
                 </div>
 
                 <div id="girldiv" onClick={hideSidebar}>
@@ -59,17 +60,17 @@ export function Landing() {
                 </div>
 
                 <div>
-                    <Rectangle props={hideSidebar}/>
+                    <Rectangle props={hideSidebar} />
                 </div>
 
                 <div>
-                    <BottomNavBar props={hideSidebar}/> 
+                    <BottomNavBar props={hideSidebar} />
                 </div>
 
                 <div>
                     <Bottom />
                 </div>
-                <Sidebar prop={sidebar} username={name}/>
+                <Sidebar prop={sidebar} username={name} />
             </div>
         </>
     )

@@ -1,3 +1,7 @@
-#heart{
-    background-color: red;
+#individualpost{
+    position: relative;
+    width: 411px;
+    height: 823px;
+    background: #FFFFFF; 
+    margin: auto;
 }

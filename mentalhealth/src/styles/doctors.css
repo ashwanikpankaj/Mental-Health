@@ -15,7 +15,12 @@
     margin: auto;
     margin-bottom: 36px;
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 35% 65%;
+    padding:14px;
+}
+
+#div1{
+    text-align:left;
 }
 
 #mainDiv{
@@ -45,14 +50,58 @@
 .docDetails{
     position: static;
     text-align: left;
-    font-size: 12px;
     font-family: "Poppins";
     font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
     line-height: 18px;
+    color: #656B75;
+    margin-bottom:14px;
 }
 
 #docimage{
     width:80px;
     height:80px;
     border-radius: 50%;
+}
+
+#docname{
+
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: #37474F;
+}
+
+#stars{
+    text-align:left;
+    margin-bottom:14px;
+}
+
+#docbuttons{
+    text-align:left;
+}
+
+#details{
+    border: 1px solid #37474F;
+    box-sizing: border-box;
+    background-color:white;
+    color: #37474F;
+    margin-right:28px;
+}
+
+#books{
+    background-color:#A28EFC;
+    color: #FFFFFF;
+    border:none;
+}
+
+#details:active{
+    border: 1px solid #D8DADC;
+}
+
+#books:active{
+    background: #534883;
 }

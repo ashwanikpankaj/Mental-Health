@@ -2,7 +2,7 @@ import '../styles/login.css'
 import axios from 'axios';
 import { StaticHeader } from './Staticheader'
 import { useState } from 'react';
-import { useHistory } from 'react-router-dom'
+import { Link,useHistory } from 'react-router-dom'
 import styled from "styled-components";
 
 const Button = styled.input`
@@ -71,6 +71,8 @@ export const Login = () => {
                 emptyData()
                 console.log(res);
                 console.log(res.data);
+                localStorage.setItem('data', JSON.stringify(res.data));
+                localStorage.setItem("loginMethod","Normallogin")
                 history.push("/blueaura");
             }).catch(function(e) {
                 setSignUpError(true)
@@ -103,7 +105,10 @@ export const Login = () => {
 
                 <div>
                     <p className="loginP" id="newapp">New to app?</p>
+                    <Link to="/signup">
                     <p className="loginP" id="Signuproute">Sign up</p>
+                    </Link>
+                    
                 </div>
 
                 <button id="facebook"><img src="facebook.jpg" alt="facebook"></img>Sign up with facebook</button>

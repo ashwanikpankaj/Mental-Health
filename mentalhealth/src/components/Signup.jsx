@@ -3,7 +3,7 @@ import axios from 'axios';
 import { StaticHeader } from './Staticheader'
 import { useState } from 'react';
 import styled from "styled-components";
-import { useHistory } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 
 const Button = styled.input`
     position: absolute;
@@ -68,6 +68,9 @@ export const Signup = () => {
             return
         }
 
+        console.log(userData)
+
+
         axios.post("http://localhost:7765/register", userData)
             .then(res => {
                 setSignUpError(false)
@@ -85,15 +88,14 @@ export const Signup = () => {
 
 
     const googleAuth = () => {
-
+        localStorage.setItem("loginMethod","Fastlogin")
         window.open('http://localhost:7765/auth/google','_self');
-
+        
     }
 
     const facebookAuth = () => {
-
+        localStorage.setItem("loginMethod","Fastlogin")
         window.open('http://localhost:7765/auth/facebook/','_self');
-
     }
 
     return (
@@ -115,7 +117,9 @@ export const Signup = () => {
 
                 <div>
                     <p className="commonp" id="member">Already a member?</p>
+                    <Link to="/login">
                     <p className="commonp" id="Login">Login</p>
+                    </Link>
                 </div>
 
                 <button id="facebook" onClick={facebookAuth}><img src="facebook.jpg" alt="alt"></img>Sign up with facebook</button>

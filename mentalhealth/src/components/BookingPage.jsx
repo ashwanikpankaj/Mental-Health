@@ -3,6 +3,8 @@ import '../styles/bookingpage.css'
 import { StaticHeader } from './Staticheader'
 import axios from 'axios';
 import { useState } from 'react';
+import { Heading } from './Heading';
+import { Bottom } from './Bottom'
 
 export const Book = () => {
 
@@ -19,9 +21,9 @@ export const Book = () => {
         sessiontype: ""
     })
 
-    const [personal,setPersonal]= useState({
-        phone:"",
-        email:""
+    const [personal, setPersonal] = useState({
+        phone: "",
+        email: ""
     })
 
     console.log(obj.id)
@@ -37,7 +39,6 @@ export const Book = () => {
 
         console.log(name, value)
 
-        //make axios get call in appoinment with doctor id and date
         axios
             .get(`http://localhost:7765/appointments/searchappointment/${e.target.value}/${obj.id}`, { withCredentials: true })
             .then(res => {
@@ -47,8 +48,6 @@ export const Book = () => {
             .catch(err => {
                 console.log("Error", err);
             })
-
-        //i will get an array of slots which i will pass in a state which will be shown to user
 
     }
 
@@ -76,11 +75,11 @@ export const Book = () => {
         console.log(name, value)
     }
 
-    const sendData = (e) =>{
+    const sendData = (e) => {
         e.preventDefault()
         console.log(bookData)
-        localStorage.setItem("bookData",JSON.stringify(bookData))
-        localStorage.setItem("personal",JSON.stringify(personal))
+        localStorage.setItem("bookData", JSON.stringify(bookData))
+        localStorage.setItem("personal", JSON.stringify(personal))
         history.push("/therapistappointment");
     }
 
@@ -88,40 +87,49 @@ export const Book = () => {
         <>
             <div id="bookpage">
                 <StaticHeader />
-                <h1>Hello</h1>
+                <Heading image="/leftarrow.png" heading="BOOK" />
+                <p id="pbooking">How should we book?</p>
+                <p id="pinstruction">Video consultation require good bandwith internet connection on your phone for an uinterrupted session. Please prefer chat/phone call consultation from the below otherwise.</p>
+                <p id="pnote">Note- Time slot are displayed in Asia / Kolkata zone</p>
+                <p id="bookingdate">Select Date  </p>
+                <p id="bookingtime">Select Time  </p>
+                <p id="userphone">Enter Phone no </p>
+                <p id="useremail">Enter Email Id </p>
+                <img src="/dates.png" id="calenderimg"></img>
+                <img src="/rightTime.png" id="timeimage"></img>
 
                 <form id="formdata" onSubmit={sendData}>
 
-                    <input onChange={selecteDate} type="date" name="date" /><br />
+                    <input onChange={selecteDate} type="date" name="date" id="bookingdateinput" /><br />
 
                     <div>
                         <input onChange={handleChange} type="radio" id="chat" name="sessiontype" value="CHAT" />
-                        <label for="chat">Chat Consultation - Rs 399</label><br />
+                        <label id="chatlabel" for="chat">Chat Consultation - Rs 399</label>
                     </div>
                     <div>
                         <input onChange={handleChange} type="radio" id="video" name="sessiontype" value="VIDEO" />
-                        <label for="video">Video Consultation - Rs 599</label><br />
+                        <label id="videolabel" for="video">Video Consultation - Rs 599</label>
                     </div>
 
-                    <select name="time" onChange={handleChange}>
-                        <option value="">Choose Category</option>
+                    <select name="time" id="bookingtimeinput" onChange={handleChange}>
+                        <option value="">Time</option>
                         {slots.map((e, index) => (
                             <option key={index} value={e}>{e}</option>
                         ))}
                     </select>
-                    <br />
-                    <input type="text" name="phone" onChange={handlePersonalDetails}/>
-                    <label for="chat">Enter phone number</label><br />
-                    <input type="email" name="email" onChange={handlePersonalDetails}/>
-                    <label for="chat">Enter email id</label><br />
 
-                    <input type="submit" value="Book" /><br />
+                    <input id="bookingphoneinput" type="text" name="phone" onChange={handlePersonalDetails} placeholder="+91" />
+                    <input id="bookingemailinput" type="email" name="email" onChange={handlePersonalDetails} placeholder="E-mail" />
+
+                    <input id="proceedbtn" type="submit" value="Proceed" /><br />
 
                 </form>
 
-
-
+                <div id="bookingbottom">
+                    <hr id="bookingbottom1" />
+                </div>
             </div>
+
         </>
     )
 

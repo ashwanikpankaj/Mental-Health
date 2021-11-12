@@ -32,7 +32,6 @@ import { Doctors } from './components/Doctorspage';
 import { Vrinsitu } from './components/Vrinsitu';
 import { GamesCrousel } from './components/Games-crousel';
 import { Individualdoctor } from './components/IndividualDoc';
-import { Prakash } from "./components/Prakash";
 import { DiscussionForum } from './components/DiscussionForum';
 import { Postissue } from './components/Postcreation';
 import { Categories } from './components/Categories';
@@ -161,7 +160,7 @@ function App() {
           <GamesCrousel />
         </Route>
         <Route path="/meditate-home">
-        <Meditate/>
+          <Meditate/>
         </Route>
         <Route path="/meditate">
           <MeditateCrousel />
@@ -199,7 +198,6 @@ function App() {
       <Bluetooh></Bluetooh>
       <Personality />
       <DailyTask />
-      <Prakash></Prakash>
       <TherapistAppointment />
       <Cardpayment />
       <Otpverification />

@@ -34,6 +34,7 @@ const register = async (req, res) => {
 
 const login = async (req, res) => {
     
+    console.log("here")
     try {
         // First we will check if user with same email already exists
         let user = await User.findOne({email: req.body.email});
