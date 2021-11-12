@@ -32,8 +32,8 @@ function MeditateCrousel() {
   return (
     <div id="meditate-crousel-cont">
       <StaticHeader></StaticHeader>
-      <Heading heading={"MEDITATE"} image={"leftarrow.png"}/>
-      
+      <Heading heading={"MEDITATE"} image={"leftarrow.png"} route={"/meditate-home"}/>
+
       <Link to="/vr-insitu">
       <Carousel
         ref={carouselRef}

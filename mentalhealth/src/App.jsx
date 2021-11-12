@@ -44,12 +44,13 @@ import { Community } from './components/Community';
 import { Book } from './components/BookingPage';
 import { Cardpayment } from './components/Cardpayment';
 import { Otpverification } from './components/Otpverification';
+import { Createpost } from './components/Createpost';
 
 function App() {
   return (
     <div className="App">
 
-      <Switch>
+       <Switch>
         <Route path="/" exact>
           <Onboarding />
         </Route>
@@ -159,6 +160,12 @@ function App() {
         <Route path="/games">
           <GamesCrousel />
         </Route>
+        <Route path="/games-play">
+          <Games></Games>
+        </Route>
+        <Route path="/games-scorecard">
+        <ScoreCard />
+        </Route>
         <Route path="/meditate-home">
           <Meditate/>
         </Route>
@@ -180,9 +187,13 @@ function App() {
         
 
       </Switch>
+    
+    
 
+      
 
-      {/*       
+      {/*   
+      <Mprofile />    
       <Meditate />
       <Game />
       <Landing1 />
@@ -191,13 +202,19 @@ function App() {
       <Diary1 />
       <Game />
       <Game1 />
-      <GamesCrousel />
-      <MeditateCrousel/>
-      <Games></Games>
-      <ScoreCard></ScoreCard>
+
       <Bluetooh></Bluetooh>
       <Personality />
       <DailyTask />
+      <Prakash></Prakash>  
+      <Bookingcomplete></Bookingcomplete>
+      <TherapistAppointment />
+      <Cardpayment />
+    
+      <Community></Community> 
+      < Otpverification />
+
+      <Prakash></Prakash>
       <TherapistAppointment />
       <Cardpayment />
       <Otpverification />
@@ -206,7 +223,8 @@ function App() {
       <Vrinsitu/>
       <GamesCrousel />
       <Landing />
-      <Community></Community> */}
+      <Community></Community>
+       <Createpost/> */}
     </div>
 
   );

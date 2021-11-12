@@ -10,12 +10,15 @@
 }
 
 #circlesText {
+  position: absolute;
   height: 36px;
   width: 299px;
   left: 48px;
   top: 112px;
   border-radius: nullpx;
   color: #37474f;
+  font-weight: 600;
+  font-size: 20px;
 }
 
 #circlegame {
@@ -37,6 +40,9 @@
   border-radius: 30px;
   border: none;
 }
+#answer6:hover{
+  cursor: pointer;
+}
 
 #answer8 {
   position: absolute;
@@ -47,6 +53,9 @@
   background:#a28efc;
   border-radius: 30px;
   border: none;
+}
+#answer8:hover{
+  cursor: pointer;
 }
 
 #Text6,

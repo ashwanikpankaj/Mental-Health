@@ -18,7 +18,7 @@ export const Waterfall = () => {
   return (
     <div id="waterfall-cont"  >
        <StaticHeader/>
-      <Heading heading={"WATERFALL"} image={"leftarrow.png"}/>
+      <Heading heading={"WATERFALL"} image={"leftarrow.png"} route={"/vr-insitu"}/>
 
       <div className="waterfall-video-div">
         <YouTube videoId="MFLVmAE4cqg" opts={opts} />
