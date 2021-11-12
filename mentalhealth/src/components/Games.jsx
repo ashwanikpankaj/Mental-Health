@@ -22,9 +22,10 @@ export const Games = () => {
   function handleWrong() {
     setRedcolor("#fc8282");
     setTimeout(() => {
+     setRedcolor("#a28efc");
       setTemp(temp + 1);
-      setGreencolor("#a28efc");
     }, 1000);
+
   }
 
   localStorage.setItem("games_count", count);
