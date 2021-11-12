@@ -5,6 +5,7 @@ import { BottomNavBar } from "../components/Bottom-nav-bar";
 import { Bottom } from "../components/Bottom";
 import "../styles/meditate-carousel.css";
 import { Link } from "react-router-dom";
+import { Heading } from "./Heading";
 
 const items = [
   {
@@ -31,14 +32,8 @@ function MeditateCrousel() {
   return (
     <div id="meditate-crousel-cont">
       <StaticHeader></StaticHeader>
-      <div id="meditate-heading-div">
-        <Link to ="/landingpage">
-        <button>
-          <img src="leftarrow.png" alt="leftarrow"/>
-        </button> 
-        </Link>
-        <div>MEDITATE</div>
-      </div>
+      <Heading heading={"MEDITATE"} image={"leftarrow.png"}/>
+      
       <Link to="/vr-insitu">
       <Carousel
         ref={carouselRef}
