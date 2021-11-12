@@ -40,7 +40,7 @@ export const Bookingcomplete = () => {
               <h2 id="Booking-Total" >TOTAL AMOUNT PAID</h2>
               <h2  id="Booking-Total-value">Rs 399</h2>
               
-              <Link to="/homepage">
+              <Link to="/landingpage">
                     <Skip prop="Back to homepage" />
               </Link>
               

@@ -170,8 +170,6 @@ function App() {
 
       </Switch>
 
-
-
       {/*       
       <Meditate />
       <Game />
@@ -190,8 +188,6 @@ function App() {
       <Personality />
       <DailyTask />
       <Prakash></Prakash>
-      
-      <Bookingcomplete></Bookingcomplete>
       <TherapistAppointment />
       <Cardpayment />
       <Otpverification />

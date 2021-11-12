@@ -14,7 +14,7 @@ function TherapistAppointment() {
             <Heading image={"leftarrow.png"} heading={"THERAPIST APPOINTMENT"} />
             <div id="mobile-no-div">+91{phone}</div>
             <div id="therapist-line-div"></div>
-            <div id="gmail-div">{email}</div>
+            <p id="gmail-div">{email}</p>
 
             <div>Payment Mode</div>
 

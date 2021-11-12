@@ -31,6 +31,10 @@
     top:114px;
     left:214px;
     font-size: 14px;
+    width:160px;
+    height:21px;
+    word-wrap: break-word;
+
 }
 
 #therapist-appointment-cont div:nth-child(6){

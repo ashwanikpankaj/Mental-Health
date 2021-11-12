@@ -51,7 +51,7 @@ input[type="password"] {
     top:430px
 }
 
-p{
+.loginP{
     position: absolute;
     top: 574px;
     font-family: 'Poppins';
