@@ -45,12 +45,13 @@ import { Community } from './components/Community';
 import { Book } from './components/BookingPage';
 import { Cardpayment } from './components/Cardpayment';
 import { Otpverification } from './components/Otpverification';
+import { Createpost } from './components/Createpost';
 
 function App() {
   return (
     <div className="App">
 
-      <Switch>
+       <Switch>
         <Route path="/" exact>
           <Onboarding />
         </Route>
@@ -184,8 +185,8 @@ function App() {
         
 
       </Switch>
-   
- 
+    
+       <Createpost/>
 
 
       {/*       
