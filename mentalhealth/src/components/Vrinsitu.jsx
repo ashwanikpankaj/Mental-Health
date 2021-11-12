@@ -32,8 +32,8 @@ function Vrinsitu() {
   return (
     <div id="meditate-crousel-cont">
       <StaticHeader></StaticHeader>
-      <Heading image={"leftarrow.png"} heading={"VR-INSITU"}/>
-      
+      <Heading image={"leftarrow.png"} heading={"VR-INSITU"} route={"/meditate"}/>
+
       <Link to="/naturevideo">
       <Carousel
         ref={carouselRef}

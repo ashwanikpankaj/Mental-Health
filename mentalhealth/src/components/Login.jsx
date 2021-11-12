@@ -83,12 +83,6 @@ export const Login = () => {
         console.log("clicked")
         window.location.href = 'http://localhost:7765/auth/google'
 
-        // axios.get("http://localhost:7765/auth/google")
-        // .then(res => {
-        //   console.log(res);
-        //   console.log(res.data);
-        //   window.location.pathname='http://localhost:3000'
-        // })
     }
 
     return (
@@ -97,7 +91,7 @@ export const Login = () => {
 
                 <StaticHeader />
 
-                {signuperror?<p id="invalid">Invalid email or password</p>:""}
+                {signuperror?<p className="loginP" id="invalid">Invalid email or password</p>:""}
 
                 <div><img id="logo" src="blueaura.png" alt="leftarrow"></img></div>
 
@@ -108,8 +102,8 @@ export const Login = () => {
                 </form>
 
                 <div>
-                    <p id="newapp">New to app?</p>
-                    <p id="Signuproute">Sign up</p>
+                    <p className="loginP" id="newapp">New to app?</p>
+                    <p className="loginP" id="Signuproute">Sign up</p>
                 </div>
 
                 <button id="facebook"><img src="facebook.jpg" alt="facebook"></img>Sign up with facebook</button>

@@ -45,13 +45,17 @@ import { Community } from './components/Community';
 import { Book } from './components/BookingPage';
 import { Cardpayment } from './components/Cardpayment';
 import { Otpverification } from './components/Otpverification';
+<<<<<<< HEAD
 import { Mprofile } from './components/M-profile';
+=======
+import { Createpost } from './components/Createpost';
+>>>>>>> 9b556bc4e5eb91deedc0b882b20d714f066dcebe
 
 function App() {
   return (
     <div className="App">
 
-      <Switch>
+       <Switch>
         <Route path="/" exact>
           <Onboarding />
         </Route>
@@ -161,6 +165,9 @@ function App() {
         <Route path="/games">
           <GamesCrousel />
         </Route>
+        <Route path="/games-play">
+          <Games></Games>
+        </Route>
         <Route path="/meditate-home">
         <Meditate/>
         </Route>
@@ -182,8 +189,13 @@ function App() {
         
 
       </Switch>
+    
+       <Createpost/>
 
+<<<<<<< HEAD
       
+=======
+>>>>>>> 9b556bc4e5eb91deedc0b882b20d714f066dcebe
 
       {/*   
       <Mprofile />    
@@ -195,16 +207,19 @@ function App() {
       <Diary1 />
       <Game />
       <Game1 />
-      <GamesCrousel />
-      <MeditateCrousel/>
-      <Games></Games>
       <ScoreCard></ScoreCard>
       <Bluetooh></Bluetooh>
       <Personality />
       <DailyTask />
-      <Prakash></Prakash>
-      
+      <Prakash></Prakash>  
       <Bookingcomplete></Bookingcomplete>
+      <TherapistAppointment />
+      <Cardpayment />
+    
+      <Community></Community> 
+      < Otpverification />
+
+      <Prakash></Prakash>
       <TherapistAppointment />
       <Cardpayment />
       <Otpverification />
@@ -212,10 +227,8 @@ function App() {
      <MeditateCrousel/>
       <Vrinsitu/>
       <GamesCrousel />
-
+      <Landing />
       <Community></Community> */}
-
-
     </div>
 
   );

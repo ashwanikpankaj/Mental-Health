@@ -5,6 +5,7 @@ import { BottomNavBar } from "../components/Bottom-nav-bar";
 import { Bottom } from "../components/Bottom";
 import "../styles/meditate-carousel.css";
 import { Heading } from "./Heading";
+import { Link } from "react-router-dom";
 
 const items = [
   {
@@ -31,8 +32,9 @@ function GamesCrousel() {
   return (
     <div id="meditate-crousel-cont">
       <StaticHeader></StaticHeader>
-      <Heading heading={"GAMES"} image={"leftarrow.png"}/>
-      
+      <Heading heading={"GAMES"} image={"leftarrow.png"} route={"/games-home"}/>
+
+      <Link to ="/games-play">
       <Carousel
         ref={carouselRef}
         itemsToShow={1}
@@ -49,6 +51,7 @@ function GamesCrousel() {
           </div>
         ))}
       </Carousel>
+      </Link>
       <BottomNavBar />
       <Bottom />
     </div>
