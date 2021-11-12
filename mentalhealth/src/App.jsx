@@ -191,8 +191,10 @@ function App() {
     
     
 
+      
 
-      {/*       
+      {/*   
+      <Mprofile />    
       <Meditate />
       <Game />
       <Landing1 />
