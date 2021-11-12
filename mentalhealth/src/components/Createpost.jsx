@@ -1,41 +1,104 @@
-import { useState } from "react"
 import "../styles/createpost.css"
 import { Bottom } from "./Bottom"
 import { Heading } from "./Heading"
 import { StaticHeader } from "./Staticheader"
+import axios from 'axios';
+import { useEffect, useState } from 'react'
+
+function Createpost() {
+
+    const { user } = JSON.parse(localStorage.getItem("data"))
+
+    const [btns, setbtns] = useState([])
+    const [issue,setIssue] = useState("")
+
+    const [postData, SetpostData] = useState({
+        message: "",
+        category: "",
+        userid: user._id,
+        replycount: 0,
+        likescount: 0
+    })
+
+    useEffect(() => {
+        fetchCategories()
+    }, [])
+
+    const fetchCategories = () => {
+        axios
+            .get("http://localhost:7765/categories", { withCredentials: true })
+            .then(res => {
+                setbtns(res.data.categories)
+            })
+            .catch(err => {
+                console.log("Error", err);
+            })
+    }
+
+    const handleChangeInselect = (e) => {
+
+        const { name, value,options, selectedIndex } = e.target;
+
+        SetpostData({
+            ...postData,
+            [name]: value
+        })
+
+        setIssue(options[selectedIndex].textContent)
+        console.log(name, value,options[selectedIndex].textContent)
+    }
 
 
-function Createpost (){
+    const handleChange = (e) => {
 
-    const [text,setText] = useState("")
+        const { name, value } = e.target;
 
-  const handleChange = (e)=>{
-     const {value} = e.target
+        SetpostData({
+            ...postData,
+            [name]: value
+        })
 
-     setText(value)
-  }
-  console.log("text",text)
+        console.log(name, value)
+    }
+
+    const sendData = (e) => {
+        e.preventDefault()
+        console.log(postData)
+
+        axios.post("http://localhost:7765/posts", postData)
+            .then(res => {
+                console.log(res);
+                console.log(res.data);
+            })
+    }
+
 
     return (
         <div id="create-post-cont">
-            <StaticHeader/>
-            <Heading heading = {"Create Post"} image={"leftarrow.png"}/>
+            <StaticHeader />
+            <Heading heading={"Create Post"} image={"leftarrow.png"} />
             <div id="write-issue-text">WRITE YOUR ISSUE HERE </div>
-            <select id="create-post-select">
-               <option>Choose category</option>
-                 <option value="all">ALL</option>
-                 <option value="anxiety&Depression">Anxiety & Depression</option>
-                 <option value="mindfulness">Mindfulness</option>
-                 <option value="focus&concentration">Focus & concentration</option>
-                 <option value="sleepissues">Sleep issues</option>
-                 <option value="stress">Stress</option>
-             </select>
-            <textarea id="create-post-text-area" value={text} onChange={handleChange}> </textarea>
-            <button id="create-post-btn">POST</button>
-            <Bottom/>
-          
+
+            <p id="hashtag">Add hashtag</p>
+            <p id="postcategory">{issue}</p>
+
+            <form id="formdata" onSubmit={sendData}>
+                <select name="category" id="create-post-select" onChange={handleChangeInselect}>
+                    <option value="">Choose Category</option>
+                    {btns.map((e, index) => (
+                        <option key={index} value={e._id}>{e.categoryname}</option>
+                    ))}
+                </select>
+
+                <textarea id="create-post-text-area" onChange={handleChange} name="message"> </textarea>
+
+                <input id="create-post-btn" type="submit" value="POST" />
+            </form>
+
+            <Bottom />
+
         </div>
     )
 }
 
-export {Createpost}
+export { Createpost }

@@ -32,8 +32,6 @@ import { Doctors } from './components/Doctorspage';
 import { Vrinsitu } from './components/Vrinsitu';
 import { GamesCrousel } from './components/Games-crousel';
 import { Individualdoctor } from './components/IndividualDoc';
-import { DiscussionForum } from './components/DiscussionForum';
-import { Postissue } from './components/Postcreation';
 import { Categories } from './components/Categories';
 import { Postshow } from './components/Postshow';
 import { Individualpost } from './components/IndividualPost';
@@ -111,12 +109,12 @@ function App() {
           <Individualdoctor />
         </Route>
 
-        <Route path="/discussionforum">
-          <DiscussionForum />
+        <Route path="/community">
+        <Community></Community>
         </Route>
 
         <Route path="/posttheissue">
-          <Postissue />
+        <Createpost/> 
         </Route>
 
         <Route path="/categories">
@@ -191,6 +189,7 @@ function App() {
     
 
       
+      
 
       {/*   
       <Mprofile />    
@@ -211,7 +210,7 @@ function App() {
       <TherapistAppointment />
       <Cardpayment />
     
-      <Community></Community> 
+       
       < Otpverification />
 
       <Prakash></Prakash>
