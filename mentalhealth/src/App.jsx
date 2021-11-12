@@ -45,11 +45,7 @@ import { Community } from './components/Community';
 import { Book } from './components/BookingPage';
 import { Cardpayment } from './components/Cardpayment';
 import { Otpverification } from './components/Otpverification';
-<<<<<<< HEAD
-import { Mprofile } from './components/M-profile';
-=======
 import { Createpost } from './components/Createpost';
->>>>>>> 9b556bc4e5eb91deedc0b882b20d714f066dcebe
 
 function App() {
   return (
@@ -192,10 +188,7 @@ function App() {
     
        <Createpost/>
 
-<<<<<<< HEAD
       
-=======
->>>>>>> 9b556bc4e5eb91deedc0b882b20d714f066dcebe
 
       {/*   
       <Mprofile />    
