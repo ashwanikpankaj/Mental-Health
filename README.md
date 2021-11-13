@@ -64,11 +64,9 @@ To run this application on your local system, execute the following commands on 
 
 ![ham (2)](https://user-images.githubusercontent.com/86404961/141604299-334c86fb-29fb-4740-bf16-ed1511da85d5.png)
 
-
-
+![games-home](https://user-images.githubusercontent.com/87421972/141608018-7e9151e5-60b3-4f50-a7ca-061b69834168.png)
 
 ![Screenshot (359)](https://user-images.githubusercontent.com/86404961/141605720-b6637405-aa04-4430-a679-1affec754962.png)
-
 
 6. Game Pages-
 
@@ -76,17 +74,38 @@ To run this application on your local system, execute the following commands on 
 
 ![circle (2)](https://user-images.githubusercontent.com/86404961/141604354-f2ae99d5-e322-4676-8281-68509b2b1181.png)
 
-![rectangle (2)](https://user-images.githubusercontent.com/86404961/141604361-c1ae7673-452e-454c-8914-bd457f852dc4.png)
-
 ![good (2)](https://user-images.githubusercontent.com/86404961/141604369-0fcdb5db-23d6-42b2-91d9-b83df20d3ca1.png)
 
-![sorry (2)](https://user-images.githubusercontent.com/86404961/141604376-2b30d131-9585-4ca4-b479-708a24511a62.png)
+7. Meditate Pages-
 
+![meditate](https://user-images.githubusercontent.com/87421972/141608233-94f73de4-e546-40eb-8816-dea49eda6105.png)
 
+![waterfallvideo (2)](https://user-images.githubusercontent.com/87421972/141608157-f310c1f1-ff67-4565-814b-a6c6c9255ea3.png)
 
+8. Therapy Pages-
 
+![Screenshot (1958)](https://user-images.githubusercontent.com/87421972/141608676-90530dbb-e9f4-478f-a56c-c6ecf44273dc.png)
 
+![Screenshot (1959)](https://user-images.githubusercontent.com/87421972/141608714-64a8be50-931c-454f-84b3-77bd0f868d52.png)
 
+![Screenshot (1960)](https://user-images.githubusercontent.com/87421972/141608740-d95b458c-e171-42e4-a007-717fdea232ad.png)
 
+![Screenshot (1961)](https://user-images.githubusercontent.com/87421972/141608755-b463e2f7-0e9d-4124-8579-c1e0e9c758e0.png)
+
+![Screenshot (1962)](https://user-images.githubusercontent.com/87421972/141608769-c402e750-60ae-497e-835a-7e921dfc26cf.png)
+
+![Screenshot (1963)](https://user-images.githubusercontent.com/87421972/141608793-3df4da06-bb8d-4604-81a6-48554548e226.png)
+
+![Screenshot (1964)](https://user-images.githubusercontent.com/87421972/141608827-ec776bd0-79cf-491f-a097-a6105a0dbc11.png)
+
+9. Community Pages-
+
+![Screenshot (1965)](https://user-images.githubusercontent.com/87421972/141608874-20d5afbd-50b1-4b54-a62f-2f503ce58e76.png)
+
+![Screenshot (1966)](https://user-images.githubusercontent.com/87421972/141608890-72284b3a-e56f-46c5-aba8-6618f894d139.png)
+
+![Screenshot (1967)](https://user-images.githubusercontent.com/87421972/141608906-b344ad49-1484-4e6f-93a5-ae820dd0f5e6.png)
+
+![Screenshot (1968)](https://user-images.githubusercontent.com/87421972/141608933-a2a6c5c5-a3f2-4364-8c76-f5660ebdb3db.png)
 
 
