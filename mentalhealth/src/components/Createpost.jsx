@@ -4,8 +4,11 @@ import { Heading } from "./Heading"
 import { StaticHeader } from "./Staticheader"
 import axios from 'axios';
 import { useEffect, useState } from 'react'
+import { useHistory } from "react-router"
 
 function Createpost() {
+
+    const history = useHistory();
 
     const { user } = JSON.parse(localStorage.getItem("data"))
 
@@ -69,6 +72,7 @@ function Createpost() {
             .then(res => {
                 console.log(res);
                 console.log(res.data);
+                history.push("/community");
             })
     }
 

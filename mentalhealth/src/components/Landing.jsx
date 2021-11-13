@@ -48,7 +48,7 @@ export function Landing() {
     return (
         <>
             <div className="lpage_maindiv">
-            <StaticHeader color="#D8EFFF"/>
+            <StaticHeader/>
                 <div>
                     {/* <Navbar props={hideSidebar} /> */}
                     

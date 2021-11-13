@@ -32,7 +32,7 @@ export const Waterfall = () => {
 
       <button id="play">Play</button>
       <Link to="/meditate-home">
-      <button id="download">HOME</button>
+      <button id="download">Home</button>
       </Link>
 
       <div id="vr-headset">

@@ -7,6 +7,7 @@ import { Navbar } from './Navbar'
 import { Rectangle } from './Rectangle'
 import { useEffect,useState } from 'react'
 import { Sidebar } from './Sidebar'
+import { StaticHeader } from './Staticheader';
 
 export function Game() {
 
@@ -27,7 +28,7 @@ export function Game() {
         <>
             <div className="lpage_maindiv">
                 <div >
-                    <Navbar props={hideSidebar}/>
+                <StaticHeader/>
                 </div>
 
                 <div>
