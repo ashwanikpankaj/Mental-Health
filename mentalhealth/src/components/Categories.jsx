@@ -5,6 +5,7 @@ import { Bottom } from "./Bottom";
 import axios from 'axios';
 import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
+import { Heading } from "./Heading"
 
 const Button = styled.button`
   position: absolute;
@@ -52,13 +53,7 @@ const Categories = () =>{
   return (
     <div id="dfcategory-cont">
       <StaticHeader></StaticHeader>
-      <div className="category-heading">
-        <button className="category-heading-btn">
-          {" "}
-          <img src="leftarrow.png" />
-        </button>
-        <h1>CATEGORIES</h1>
-      </div>
+      <Heading heading={"CATEGORIES"} image={"leftarrow.png"} route={`/community`}/>
 
       <Link to="/postshow/all">
           <Button className="all-btn">ALL</Button>

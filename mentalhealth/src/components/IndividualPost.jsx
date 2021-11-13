@@ -148,7 +148,7 @@ export const Individualpost = () => {
         <>
             <div id="individualpost">
                 <StaticHeader />
-                <Heading image="/leftarrow.png" heading={post?.category?.categoryname} />
+                <Heading image="/leftarrow.png" heading={post?.category?.categoryname} route={`/postshow/${post?.category?._id}`}/>
 
                 <div id="insideDiv">
                     <div id="contentDiv">

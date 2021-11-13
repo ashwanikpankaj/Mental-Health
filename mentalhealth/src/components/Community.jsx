@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 export const Community = () => {
     return <div id="community-Box">
         <StaticHeader />
-        <Heading image={"leftarrow.png"} heading={"COMMUNITY"} />
+        <Heading image={"leftarrow.png"} heading={"COMMUNITY"} route={`/landingpage`}/>
 
         <Link to="/posttheissue">
             <div id="community-create-Box">

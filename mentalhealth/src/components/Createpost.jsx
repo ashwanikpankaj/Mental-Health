@@ -76,7 +76,7 @@ function Createpost() {
     return (
         <div id="create-post-cont">
             <StaticHeader />
-            <Heading heading={"Create Post"} image={"leftarrow.png"} />
+            <Heading heading={"Create Post"} image={"leftarrow.png"} route={`/community`}/>
             <div id="write-issue-text">WRITE YOUR ISSUE HERE </div>
 
             <p id="hashtag">Add hashtag</p>

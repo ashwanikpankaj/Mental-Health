@@ -55,7 +55,7 @@ export const Postshow = () => {
         <>
             <div id="postshow">
                 <StaticHeader></StaticHeader>
-                <Heading image="/leftarrow.png" heading={cat} />
+                <Heading image="/leftarrow.png" heading={cat} route={`/categories`}/>
 
                 <div id="postmainDiv">
                     {
