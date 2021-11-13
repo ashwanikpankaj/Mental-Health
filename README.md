@@ -1,6 +1,6 @@
 # Mental Health
 
-> The most simple & convenient way to access talk therapy - anytime, anywhere, any device.
+> The most simple & convenient way to access talk therapy - anytime, anywhere, any device.This project was build as a construct week project by Masai School Students.
 
 
 ## Features
@@ -36,17 +36,17 @@ To run this application on your local system, execute the following commands on 
   <code>npm start</code>
 
 
-## A Glimpse of our cloned website
+## A Glimpse of our website
 
 1. Onboarding Page-
 
 ![Screenshot (353)](https://user-images.githubusercontent.com/86404961/141604776-9252335f-6c04-4ce6-8d58-79e1e034147d.png)
 
-2.Signup Page-
+2. Signup Page-
 
 ![Screenshot (333)](https://user-images.githubusercontent.com/86404961/141604093-3a2cfda6-061c-4d85-9698-ea33ca0a8ac2.png)
 
-3.Login Page-
+3. Login Page-
 
 ![login (2)](https://user-images.githubusercontent.com/86404961/141604109-0ac7ffe7-8457-41d9-b44f-3f2faaafaf60.png)
 
@@ -56,7 +56,7 @@ To run this application on your local system, execute the following commands on 
 
 ![color (2)](https://user-images.githubusercontent.com/86404961/141604212-04ab0e03-0c6b-404f-9257-76bd3afb1837.png)
 
-5.Landing Pages-
+5. Landing Pages-
 
 ![profile (2)](https://user-images.githubusercontent.com/86404961/141604268-90081f70-fe13-4c36-bd27-b54b2e2045d2.png)
 
@@ -107,5 +107,38 @@ To run this application on your local system, execute the following commands on 
 ![Screenshot (1967)](https://user-images.githubusercontent.com/87421972/141608906-b344ad49-1484-4e6f-93a5-ae820dd0f5e6.png)
 
 ![Screenshot (1968)](https://user-images.githubusercontent.com/87421972/141608933-a2a6c5c5-a3f2-4364-8c76-f5660ebdb3db.png)
+
+
+## Tech Stack-
+
+- CSS
+- React
+- Node js
+- Mongodb
+- Express js
+
+## Acknowledgment
+Took some help from these resources 
+1) [W3 Schools](https://www.w3schools.com)
+2) [MDN docs](https://developer.mozilla.org/en-US/)
+
+## Team Members-
+### UI Designer
+1. Supriya Monika Soreng
+
+### Web Developer
+1. Prateek R. Jadhav
+2. Ashwani Kumar Pankaj
+3. Rahul Kumar
+4. Prakash Chandra
+
+## Contact-
+
+1. Prateek R. Jadhav - [Github](https://github.com/pratikjadhav080) 
+2. Ashwani Kumar Pankaj - [Github](https://github.com/ashwanikpankaj)
+3. Rahul Kumar - [Github](https://github.com/fitrahul)
+4. Prakash Chandra - [Github](https://github.com/Prakashchandra041)
+
+
 
 
