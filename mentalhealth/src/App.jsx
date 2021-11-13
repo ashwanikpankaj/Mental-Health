@@ -43,12 +43,13 @@ import { Book } from './components/BookingPage';
 import { Cardpayment } from './components/Cardpayment';
 import { Otpverification } from './components/Otpverification';
 import { Createpost } from './components/Createpost';
+import { Mprofile } from './components/M-profile';
 
 function App() {
   return (
     <div className="App">
 
-       <Switch>
+        <Switch>
         <Route path="/" exact>
           <Onboarding />
         </Route>
@@ -184,11 +185,11 @@ function App() {
         </Route>
         
 
-      </Switch>
+      </Switch> 
     
-    
+     
+   
 
-      
       
 
       {/*   
