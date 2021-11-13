@@ -27,7 +27,7 @@ function Otpverification() {
   return (
     <div id="otp-cont">
       <StaticHeader />
-      <Heading image={"leftarrow.png"} heading={"CARD PAYMENT"} />
+      <Heading image={"leftarrow.png"} heading={"CARD PAYMENT"} route={`/cardpayment`}/>
       <div className="verification">Verfication</div>
       <div id="enter-otp">Enter OTP</div>
       {arr.map((item)=>(

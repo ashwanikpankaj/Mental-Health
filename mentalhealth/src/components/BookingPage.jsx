@@ -87,7 +87,7 @@ export const Book = () => {
         <>
             <div id="bookpage">
                 <StaticHeader />
-                <Heading image="/leftarrow.png" heading="BOOK" />
+                <Heading image="/leftarrow.png" heading="BOOK" route={`/individualdoctor/${obj.id}`} />
                 <p id="pbooking">How should we book?</p>
                 <p id="pinstruction">Video consultation require good bandwith internet connection on your phone for an uinterrupted session. Please prefer chat/phone call consultation from the below otherwise.</p>
                 <p id="pnote">Note- Time slot are displayed in Asia / Kolkata zone</p>

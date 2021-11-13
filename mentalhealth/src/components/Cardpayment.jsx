@@ -29,11 +29,11 @@ function Cardpayment() {
       //do validation here
       history.push("/otppage");
   }
-  
+
   return (
     <div id="card-payment-cont">
       <StaticHeader />
-      <Heading image={"leftarrow.png"} heading={"CARD PAYMENT"} />
+      <Heading image={"leftarrow.png"} heading={"CARD PAYMENT"} route={`/therapistappointment`}/>
       <div id="total-payment-mode">TOTAL PAYMENT MODE</div>
       <div>{sessiontype==="VIDEO"?"RS 599":"RS 399"}</div>
       <div id="add-new-card">ADD NEW CARD</div>

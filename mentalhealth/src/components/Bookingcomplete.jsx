@@ -30,7 +30,7 @@ export const Bookingcomplete = () => {
     <>
       <div id="BookingOutterBox">
         <StaticHeader></StaticHeader>
-        <Heading image="leftArrowdoc1.jpg" heading="BOOKING COMPLETE"></Heading>
+        <Heading image="leftArrowdoc1.jpg" heading="BOOKING COMPLETE" route={`/landingpage`}></Heading>
         <div>
           <img id="Booking-doc-image" src={specificdoctor.photo} alt="doctor image" />
         </div>

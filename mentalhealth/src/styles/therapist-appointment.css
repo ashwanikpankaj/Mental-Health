@@ -19,7 +19,7 @@
 #therapist-line-div{
     position: absolute;
     top:118px;
-    left:186px;
+    left:160px;
     height: 12px;
     background-color: #C4C4C4;
     width: 1px;
@@ -29,9 +29,8 @@
 #gmail-div{
     position: absolute;
     top:114px;
-    left:214px;
+    left:184px;
     font-size: 14px;
-    width:160px;
     height:21px;
     word-wrap: break-word;
 

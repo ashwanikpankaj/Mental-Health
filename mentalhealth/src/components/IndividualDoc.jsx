@@ -35,7 +35,7 @@ export const Individualdoctor = () => {
         <>
             <div id="docDetailBox">
                 <StaticHeader />
-                <Heading image="/leftArrowdoc1.jpg" heading="THERAPIST"></Heading>
+                <Heading image="/leftArrowdoc1.jpg" heading="THERAPIST" route={"/therapy"}></Heading>
 
                 <img src={doc.photo} id="docDetailImg" />
                 <p id="docName">{doc.name}</p>

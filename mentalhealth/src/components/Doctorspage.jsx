@@ -65,7 +65,7 @@ export const Doctors = () => {
     return (
         <div id="doctorspage">
             <StaticHeader></StaticHeader>
-            <Heading image="/leftarrow.png" heading={category} />
+            <Heading image="/leftarrow.png" heading={category} route={"/therapy"} />
 
             <div id="mainDiv">
                 {

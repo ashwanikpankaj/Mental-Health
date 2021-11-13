@@ -3,15 +3,16 @@ import { Heading } from "./Heading"
 import "../styles/therapist-appointment.css"
 import { Bottom } from "./Bottom";
 import { Link } from "react-router-dom";
+
 function TherapistAppointment() {
 
     const { phone, email } = JSON.parse(localStorage.getItem("personal"))
-
+    const { doctorid } = JSON.parse(localStorage.getItem("bookData"))
 
     return (
         <div id="therapist-appointment-cont">
             <StaticHeader />
-            <Heading image={"leftarrow.png"} heading={"THERAPIST APPOINTMENT"} />
+            <Heading image={"leftarrow.png"} heading={"THERAPIST APPOINTMENT"} route={`/booking/${doctorid}`}/>
             <div id="mobile-no-div">+91{phone}</div>
             <div id="therapist-line-div"></div>
             <p id="gmail-div">{email}</p>
