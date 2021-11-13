@@ -184,6 +184,9 @@ function App() {
           <DailyTask />
         </Route>
         
+        <Route path="/myprofile">
+        <Mprofile/> 
+        </Route>
 
       </Switch> 
     

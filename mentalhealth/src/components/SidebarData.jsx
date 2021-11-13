@@ -3,7 +3,7 @@
 export const SiderbarData = [
     {
         title : "My Profile",
-        path:'/',
+        path:'/myprofile',
         icon:"myprofile.svg",
         cName:'nav-text'
     },
