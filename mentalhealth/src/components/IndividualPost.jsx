@@ -185,6 +185,7 @@ export const Individualpost = () => {
                             </div>
                         })}
 
+
                     </div>
                 </div>
                 <div id="docbottom">
