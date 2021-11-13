@@ -7,9 +7,8 @@
 
 - Google Auth, Facebook Auth,Signup/Signin
 - Users can book appointment by vieweing profile of doctors with their specialization.
-- Users can post their issues and also likes and comments on the other user's posts.
-- Users can analyse their mental health by playing games.
-- Users can relax their mind by watching meditation video.
+- Users can post their issues, likes and comments on the other user's posts.
+- Users can play games and watch meditation videos to relax their mind.
 
 
 ## Installing and running the app in pc
@@ -111,11 +110,8 @@ To run this application on your local system, execute the following commands on 
 
 ## Tech Stack-
 
-- CSS
-- React
-- Node js
-- Mongodb
-- Express js
+<img src="https://img.shields.io/badge/CSS3-1572B6?&style=for-the-badge&logo=css3&logoColor=white" />&nbsp;&nbsp;<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />&nbsp;&nbsp;<img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />&nbsp;&nbsp;<img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" />&nbsp;&nbsp;<img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" />&nbsp;&nbsp;<img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white" />&nbsp;&nbsp;<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />&nbsp;&nbsp;
+
 
 ## Acknowledgment
 Took some help from these resources 
@@ -124,17 +120,11 @@ Took some help from these resources
 
 ## Team Members-
 ### UI Designer
-1. Supriya Monika Soreng
+1. Supriya Monika Soreng - [Github](https://github.com/Supriyasoreng)
 
 ### Web Developer
-1. Prateek R. Jadhav
-2. Ashwani Kumar Pankaj
-3. Rahul Kumar
-4. Prakash Chandra
 
-## Contact-
-
-1. Prateek R. Jadhav - [Github](https://github.com/pratikjadhav080) 
+1. Pratik R. Jadhav - [Github](https://github.com/pratikjadhav080) 
 2. Ashwani Kumar Pankaj - [Github](https://github.com/ashwanikpankaj)
 3. Rahul Kumar - [Github](https://github.com/fitrahul)
 4. Prakash Chandra - [Github](https://github.com/Prakashchandra041)
