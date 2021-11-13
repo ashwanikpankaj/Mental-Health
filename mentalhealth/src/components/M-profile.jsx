@@ -41,7 +41,7 @@ export function Mprofile() {
         <>
             <div className="lpage_maindiv">
                 <StaticHeader />
-                <Heading image="leftArrowdoc1.jpg" heading="MY PROFILE"></Heading>
+                <Heading image="leftArrowdoc1.jpg" heading="MY PROFILE" route={`/landingpage`}></Heading>
 
                 <div id="m-profile2">
                     <div id="m-pro3">NAME - {data.user.name}</div>

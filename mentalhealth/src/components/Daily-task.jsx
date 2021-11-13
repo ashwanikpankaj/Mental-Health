@@ -15,7 +15,7 @@ export function DailyTask() {
 
                 <StaticHeader />
 
-                <Heading heading={"My Stats"} image={"leftarrow.png"} />
+                <Heading heading={"My Stats"} image={"leftarrow.png"} route={`/landingpage`}/>
 
                 <div id="mindfulnes">MY MINDFULNESS</div>
 

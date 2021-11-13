@@ -45,7 +45,7 @@ export const SiderbarData = [
     },
     {
         title : "Sign Out",
-        path:'/',
+        path:'/login',
         icon:"signout.svg",
         cName:'nav-text'
     }

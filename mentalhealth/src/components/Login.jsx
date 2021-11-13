@@ -1,7 +1,7 @@
 import '../styles/login.css'
 import axios from 'axios';
 import { StaticHeader } from './Staticheader'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link,useHistory } from 'react-router-dom'
 import styled from "styled-components";
 
@@ -32,8 +32,13 @@ const Button = styled.input`
 
 
 export const Login = () => {
+
     const history = useHistory();
     const [signuperror,setSignUpError] = useState(false)
+
+    useEffect(()=>{
+        localStorage.clear();
+    },[])
 
     const [userData,setUserData] = useState({
         email:"",
@@ -82,9 +87,14 @@ export const Login = () => {
     }
 
     const googleAuth = () => {
-        console.log("clicked")
-        window.location.href = 'http://localhost:7765/auth/google'
+        localStorage.setItem("loginMethod","Fastlogin")
+        window.open('http://localhost:7765/auth/google','_self');
+        
+    }
 
+    const facebookAuth = () => {
+        localStorage.setItem("loginMethod","Fastlogin")
+        window.open('http://localhost:7765/auth/facebook/','_self');
     }
 
     return (
@@ -111,7 +121,7 @@ export const Login = () => {
                     
                 </div>
 
-                <button id="facebook"><img src="facebook.jpg" alt="facebook"></img>Sign up with facebook</button>
+                <button id="facebook" onClick={facebookAuth}><img src="facebook.jpg" alt="facebook"></img>Sign up with facebook</button>
                 <button id="google" onClick={googleAuth}><img src="google.jpg" alt="google"></img>Sign up with Google</button>
             
             </div>
