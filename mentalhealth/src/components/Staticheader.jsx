@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "../styles/staticHeader.css";
 
-export const StaticHeader = () => {
+export const StaticHeader = ({color}) => {
 
   let time = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
   const [ctime, setCTime] = useState(time);
@@ -14,7 +14,7 @@ export const StaticHeader = () => {
 
   return (
     <>
-      <div className="headerBox">
+      <div style={{backgroundColor:color?color:"white"}} className="headerBox">
         <p id="time">{ctime}</p>
         <img id="wifi" src="/wifi.jpg" alt="alt"></img>
         <img id="tower" src="/tower.jpg" alt="alt"></img>

@@ -5,6 +5,7 @@ import { Bottom } from './Bottom'
 import { BottomNavBar } from './Bottom-nav-bar'
 // import { Navbar } from './Navbar'
 import { StaticHeader } from './Staticheader'
+import { Heading } from './Heading'
 
 
 export function DailyTask() {
@@ -14,10 +15,7 @@ export function DailyTask() {
 
                 <StaticHeader />
 
-                <div className="lpage_app_status">
-                    <img id="arrow1" src="./landing_images/arrow1.png" alt="" />
-                    <div id="my-stats1">My Stats</div>
-                </div>
+                <Heading heading={"My Stats"} image={"leftarrow.png"} />
 
                 <div id="mindfulnes">MY MINDFULNESS</div>
 

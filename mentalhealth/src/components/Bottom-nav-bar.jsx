@@ -1,15 +1,11 @@
 import '../styles/landing.css'
 import { Link } from 'react-router-dom'
 
-export function BottomNavBar({props}) {
+export function BottomNavBar() {
 
-    const hamburgerclick = () =>{
-        props()
-    }
-    
     return (
         <>
-            <div onClick={hamburgerclick} className="lpage_bottom_nav_bar">
+            <div className="lpage_bottom_nav_bar">
                 <img id="home" src="/./landing_images/home.png" alt="" />
                 <Link to="/home-page" ><div id="home1">Home</div></Link>
 

@@ -10,6 +10,7 @@ import { Rectangle } from './Rectangle'
 // import { SiderbarData } from './SidebarData'
 // import {Link} from 'react-router-dom'
 import { Sidebar } from './Sidebar'
+import { StaticHeader } from './Staticheader';
 
 export function Landing() {
 
@@ -47,8 +48,10 @@ export function Landing() {
     return (
         <>
             <div className="lpage_maindiv">
+            <StaticHeader color="#D8EFFF"/>
                 <div>
-                    <Navbar props={hideSidebar} />
+                    {/* <Navbar props={hideSidebar} /> */}
+                    
                 </div>
 
                 <div>
@@ -56,7 +59,7 @@ export function Landing() {
                 </div>
 
                 <div id="girldiv" onClick={hideSidebar}>
-                    <img id="lpage_girl" src="./landing_images/girl.png" alt="" />
+                    <img id="lpage_girl" src="./landing_images/girl.png" alt={name} />
                 </div>
 
                 <div>
@@ -64,14 +67,15 @@ export function Landing() {
                 </div>
 
                 <div>
-                    <BottomNavBar props={hideSidebar} />
+                    <BottomNavBar />
                 </div>
 
                 <div>
                     <Bottom />
                 </div>
-                <Sidebar prop={sidebar} username={name} />
+                <Sidebar prop={sidebar} username={name}/>
             </div>
         </>
     )
 }
+

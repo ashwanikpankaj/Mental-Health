@@ -5,10 +5,18 @@ import { Bottom } from './Bottom'
 import { BottomNavBar } from './Bottom-nav-bar'
 import { Navbar } from './Navbar'
 import { Rectangle } from './Rectangle'
-import { useState } from 'react'
+import { useEffect,useState } from 'react'
 import { Sidebar } from './Sidebar'
 
 export function Game() {
+
+    const [name, setName] = useState("")
+
+    useEffect(()=>{
+        const loggeduser = JSON.parse(localStorage.getItem("data"))
+        setName(loggeduser.user.name)
+    },[])
+   
 
     const [sidebar,setSidebar] = useState(false)
 
@@ -35,14 +43,14 @@ export function Game() {
                 </div>
 
                 <div>
-                    <BottomNavBar props={hideSidebar}/>
+                    <BottomNavBar/>
                 </div>
 
                 <div>
                     <Bottom />
                 </div>
 
-                <Sidebar prop={sidebar}/>
+                <Sidebar prop={sidebar} username={name}/>
             </div>
         </>
     )

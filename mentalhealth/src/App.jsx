@@ -187,25 +187,22 @@ function App() {
         <Route path="/myprofile">
         <Mprofile/> 
         </Route>
-
+        
       </Switch>
     
     
+      
 
-      
-      
 
       {/*   
-      <Mprofile />    
-      <Meditate />
-      <Game />
-      <Landing1 />
-      <Meditate />
+            <Diary1 />
       <Diary />
-      <Diary1 />
+        <Meditate />
+      
       <Game />
       <Game1 />
-
+      <Landing1 />
+      <Mprofile />    
       <Bluetooh></Bluetooh>
       <Personality />
       <DailyTask />
@@ -213,8 +210,6 @@ function App() {
       <Bookingcomplete></Bookingcomplete>
       <TherapistAppointment />
       <Cardpayment />
-    
-       
       < Otpverification />
 
       <Prakash></Prakash>
