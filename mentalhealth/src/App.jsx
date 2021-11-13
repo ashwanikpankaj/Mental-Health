@@ -49,7 +49,7 @@ function App() {
   return (
     <div className="App">
 
-       <Switch>
+        <Switch>
         <Route path="/" exact>
           <Onboarding />
         </Route>
@@ -218,9 +218,7 @@ function App() {
       <Otpverification />
 
      <MeditateCrousel/>
-      <Vrinsitu/>
-      <GamesCrousel />
-      <Landing />
+  
       <Community></Community>
        <Createpost/> */}
     </div>

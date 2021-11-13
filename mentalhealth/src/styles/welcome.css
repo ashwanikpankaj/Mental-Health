@@ -12,9 +12,10 @@
 }
 
 .img-div {
+  box-sizing: border-box;
   width: 359px;
-  height: 341px;
-  padding-top: 50px;
+  height: 350px;
+  padding-top: 40px;
   margin-left: 20px;
 }
 
@@ -22,6 +23,7 @@
   width: 411px;
   height: 281px;
   margin-bottom: 0px;
+  margin-top: 110px;
 }
 
 .welcome {
@@ -41,6 +43,8 @@
 .bottom-line {
   width: 411px;
   height: 16px;
+  padding-top: 5px;
+  box-sizing: border-box;
 }
 .bottom-line > div {
   height: 3px;
