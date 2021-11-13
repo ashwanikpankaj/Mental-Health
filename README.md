@@ -5,20 +5,41 @@
 
 ## Features
 
-- Google Auth, Facebook Auth,Signin/Signup
+- Google Auth, Facebook Auth,Signup/Signin
 - Users can book appointment by vieweing profile of doctors with their specialization.
-- Users can analyse thier their mental health by playing games.
-
+- Users can post their issues and also likes and comments on the other user's posts.
+- Users can analyse their mental health by playing games.
+- Users can relax their mind by watching meditation video.
 
 
 ## Installing and running the app in pc
 
+<!-- <hr> -->
+To run this application on your local system, execute the following commands on your terminal/command line:
+  
+    <code>git clone https://github.com/pratikjadhav080/Mental-Health.git</code>
+
+  ### It has two folders-
+
+1. backend
+
+  <code>npm i</code> 
+  
+  <code>npm run server</code> 
+
+  create a .env file with username, database name and password of mongodb, google client id and google client secret, facebook app id and facebook app secret, jwt secret key
+
+2. mentalhealth
+
+  <code>npm i</code>
+
+  <code>npm start</code>
 
 
 ## A Glimpse of our cloned website
 
 1. Onboarding Page-
-2. 
+
 ![Screenshot (353)](https://user-images.githubusercontent.com/86404961/141604776-9252335f-6c04-4ce6-8d58-79e1e034147d.png)
 
 2.Signup Page-
@@ -26,19 +47,14 @@
 ![Screenshot (333)](https://user-images.githubusercontent.com/86404961/141604093-3a2cfda6-061c-4d85-9698-ea33ca0a8ac2.png)
 
 3.Login Page-
+
 ![login (2)](https://user-images.githubusercontent.com/86404961/141604109-0ac7ffe7-8457-41d9-b44f-3f2faaafaf60.png)
 
 4.Questionaire Pages-
 
 ![blueaura (2)](https://user-images.githubusercontent.com/86404961/141604169-74e7fd75-ee65-4fdf-a219-0c12f7b548ac.png)
 
-![goal (2)](https://user-images.githubusercontent.com/86404961/141604184-64106aac-dec2-4331-b425-be0eaafe2d18.png)
-
-![funtest (2)](https://user-images.githubusercontent.com/86404961/141604192-fbb4f66d-6719-4172-925d-61245eb59024.png)
-
 ![color (2)](https://user-images.githubusercontent.com/86404961/141604212-04ab0e03-0c6b-404f-9257-76bd3afb1837.png)
-
-![personality (2)](https://user-images.githubusercontent.com/86404961/141604227-6a31efd5-61e9-4e0c-80ad-4ddd800bbafa.png)
 
 5.Landing Pages-
 
@@ -48,7 +64,8 @@
 
 ![ham (2)](https://user-images.githubusercontent.com/86404961/141604299-334c86fb-29fb-4740-bf16-ed1511da85d5.png)
 
-![games-home](https://user-images.githubusercontent.com/86404961/141605657-dbaffce8-b18f-4a2b-b2e0-8aef76b54533.png)
+
+
 
 ![Screenshot (359)](https://user-images.githubusercontent.com/86404961/141605720-b6637405-aa04-4430-a679-1affec754962.png)
 
