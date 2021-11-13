@@ -18,8 +18,8 @@
 ## A Glimpse of our cloned website
 
 1. Onboarding Page-
-
-![Screenshot (326)](https://user-images.githubusercontent.com/86404961/141604055-a1e16a47-3149-49dd-8903-281e0cf524ef.png)
+2. 
+![Screenshot (353)](https://user-images.githubusercontent.com/86404961/141604776-9252335f-6c04-4ce6-8d58-79e1e034147d.png)
 
 2.Signup Page-
 
@@ -48,6 +48,11 @@
 
 ![ham (2)](https://user-images.githubusercontent.com/86404961/141604299-334c86fb-29fb-4740-bf16-ed1511da85d5.png)
 
+![games-home](https://user-images.githubusercontent.com/86404961/141605657-dbaffce8-b18f-4a2b-b2e0-8aef76b54533.png)
+
+![Screenshot (359)](https://user-images.githubusercontent.com/86404961/141605720-b6637405-aa04-4430-a679-1affec754962.png)
+
+
 6. Game Pages-
 
 ![games (2)](https://user-images.githubusercontent.com/86404961/141604343-9442ee0c-9ba1-4a10-82cc-860e36629b37.png)
@@ -59,6 +64,12 @@
 ![good (2)](https://user-images.githubusercontent.com/86404961/141604369-0fcdb5db-23d6-42b2-91d9-b83df20d3ca1.png)
 
 ![sorry (2)](https://user-images.githubusercontent.com/86404961/141604376-2b30d131-9585-4ca4-b479-708a24511a62.png)
+
+
+
+
+
+
 
 
 

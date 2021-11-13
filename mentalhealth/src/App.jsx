@@ -223,9 +223,7 @@ function App() {
       <Otpverification />
 
      <MeditateCrousel/>
-      <Vrinsitu/>
-      <GamesCrousel />
-      <Landing />
+  
       <Community></Community>
        <Createpost/> */}
     </div>
