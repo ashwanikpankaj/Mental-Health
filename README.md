@@ -1,14 +1,14 @@
 # Mental Health
 
-> The most simple & convenient way to access talk therapy - anytime, anywhere, any device.This project was build as a construct week project by Masai School Students.
+> The most simple & convenient way to access the talk therapy - anytime, anywhere, any device. This project was build as a construct week project by the Masai School Students.
 
 
 ## Features
 
-- Google Auth, Facebook Auth,Signup/Signin
-- Users can book appointment by vieweing profile of doctors with their specialization.
+- Google Auth, Facebook Auth, Normal Signup/Signin.
+- Users can book an appointment with our doctor. You can also check doctor's profile along with their specialization.
 - Users can post their issues, likes and comments on the other user's posts.
-- Users can play games and watch meditation videos to relax their mind.
+- Users can also play a small game and watch a meditation video in order to relax their mind.
 
 
 ## Installing and running the app in pc
