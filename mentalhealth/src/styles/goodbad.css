@@ -35,6 +35,16 @@
     left:249.265px;
 }
 
+#good:active{
+    border-radius: 65px;
+    border:8px solid #8773DF;
+}
+
+#bad:active{
+    border-radius: 65px;
+    border:8px solid #8773DF;
+}
+
 #goodtext,#badtext{
     position: absolute;
     width: 114px;

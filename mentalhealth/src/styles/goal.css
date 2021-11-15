@@ -26,7 +26,9 @@
     position: absolute;
     width: 165px;
     height: 127px;
+    transition: border 0.2s ease-in;
 }
+
 
 #anxietyimg{
     left: 34px;
@@ -46,6 +48,13 @@
     left: 225px;
     top: 395px;
 }
+
+
+.allimages:active{
+    border:1px solid rgb(158, 154, 154);
+    border-radius: 10px;
+}
+
 
 #reduce,#mind,#stay,#sleep{
     position: absolute;

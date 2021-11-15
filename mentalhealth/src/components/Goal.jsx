@@ -12,19 +12,19 @@ export const Goal = () => {
                 <p id="whatisgoal">What is your Goal?</p>
 
                 <Link to="/funtest">
-                    <img id="anxietyimg" src="anxiety.jpg" alt="anxiety"></img>
+                    <img className="allimages" id="anxietyimg" src="anxiety.jpg" alt="anxiety"></img>
                 </Link>
 
                 <Link to="/funtest">
-                    <img id="mindfulnessimg" src="mindfulness.png" alt="mindfulness"></img>
+                    <img className="allimages" id="mindfulnessimg" src="mindfulness.png" alt="mindfulness"></img>
                 </Link>
 
                 <Link to="/funtest">
-                    <img id="sleepimg" src="sleep.jpg" alt="sleep"></img>
+                    <img className="allimages" id="sleepimg" src="sleep.jpg" alt="sleep"></img>
                 </Link>
 
                 <Link to="/funtest">
-                    <img id="Stayfocusedimg" src="Stayfocused.jpg" alt="Stayfocused"></img>
+                    <img className="allimages" id="Stayfocusedimg" src="Stayfocused.jpg" alt="Stayfocused"></img>
                 </Link>
 
 
