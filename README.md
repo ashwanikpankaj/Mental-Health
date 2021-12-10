@@ -129,7 +129,7 @@ Took some help from these resources
 3. Rahul Kumar - [Github](https://github.com/fitrahul)
 4. Prakash Chandra - [Github](https://github.com/Prakashchandra041)
 
-##Github Link:https://mental-health-client.vercel.app/
+## Github Link:https://mental-health-client.vercel.app/
 
 
 
